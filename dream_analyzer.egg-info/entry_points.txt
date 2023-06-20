@@ -1,0 +1,4 @@
+[console_scripts]
+dream = join.__main__:main
+dream-flat = join.run_flat.__main__:main
+

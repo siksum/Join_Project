@@ -1,0 +1,1671 @@
+
+Filename: 0x02ae1deb9a7e9ff1c5354f9c670bf1edde6f728d_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TAO.onlyVault() (0x02ae1deb9a7e9ff1c5354f9c670bf1edde6f728d_txOriginForAuthentication.sol#281-284) uses tx.origin for authorization: require(bool)(tx.origin == vaultAddress) (0x02ae1deb9a7e9ff1c5354f9c670bf1edde6f728d_txOriginForAuthentication.sol#282)
+ TheAO.transferOwnership(address) (0x02ae1deb9a7e9ff1c5354f9c670bf1edde6f728d_txOriginForAuthentication.sol#670-674) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x02ae1deb9a7e9ff1c5354f9c670bf1edde6f728d_txOriginForAuthentication.sol#671)
+ TheAO.setWhitelist(address,bool) (0x02ae1deb9a7e9ff1c5354f9c670bf1edde6f728d_txOriginForAuthentication.sol#681-685) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x02ae1deb9a7e9ff1c5354f9c670bf1edde6f728d_txOriginForAuthentication.sol#682)
+ 
+line_number: 282
+line_number: 671
+line_number: 682
+
+Filename: 0x0545590d1ce8a60db943f7cf64f60cca44895da6_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+CustomToken.onlyOwner() (0x0545590d1ce8a60db943f7cf64f60cca44895da6_txOriginForAuthentication.sol#90-93) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,Action can only be performed by owner) (0x0545590d1ce8a60db943f7cf64f60cca44895da6_txOriginForAuthentication.sol#91)
+ 
+line_number: 91
+
+Filename: 0x0693c3a780a0a757e803a4bd76bcf43d438f8806_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Owned.onlyOwner() (0x0693c3a780a0a757e803a4bd76bcf43d438f8806_txOriginForAuthentication.sol#82-85) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x0693c3a780a0a757e803a4bd76bcf43d438f8806_txOriginForAuthentication.sol#83)
+ 
+line_number: 83
+
+Filename: 0x074544d3ab4026f7b4f107a3f5f320fca9c5709f_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x074544d3ab4026f7b4f107a3f5f320fca9c5709f_txOriginForAuthentication.sol#156-159) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,Ownable: the caller must be owner) (0x074544d3ab4026f7b4f107a3f5f320fca9c5709f_txOriginForAuthentication.sol#157)
+ 
+line_number: 157
+
+Filename: 0x090559D8630Da8e87066ED6A30C86daa03386346_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+King.onlyOwner() (0x090559D8630Da8e87066ED6A30C86daa03386346_txOriginForAuthentication.sol#52-55) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x090559D8630Da8e87066ED6A30C86daa03386346_txOriginForAuthentication.sol#53)
+ 
+line_number: 53
+
+Filename: 0x090bd1a0e5b2dfbf310f48c1c3a4efffbe2bb53c_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TheAO.setWhitelist(address,bool) (0x090bd1a0e5b2dfbf310f48c1c3a4efffbe2bb53c_txOriginForAuthentication.sol#681-685) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x090bd1a0e5b2dfbf310f48c1c3a4efffbe2bb53c_txOriginForAuthentication.sol#682)
+ TheAO.transferOwnership(address) (0x090bd1a0e5b2dfbf310f48c1c3a4efffbe2bb53c_txOriginForAuthentication.sol#670-674) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x090bd1a0e5b2dfbf310f48c1c3a4efffbe2bb53c_txOriginForAuthentication.sol#671)
+ TAO.onlyVault() (0x090bd1a0e5b2dfbf310f48c1c3a4efffbe2bb53c_txOriginForAuthentication.sol#281-284) uses tx.origin for authorization: require(bool)(tx.origin == vaultAddress) (0x090bd1a0e5b2dfbf310f48c1c3a4efffbe2bb53c_txOriginForAuthentication.sol#282)
+ 
+line_number: 282
+line_number: 671
+line_number: 682
+
+Filename: 0x099bcccd2e2ef8c638140f0655e76471acfed045_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x099bcccd2e2ef8c638140f0655e76471acfed045_txOriginForAuthentication.sol#8-11) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x099bcccd2e2ef8c638140f0655e76471acfed045_txOriginForAuthentication.sol#9)
+ 
+line_number: 9
+
+Filename: 0x09d54acec80f7f14994d0903e1b5d5488f670825_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+DEFIBANK.addMinter(address) (0x09d54acec80f7f14994d0903e1b5d5488f670825_txOriginForAuthentication.sol#236-239) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x09d54acec80f7f14994d0903e1b5d5488f670825_txOriginForAuthentication.sol#237)
+ DEFIBANK.constructor() (0x09d54acec80f7f14994d0903e1b5d5488f670825_txOriginForAuthentication.sol#213-215) uses tx.origin for authorization: governance = tx.origin (0x09d54acec80f7f14994d0903e1b5d5488f670825_txOriginForAuthentication.sol#214)
+ DEFIBANK.setGovernance(address) (0x09d54acec80f7f14994d0903e1b5d5488f670825_txOriginForAuthentication.sol#231-234) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x09d54acec80f7f14994d0903e1b5d5488f670825_txOriginForAuthentication.sol#232)
+ DEFIBANK.removeMinter(address) (0x09d54acec80f7f14994d0903e1b5d5488f670825_txOriginForAuthentication.sol#241-244) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x09d54acec80f7f14994d0903e1b5d5488f670825_txOriginForAuthentication.sol#242)
+ 
+line_number: 232
+line_number: 237
+line_number: 242
+
+Filename: 0x0ce881ab266e848c2a4d2d873b74dc7a1138ce6c_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+pYFIIVault.setGovernance(address) (0x0ce881ab266e848c2a4d2d873b74dc7a1138ce6c_txOriginForAuthentication.sol#243-246) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x0ce881ab266e848c2a4d2d873b74dc7a1138ce6c_txOriginForAuthentication.sol#244)
+ 
+line_number: 244
+
+Filename: 0x0cfec3b9516e22b63dac89926b84ba2ae31895ba_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+owned.onlyOwner() (0x0cfec3b9516e22b63dac89926b84ba2ae31895ba_txOriginForAuthentication.sol#53-56) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x0cfec3b9516e22b63dac89926b84ba2ae31895ba_txOriginForAuthentication.sol#54)
+ 
+line_number: 54
+
+Filename: 0x0e605600f9b4b6762498c941fee0b32976cb5e9b_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+owned.onlyOwner() (0x0e605600f9b4b6762498c941fee0b32976cb5e9b_txOriginForAuthentication.sol#53-56) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x0e605600f9b4b6762498c941fee0b32976cb5e9b_txOriginForAuthentication.sol#54)
+ 
+line_number: 54
+
+Filename: 0x11ded8addda881f700fbda2fe2030656289322a3_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+AfterShock.transferOwnership(address) (0x11ded8addda881f700fbda2fe2030656289322a3_txOriginForAuthentication.sol#123-129) uses tx.origin for authorization: require(bool)(tx.origin == contractOwner) (0x11ded8addda881f700fbda2fe2030656289322a3_txOriginForAuthentication.sol#125)
+ AfterShock.excludeAddressFromStaking(address,bool) (0x11ded8addda881f700fbda2fe2030656289322a3_txOriginForAuthentication.sol#378-386) uses tx.origin for authorization: require(bool)(tx.origin == contractOwner) (0x11ded8addda881f700fbda2fe2030656289322a3_txOriginForAuthentication.sol#380)
+ AfterShock.withdrawERC20Tokens(address,uint256) (0x11ded8addda881f700fbda2fe2030656289322a3_txOriginForAuthentication.sol#389-394) uses tx.origin for authorization: require(bool)(tx.origin == contractOwner) (0x11ded8addda881f700fbda2fe2030656289322a3_txOriginForAuthentication.sol#391)
+ 
+line_number: 125
+line_number: 380
+line_number: 391
+
+Filename: 0x124c6092c469716a661b5b0609f205050b26b50f_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+kBASEv0.setMonetaryPolicy(address) (0x124c6092c469716a661b5b0609f205050b26b50f_txOriginForAuthentication.sol#260-265) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x124c6092c469716a661b5b0609f205050b26b50f_txOriginForAuthentication.sol#262)
+ kBASEv0.setGovernance(address) (0x124c6092c469716a661b5b0609f205050b26b50f_txOriginForAuthentication.sol#242-245) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x124c6092c469716a661b5b0609f205050b26b50f_txOriginForAuthentication.sol#243)
+ 
+line_number: 243
+line_number: 262
+
+Filename: 0x14160d16306280875bbdc8130c269961eb00137f_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TimelockGovernance.setTargetGovernance(address) (0x14160d16306280875bbdc8130c269961eb00137f_txOriginForAuthentication.sol#78-82) uses tx.origin for authorization: require(bool)(governance == tx.origin) (0x14160d16306280875bbdc8130c269961eb00137f_txOriginForAuthentication.sol#79)
+ TimelockGovernance.setThisGovernance(address) (0x14160d16306280875bbdc8130c269961eb00137f_txOriginForAuthentication.sol#67-71) uses tx.origin for authorization: require(bool)(governance == tx.origin) (0x14160d16306280875bbdc8130c269961eb00137f_txOriginForAuthentication.sol#68)
+ 
+line_number: 68
+line_number: 79
+
+Filename: 0x15ae271790e8a0a4ac0d4c0daa16adc3b72c72d5_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+InvoiceCreator.onlyManager() (0x15ae271790e8a0a4ac0d4c0daa16adc3b72c72d5_txOriginForAuthentication.sol#34-37) uses tx.origin for authorization: require(bool)(tx.origin == manager) (0x15ae271790e8a0a4ac0d4c0daa16adc3b72c72d5_txOriginForAuthentication.sol#35)
+ Invoice.onlyOwner() (0x15ae271790e8a0a4ac0d4c0daa16adc3b72c72d5_txOriginForAuthentication.sol#14-17) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x15ae271790e8a0a4ac0d4c0daa16adc3b72c72d5_txOriginForAuthentication.sol#15)
+ 
+line_number: 15
+line_number: 35
+
+Filename: 0x163d8e4a326119fb2342e2efd1bee2be0f31788f_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+YFIREV.addMinter(address) (0x163d8e4a326119fb2342e2efd1bee2be0f31788f_txOriginForAuthentication.sol#220-223) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x163d8e4a326119fb2342e2efd1bee2be0f31788f_txOriginForAuthentication.sol#221)
+ YFIREV.setGovernance(address) (0x163d8e4a326119fb2342e2efd1bee2be0f31788f_txOriginForAuthentication.sol#215-218) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x163d8e4a326119fb2342e2efd1bee2be0f31788f_txOriginForAuthentication.sol#216)
+ YFIREV.removeMinter(address) (0x163d8e4a326119fb2342e2efd1bee2be0f31788f_txOriginForAuthentication.sol#225-228) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x163d8e4a326119fb2342e2efd1bee2be0f31788f_txOriginForAuthentication.sol#226)
+ 
+line_number: 216
+line_number: 221
+line_number: 226
+
+Filename: 0x1863d1351fc3003f1ad361939248e3a3a114958e_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Oracle.onlyRateControl() (0x1863d1351fc3003f1ad361939248e3a3a114958e_txOriginForAuthentication.sol#147-151) uses tx.origin for authorization: require(bool,string)(tx.origin == rateControl,rateControl key required for this function.) (0x1863d1351fc3003f1ad361939248e3a3a114958e_txOriginForAuthentication.sol#149)
+ Oracle.onlyTokenAssignmentControl() (0x1863d1351fc3003f1ad361939248e3a3a114958e_txOriginForAuthentication.sol#153-156) uses tx.origin for authorization: require(bool,string)(tx.origin == tokenAssignmentControl,tokenAssignmentControl key required for this function.) (0x1863d1351fc3003f1ad361939248e3a3a114958e_txOriginForAuthentication.sol#154)
+ 
+line_number: 149
+line_number: 154
+
+Filename: 0x18fe3b5b498df6ad5667fb1d28d7f50c734ad97b_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TAO.onlyVault() (0x18fe3b5b498df6ad5667fb1d28d7f50c734ad97b_txOriginForAuthentication.sol#297-300) uses tx.origin for authorization: require(bool)(tx.origin == vaultAddress) (0x18fe3b5b498df6ad5667fb1d28d7f50c734ad97b_txOriginForAuthentication.sol#298)
+ TheAO.transferOwnership(address) (0x18fe3b5b498df6ad5667fb1d28d7f50c734ad97b_txOriginForAuthentication.sol#686-690) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x18fe3b5b498df6ad5667fb1d28d7f50c734ad97b_txOriginForAuthentication.sol#687)
+ TheAO.setWhitelist(address,bool) (0x18fe3b5b498df6ad5667fb1d28d7f50c734ad97b_txOriginForAuthentication.sol#697-701) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x18fe3b5b498df6ad5667fb1d28d7f50c734ad97b_txOriginForAuthentication.sol#698)
+ 
+line_number: 298
+line_number: 687
+line_number: 698
+
+Filename: 0x1b33d4ba1635442c484dcb9ce8c18d0f3d308e85_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TheAO.setWhitelist(address,bool) (0x1b33d4ba1635442c484dcb9ce8c18d0f3d308e85_txOriginForAuthentication.sol#681-685) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x1b33d4ba1635442c484dcb9ce8c18d0f3d308e85_txOriginForAuthentication.sol#682)
+ TAO.onlyVault() (0x1b33d4ba1635442c484dcb9ce8c18d0f3d308e85_txOriginForAuthentication.sol#281-284) uses tx.origin for authorization: require(bool)(tx.origin == vaultAddress) (0x1b33d4ba1635442c484dcb9ce8c18d0f3d308e85_txOriginForAuthentication.sol#282)
+ TheAO.transferOwnership(address) (0x1b33d4ba1635442c484dcb9ce8c18d0f3d308e85_txOriginForAuthentication.sol#670-674) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x1b33d4ba1635442c484dcb9ce8c18d0f3d308e85_txOriginForAuthentication.sol#671)
+ 
+line_number: 282
+line_number: 671
+line_number: 682
+
+Filename: 0x1e15abf152067e9fe4a48bbf094a71f5bb16325d_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+SFI.setGovernance(address) (0x1e15abf152067e9fe4a48bbf094a71f5bb16325d_txOriginForAuthentication.sol#218-221) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x1e15abf152067e9fe4a48bbf094a71f5bb16325d_txOriginForAuthentication.sol#219)
+ SFI.addMinter(address) (0x1e15abf152067e9fe4a48bbf094a71f5bb16325d_txOriginForAuthentication.sol#223-226) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x1e15abf152067e9fe4a48bbf094a71f5bb16325d_txOriginForAuthentication.sol#224)
+ SFI.removeMinter(address) (0x1e15abf152067e9fe4a48bbf094a71f5bb16325d_txOriginForAuthentication.sol#228-231) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x1e15abf152067e9fe4a48bbf094a71f5bb16325d_txOriginForAuthentication.sol#229)
+ 
+line_number: 219
+line_number: 224
+line_number: 229
+
+Filename: 0x201fD11a88BE3f3De7B7120625B9470E36D239d8_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+DISCOVERY.withdraw() (0x201fD11a88BE3f3De7B7120625B9470E36D239d8_txOriginForAuthentication.sol#264-267) uses tx.origin for authorization: require(bool,string)(tx.origin == admin,!not allowed) (0x201fD11a88BE3f3De7B7120625B9470E36D239d8_txOriginForAuthentication.sol#265)
+ 
+line_number: 265
+
+Filename: 0x209c860cf96cd3968b6d0aaab1d5e13c62632bf5_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Remember43.onlyOwner() (0x209c860cf96cd3968b6d0aaab1d5e13c62632bf5_txOriginForAuthentication.sol#18-21) uses tx.origin for authorization: require(bool)(owner == tx.origin) (0x209c860cf96cd3968b6d0aaab1d5e13c62632bf5_txOriginForAuthentication.sol#19)
+ 
+line_number: 19
+
+Filename: 0x221657776846890989a759ba2973e427dff5c9bb_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+ReputationToken.mintForWarpSync(uint256,address) (0x221657776846890989a759ba2973e427dff5c9bb_txOriginForAuthentication.sol#1024-1029) uses tx.origin for authorization: require(bool)(warpSync == tx.origin) (0x221657776846890989a759ba2973e427dff5c9bb_txOriginForAuthentication.sol#1025)
+ 
+line_number: 1025
+
+Filename: 0x222222de1914c2b303504e3b035cf46b11fcfc6c_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+X2Bet_win.isNotContract() (0x222222de1914c2b303504e3b035cf46b11fcfc6c_txOriginForAuthentication.sol#51-57) uses tx.origin for authorization: require(bool)(size == 0 && tx.origin == msg.sender) (0x222222de1914c2b303504e3b035cf46b11fcfc6c_txOriginForAuthentication.sol#55)
+ X2Bet_win.onlyOwner() (0x222222de1914c2b303504e3b035cf46b11fcfc6c_txOriginForAuthentication.sol#69-72) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x222222de1914c2b303504e3b035cf46b11fcfc6c_txOriginForAuthentication.sol#70)
+ 
+line_number: 70
+
+Filename: 0x2350b874d0eff523c5847223eb7144e1e56f06ce_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x2350b874d0eff523c5847223eb7144e1e56f06ce_txOriginForAuthentication.sol#27-30) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x2350b874d0eff523c5847223eb7144e1e56f06ce_txOriginForAuthentication.sol#28)
+ 
+line_number: 28
+
+Filename: 0x25727ae7907f26c0a2e3c9fe36f2eba6ea67fd73_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+NeoAdam.setCFO(address) (0x25727ae7907f26c0a2e3c9fe36f2eba6ea67fd73_txOriginForAuthentication.sol#418-421) uses tx.origin for authorization: require(bool)(tx.origin == CEO) (0x25727ae7907f26c0a2e3c9fe36f2eba6ea67fd73_txOriginForAuthentication.sol#419)
+ NeoAdam.setCEO(address) (0x25727ae7907f26c0a2e3c9fe36f2eba6ea67fd73_txOriginForAuthentication.sol#412-416) uses tx.origin for authorization: require(bool)(tx.origin == CEO) (0x25727ae7907f26c0a2e3c9fe36f2eba6ea67fd73_txOriginForAuthentication.sol#413)
+ 
+line_number: 413
+line_number: 419
+
+Filename: 0x284a67e43fa9274221ca8fbd6389c4c7b04bbb60_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TheAO.transferOwnership(address) (0x284a67e43fa9274221ca8fbd6389c4c7b04bbb60_txOriginForAuthentication.sol#686-690) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x284a67e43fa9274221ca8fbd6389c4c7b04bbb60_txOriginForAuthentication.sol#687)
+ TAO.onlyVault() (0x284a67e43fa9274221ca8fbd6389c4c7b04bbb60_txOriginForAuthentication.sol#297-300) uses tx.origin for authorization: require(bool)(tx.origin == vaultAddress) (0x284a67e43fa9274221ca8fbd6389c4c7b04bbb60_txOriginForAuthentication.sol#298)
+ TheAO.setWhitelist(address,bool) (0x284a67e43fa9274221ca8fbd6389c4c7b04bbb60_txOriginForAuthentication.sol#697-701) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x284a67e43fa9274221ca8fbd6389c4c7b04bbb60_txOriginForAuthentication.sol#698)
+ 
+line_number: 298
+line_number: 687
+line_number: 698
+
+Filename: 0x2A70605e53a2a596E04df8A775E0e8C9fEd62F9a_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Pool.changeRewardRate(uint256) (0x2A70605e53a2a596E04df8A775E0e8C9fEd62F9a_txOriginForAuthentication.sol#195-199) uses tx.origin for authorization: require(bool,string)(CONSTRUCTOR_ADDRESS == tx.origin,Only constructor can do this) (0x2A70605e53a2a596E04df8A775E0e8C9fEd62F9a_txOriginForAuthentication.sol#196)
+ 
+line_number: 196
+
+Filename: 0x2ab22d3f1205b9f523ebe80ae2853f7644830760_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x2ab22d3f1205b9f523ebe80ae2853f7644830760_txOriginForAuthentication.sol#60-64) uses tx.origin for authorization: assert(bool)(tx.origin == owner) (0x2ab22d3f1205b9f523ebe80ae2853f7644830760_txOriginForAuthentication.sol#62)
+ 
+line_number: 62
+
+Filename: 0x2b41b32668def3c3a366390225704356eecd4609_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+ZeroSwap.whitelist(address,bool) (0x2b41b32668def3c3a366390225704356eecd4609_txOriginForAuthentication.sol#136-140) uses tx.origin for authorization: require(bool)(tx.origin == info.admin) (0x2b41b32668def3c3a366390225704356eecd4609_txOriginForAuthentication.sol#137)
+ 
+line_number: 137
+
+Filename: 0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+StableAMM.setVault(address) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#320-323) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#321)
+ StableAMM.setRouter(address) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#310-313) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#311)
+ StableAMM.setLink(address) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#315-318) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#316)
+ StableAMM.setRouterAMM(address) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#335-338) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#336)
+ StableAMM.claim(address,address) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#340-348) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#341)
+ StableAMM.setGovernance(address) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#325-328) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#326)
+ StableAMM.setFactoryRouter(address) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#330-333) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x2bc7d7673b17efdf7f9d71921e88877711276c84_txOriginForAuthentication.sol#331)
+ 
+line_number: 311
+line_number: 316
+line_number: 321
+line_number: 326
+line_number: 331
+line_number: 336
+line_number: 341
+
+Filename: 0x2c7e1bc8490b14a1f059b9bb9b91f351db1987b1_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x2c7e1bc8490b14a1f059b9bb9b91f351db1987b1_txOriginForAuthentication.sol#10-13) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,) (0x2c7e1bc8490b14a1f059b9bb9b91f351db1987b1_txOriginForAuthentication.sol#11)
+ 
+line_number: 11
+
+Filename: 0x2c8177043dd748c82b0a63b9c3feb5a61002718c_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x2c8177043dd748c82b0a63b9c3feb5a61002718c_txOriginForAuthentication.sol#36-39) uses tx.origin for authorization: require(bool)(tx.origin == _owner) (0x2c8177043dd748c82b0a63b9c3feb5a61002718c_txOriginForAuthentication.sol#37)
+ 
+line_number: 37
+
+Filename: 0x2f41f7fc1d45749e0a7498c659d997a1f8fe9f46_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x2f41f7fc1d45749e0a7498c659d997a1f8fe9f46_txOriginForAuthentication.sol#71-74) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x2f41f7fc1d45749e0a7498c659d997a1f8fe9f46_txOriginForAuthentication.sol#72)
+ 
+line_number: 72
+
+Filename: 0x3356bebde2711b3254a4c3f6ccf0cfddd74c8076_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+GVC.burn(uint256) (0x3356bebde2711b3254a4c3f6ccf0cfddd74c8076_txOriginForAuthentication.sol#56-63) uses tx.origin for authorization: require(bool)(tx.origin == ownerOfTotalSupply) (0x3356bebde2711b3254a4c3f6ccf0cfddd74c8076_txOriginForAuthentication.sol#57)
+ GVC.mintToken(address,uint256) (0x3356bebde2711b3254a4c3f6ccf0cfddd74c8076_txOriginForAuthentication.sol#49-55) uses tx.origin for authorization: require(bool)(tx.origin == ownerOfTotalSupply) (0x3356bebde2711b3254a4c3f6ccf0cfddd74c8076_txOriginForAuthentication.sol#50)
+ 
+line_number: 50
+line_number: 57
+
+Filename: 0x3632fde13be1f2f210ab154e6b673fb297591ba5_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+owned.onlyOwner() (0x3632fde13be1f2f210ab154e6b673fb297591ba5_txOriginForAuthentication.sol#10-13) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x3632fde13be1f2f210ab154e6b673fb297591ba5_txOriginForAuthentication.sol#11)
+ 
+line_number: 11
+
+Filename: 0x3650b99D107d581eF8ff004365A4Ada8DA6bf62F_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x3650b99D107d581eF8ff004365A4Ada8DA6bf62F_txOriginForAuthentication.sol#370-373) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,error_onlyOwner) (0x3650b99D107d581eF8ff004365A4Ada8DA6bf62F_txOriginForAuthentication.sol#371)
+ Monoplasma.onCommit(uint256,bytes32,string) (0x3650b99D107d581eF8ff004365A4Ada8DA6bf62F_txOriginForAuthentication.sol#487-490) uses tx.origin for authorization: require(bool,string)(tx.origin == operator,error_notPermitted) (0x3650b99D107d581eF8ff004365A4Ada8DA6bf62F_txOriginForAuthentication.sol#488)
+ 
+line_number: 371
+line_number: 488
+
+Filename: 0x371a6a413fd23c5c906180769b87701d3be624a8_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Whitelist.onlyOwner() (0x371a6a413fd23c5c906180769b87701d3be624a8_txOriginForAuthentication.sol#15-18) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x371a6a413fd23c5c906180769b87701d3be624a8_txOriginForAuthentication.sol#16)
+ 
+line_number: 16
+
+Filename: 0x37ee79e0b44866876de2fb7f416d0443dd5ae481_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x37ee79e0b44866876de2fb7f416d0443dd5ae481_txOriginForAuthentication.sol#61-64) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x37ee79e0b44866876de2fb7f416d0443dd5ae481_txOriginForAuthentication.sol#62)
+ 
+line_number: 62
+
+Filename: 0x397f88326ab872d47c66a93409344b36aa6ad846_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+VirtuDollar.mint(uint256) (0x397f88326ab872d47c66a93409344b36aa6ad846_txOriginForAuthentication.sol#132-143) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x397f88326ab872d47c66a93409344b36aa6ad846_txOriginForAuthentication.sol#134)
+ 
+line_number: 134
+
+Filename: 0x3dd03fcb4aec72477836a3205402289bd1e1fb25_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Hoouusch.transferOwnership(address) (0x3dd03fcb4aec72477836a3205402289bd1e1fb25_txOriginForAuthentication.sol#18-21) uses tx.origin for authorization: require(bool)(owner == tx.origin) (0x3dd03fcb4aec72477836a3205402289bd1e1fb25_txOriginForAuthentication.sol#19)
+ Hoouusch.withdraw(address,uint256) (0x3dd03fcb4aec72477836a3205402289bd1e1fb25_txOriginForAuthentication.sol#13-16) uses tx.origin for authorization: require(bool)(owner == tx.origin) (0x3dd03fcb4aec72477836a3205402289bd1e1fb25_txOriginForAuthentication.sol#14)
+ 
+line_number: 14
+line_number: 19
+
+Filename: 0x3f7c656c0c3f547cb18d7a15318e98ae44ed8cbc_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+JumpRateModelV2.updateJumpRateModel(uint256,uint256,uint256,uint256) (0x3f7c656c0c3f547cb18d7a15318e98ae44ed8cbc_txOriginForAuthentication.sol#294-298) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,only the owner may call this function.) (0x3f7c656c0c3f547cb18d7a15318e98ae44ed8cbc_txOriginForAuthentication.sol#295)
+ 
+line_number: 295
+
+Filename: 0x4273c27fc7f5194bb970d4faf6a2a70c45418a72_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+GFI.removeMinter(address) (0x4273c27fc7f5194bb970d4faf6a2a70c45418a72_txOriginForAuthentication.sol#234-237) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x4273c27fc7f5194bb970d4faf6a2a70c45418a72_txOriginForAuthentication.sol#235)
+ GFI.setGovernance(address) (0x4273c27fc7f5194bb970d4faf6a2a70c45418a72_txOriginForAuthentication.sol#224-227) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x4273c27fc7f5194bb970d4faf6a2a70c45418a72_txOriginForAuthentication.sol#225)
+ GFI.addMinter(address) (0x4273c27fc7f5194bb970d4faf6a2a70c45418a72_txOriginForAuthentication.sol#229-232) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x4273c27fc7f5194bb970d4faf6a2a70c45418a72_txOriginForAuthentication.sol#230)
+ 
+line_number: 225
+line_number: 230
+line_number: 235
+
+Filename: 0x42c04df2c334d3a1c84813c5fe3b158ea06fc64c_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TESTY.constructor() (0x42c04df2c334d3a1c84813c5fe3b158ea06fc64c_txOriginForAuthentication.sol#210-212) uses tx.origin for authorization: governance = tx.origin (0x42c04df2c334d3a1c84813c5fe3b158ea06fc64c_txOriginForAuthentication.sol#211)
+ TESTY.setGovernance(address) (0x42c04df2c334d3a1c84813c5fe3b158ea06fc64c_txOriginForAuthentication.sol#219-222) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x42c04df2c334d3a1c84813c5fe3b158ea06fc64c_txOriginForAuthentication.sol#220)
+ TESTY.removeMinter(address) (0x42c04df2c334d3a1c84813c5fe3b158ea06fc64c_txOriginForAuthentication.sol#229-232) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x42c04df2c334d3a1c84813c5fe3b158ea06fc64c_txOriginForAuthentication.sol#230)
+ TESTY.addMinter(address) (0x42c04df2c334d3a1c84813c5fe3b158ea06fc64c_txOriginForAuthentication.sol#224-227) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x42c04df2c334d3a1c84813c5fe3b158ea06fc64c_txOriginForAuthentication.sol#225)
+ 
+line_number: 220
+line_number: 225
+line_number: 230
+
+Filename: 0x4425e0ced71bfb3c904f3eb5d1c4e7b314e35824_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Owner.isOwner() (0x4425e0ced71bfb3c904f3eb5d1c4e7b314e35824_txOriginForAuthentication.sol#362-365) uses tx.origin for authorization: require(bool)(tx.origin == OwnerAddress) (0x4425e0ced71bfb3c904f3eb5d1c4e7b314e35824_txOriginForAuthentication.sol#363)
+ 
+line_number: 363
+
+Filename: 0x46fbd2893da3e7f6811a138bf6214e75a7956c7f_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+SysAudit.onlyAudit() (0x46fbd2893da3e7f6811a138bf6214e75a7956c7f_txOriginForAuthentication.sol#75-78) uses tx.origin for authorization: require(bool,string)(tx.origin == audit,Only for Audit manager) (0x46fbd2893da3e7f6811a138bf6214e75a7956c7f_txOriginForAuthentication.sol#76)
+ 
+line_number: 76
+
+Filename: 0x4927643162fe6d18c7f046b3d155d8da0eee80e8_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Owned.onlyOwner() (0x4927643162fe6d18c7f046b3d155d8da0eee80e8_txOriginForAuthentication.sol#50-53) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,Only owner can do it.) (0x4927643162fe6d18c7f046b3d155d8da0eee80e8_txOriginForAuthentication.sol#51)
+ 
+line_number: 51
+
+Filename: 0x4a8c4b77221ca1e82A61cE91Ca603e4c9CB7181F_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Owned.onlyOwner() (0x4a8c4b77221ca1e82A61cE91Ca603e4c9CB7181F_txOriginForAuthentication.sol#238-241) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,Must be owner) (0x4a8c4b77221ca1e82A61cE91Ca603e4c9CB7181F_txOriginForAuthentication.sol#239)
+ 
+line_number: 239
+
+Filename: 0x4c961ce47d5278678253323e7aec14e37333f7ee_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TheAO.setWhitelist(address,bool) (0x4c961ce47d5278678253323e7aec14e37333f7ee_txOriginForAuthentication.sol#712-716) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x4c961ce47d5278678253323e7aec14e37333f7ee_txOriginForAuthentication.sol#713)
+ TAO.onlyVault() (0x4c961ce47d5278678253323e7aec14e37333f7ee_txOriginForAuthentication.sol#310-313) uses tx.origin for authorization: require(bool)(tx.origin == vaultAddress) (0x4c961ce47d5278678253323e7aec14e37333f7ee_txOriginForAuthentication.sol#311)
+ TheAO.transferOwnership(address) (0x4c961ce47d5278678253323e7aec14e37333f7ee_txOriginForAuthentication.sol#701-705) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x4c961ce47d5278678253323e7aec14e37333f7ee_txOriginForAuthentication.sol#702)
+ 
+line_number: 311
+line_number: 702
+line_number: 713
+
+Filename: 0x4eeea7b48b9c3ac8f70a9c932a8b1e8a5cb624c7_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+SingleOwner.ownerOnly() (0x4eeea7b48b9c3ac8f70a9c932a8b1e8a5cb624c7_txOriginForAuthentication.sol#283-286) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,owner_access) (0x4eeea7b48b9c3ac8f70a9c932a8b1e8a5cb624c7_txOriginForAuthentication.sol#284)
+ 
+line_number: 284
+
+Filename: 0x5006e6cc07fa7ac0ee0a479dc89931e2c392744d_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Timelock.executeTransaction(address,uint256,string,bytes,uint256) (0x5006e6cc07fa7ac0ee0a479dc89931e2c392744d_txOriginForAuthentication.sol#278-303) uses tx.origin for authorization: require(bool,string)(tx.origin == admin,Timelock::executeTransaction: Call must come from admin.) (0x5006e6cc07fa7ac0ee0a479dc89931e2c392744d_txOriginForAuthentication.sol#279)
+ Timelock.cancelTransaction(address,uint256,string,bytes,uint256) (0x5006e6cc07fa7ac0ee0a479dc89931e2c392744d_txOriginForAuthentication.sol#269-276) uses tx.origin for authorization: require(bool,string)(tx.origin == admin,Timelock::cancelTransaction: Call must come from admin.) (0x5006e6cc07fa7ac0ee0a479dc89931e2c392744d_txOriginForAuthentication.sol#270)
+ Timelock.queueTransaction(address,uint256,string,bytes,uint256) (0x5006e6cc07fa7ac0ee0a479dc89931e2c392744d_txOriginForAuthentication.sol#258-267) uses tx.origin for authorization: require(bool,string)(tx.origin == admin,Timelock::queueTransaction: Call must come from admin.) (0x5006e6cc07fa7ac0ee0a479dc89931e2c392744d_txOriginForAuthentication.sol#259)
+ 
+line_number: 259
+line_number: 270
+line_number: 279
+
+Filename: 0x55862a06787dfbaa84ac4230492a3f2ee655c52e_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Owned.onlyOwner() (0x55862a06787dfbaa84ac4230492a3f2ee655c52e_txOriginForAuthentication.sol#37-40) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x55862a06787dfbaa84ac4230492a3f2ee655c52e_txOriginForAuthentication.sol#38)
+ 
+line_number: 38
+
+Filename: 0x56c2162254b0e4417288786ee402c2b41d4e181e_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+QuickToken.mint(address,uint256) (0x56c2162254b0e4417288786ee402c2b41d4e181e_txOriginForAuthentication.sol#265-282) uses tx.origin for authorization: require(bool,string)(tx.origin == minter,Quick::mint: only the minter can mint) (0x56c2162254b0e4417288786ee402c2b41d4e181e_txOriginForAuthentication.sol#266)
+ QuickToken.setMinter(address) (0x56c2162254b0e4417288786ee402c2b41d4e181e_txOriginForAuthentication.sol#254-258) uses tx.origin for authorization: require(bool,string)(tx.origin == minter,Quick::setMinter: only the minter can change the minter address) (0x56c2162254b0e4417288786ee402c2b41d4e181e_txOriginForAuthentication.sol#255)
+ 
+line_number: 255
+line_number: 266
+
+Filename: 0x5dd2777c42c34ed155fd3cc063a956d03f92448f_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x5dd2777c42c34ed155fd3cc063a956d03f92448f_txOriginForAuthentication.sol#16-19) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,permission denied) (0x5dd2777c42c34ed155fd3cc063a956d03f92448f_txOriginForAuthentication.sol#17)
+ InsuranceImprovementProposalProxy.isHuman() (0x5dd2777c42c34ed155fd3cc063a956d03f92448f_txOriginForAuthentication.sol#33-36) uses tx.origin for authorization: require(bool,string)(msg.sender == tx.origin,sorry humans only) (0x5dd2777c42c34ed155fd3cc063a956d03f92448f_txOriginForAuthentication.sol#34)
+ 
+line_number: 17
+
+Filename: 0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ether5.startNewRound() (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_txOriginForAuthentication.sol#605-623) uses tx.origin for authorization: require(bool,string)(tx.origin == roundStarter,Oops you can't start the next round) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_txOriginForAuthentication.sol#608)
+ Ether5.onlyOwner() (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_txOriginForAuthentication.sol#247-250) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,only Owner) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_txOriginForAuthentication.sol#248)
+ 
+line_number: 248
+line_number: 608
+
+Filename: 0x5ffd7d72678fc532e379f671cdc1567d9977b27e_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x5ffd7d72678fc532e379f671cdc1567d9977b27e_txOriginForAuthentication.sol#63-66) uses tx.origin for authorization: require(bool)(tx.origin == _owner) (0x5ffd7d72678fc532e379f671cdc1567d9977b27e_txOriginForAuthentication.sol#64)
+ 
+line_number: 64
+
+Filename: 0x61b10135639885e00bf4d42de2fe5f2e28abad75_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+YFElite.setGovernance(address) (0x61b10135639885e00bf4d42de2fe5f2e28abad75_txOriginForAuthentication.sol#215-218) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x61b10135639885e00bf4d42de2fe5f2e28abad75_txOriginForAuthentication.sol#216)
+ YFElite.removeMinter(address) (0x61b10135639885e00bf4d42de2fe5f2e28abad75_txOriginForAuthentication.sol#225-228) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x61b10135639885e00bf4d42de2fe5f2e28abad75_txOriginForAuthentication.sol#226)
+ YFElite.addMinter(address) (0x61b10135639885e00bf4d42de2fe5f2e28abad75_txOriginForAuthentication.sol#220-223) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x61b10135639885e00bf4d42de2fe5f2e28abad75_txOriginForAuthentication.sol#221)
+ 
+line_number: 216
+line_number: 221
+line_number: 226
+
+Filename: 0x61b2d3ea9f1c6b387c985c73d40e8fbfb284e5c7_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x61b2d3ea9f1c6b387c985c73d40e8fbfb284e5c7_txOriginForAuthentication.sol#28-31) uses tx.origin for authorization: require(bool)(tx.origin == _owner) (0x61b2d3ea9f1c6b387c985c73d40e8fbfb284e5c7_txOriginForAuthentication.sol#29)
+ 
+line_number: 29
+
+Filename: 0x62748b8c0f8a1c8cb74c3dcee5f0082b752e0145_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+CommunityChest.onlyOwner() (0x62748b8c0f8a1c8cb74c3dcee5f0082b752e0145_txOriginForAuthentication.sol#28-31) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x62748b8c0f8a1c8cb74c3dcee5f0082b752e0145_txOriginForAuthentication.sol#29)
+ 
+line_number: 29
+
+Filename: 0x63a6da104c6a08dfeb50d13a7488f67bc98cc41f_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TimeFarmer.whitelist(address,bool) (0x63a6da104c6a08dfeb50d13a7488f67bc98cc41f_txOriginForAuthentication.sol#65-69) uses tx.origin for authorization: require(bool)(tx.origin == info.admin) (0x63a6da104c6a08dfeb50d13a7488f67bc98cc41f_txOriginForAuthentication.sol#66)
+ 
+line_number: 66
+
+Filename: 0x648dc0fbb5dd60732db616ee432cb14e170899f8_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+CryptoBoard.onlyOwner() (0x648dc0fbb5dd60732db616ee432cb14e170899f8_txOriginForAuthentication.sol#29-32) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x648dc0fbb5dd60732db616ee432cb14e170899f8_txOriginForAuthentication.sol#30)
+ 
+line_number: 30
+
+Filename: 0x690f86935db734ab7232fbb52803b7a61fad1e17_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Cozy.whitelist(address,bool) (0x690f86935db734ab7232fbb52803b7a61fad1e17_txOriginForAuthentication.sol#136-140) uses tx.origin for authorization: require(bool)(tx.origin == info.admin) (0x690f86935db734ab7232fbb52803b7a61fad1e17_txOriginForAuthentication.sol#137)
+ 
+line_number: 137
+
+Filename: 0x6bbac22e3766aa76956038a101b96ca4fcb28964_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x6bbac22e3766aa76956038a101b96ca4fcb28964_txOriginForAuthentication.sol#496-499) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x6bbac22e3766aa76956038a101b96ca4fcb28964_txOriginForAuthentication.sol#497)
+ 
+line_number: 497
+
+Filename: 0x6c28aef8977c9b773996d0e8376d2ee379446f2f_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+QuickToken.setMinter(address) (0x6c28aef8977c9b773996d0e8376d2ee379446f2f_txOriginForAuthentication.sol#254-258) uses tx.origin for authorization: require(bool,string)(tx.origin == minter,Quick::setMinter: only the minter can change the minter address) (0x6c28aef8977c9b773996d0e8376d2ee379446f2f_txOriginForAuthentication.sol#255)
+ QuickToken.mint(address,uint256) (0x6c28aef8977c9b773996d0e8376d2ee379446f2f_txOriginForAuthentication.sol#265-282) uses tx.origin for authorization: require(bool,string)(tx.origin == minter,Quick::mint: only the minter can mint) (0x6c28aef8977c9b773996d0e8376d2ee379446f2f_txOriginForAuthentication.sol#266)
+ 
+line_number: 255
+line_number: 266
+
+Filename: 0x6cb44edf0b5c2414f7cf9b45753c17c9df495e95_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+standardTokenFactory.newToken(string,string,string,uint8,uint256,uint256[],address[]) (0x6cb44edf0b5c2414f7cf9b45753c17c9df495e95_txOriginForAuthentication.sol#895-921) uses tx.origin for authorization: require(bool)(tx.origin == deployer) (0x6cb44edf0b5c2414f7cf9b45753c17c9df495e95_txOriginForAuthentication.sol#905)
+ 
+line_number: 905
+
+Filename: 0x6ce654aC973D326F89f0685E7459542641410eD9_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+HD.onlyGov() (0x6ce654aC973D326F89f0685E7459542641410eD9_txOriginForAuthentication.sol#247-250) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,HUB-Token: !governance) (0x6ce654aC973D326F89f0685E7459542641410eD9_txOriginForAuthentication.sol#248)
+ HD.constructor() (0x6ce654aC973D326F89f0685E7459542641410eD9_txOriginForAuthentication.sol#252-254) uses tx.origin for authorization: governance = tx.origin (0x6ce654aC973D326F89f0685E7459542641410eD9_txOriginForAuthentication.sol#253)
+ 
+line_number: 248
+
+Filename: 0x6d760eb3c09e12a44b57f6fb7d9b3710acef22b0_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+line_number: 54
+
+Filename: 0x6e2fe65d96ed63aaca9e475f6f251d4232c3842c_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+HackersLiveCoin.setCFO(address) (0x6e2fe65d96ed63aaca9e475f6f251d4232c3842c_txOriginForAuthentication.sol#415-418) uses tx.origin for authorization: require(bool)(tx.origin == CEO) (0x6e2fe65d96ed63aaca9e475f6f251d4232c3842c_txOriginForAuthentication.sol#416)
+ HackersLiveCoin.setCEO(address) (0x6e2fe65d96ed63aaca9e475f6f251d4232c3842c_txOriginForAuthentication.sol#409-413) uses tx.origin for authorization: require(bool)(tx.origin == CEO) (0x6e2fe65d96ed63aaca9e475f6f251d4232c3842c_txOriginForAuthentication.sol#410)
+ 
+line_number: 410
+line_number: 416
+
+Filename: 0x6fffd2eed8553d674d69894ff44f2d55717b363b_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Owned.onlyOwner() (0x6fffd2eed8553d674d69894ff44f2d55717b363b_txOriginForAuthentication.sol#59-62) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,Msg sender is not owner) (0x6fffd2eed8553d674d69894ff44f2d55717b363b_txOriginForAuthentication.sol#60)
+ 
+line_number: 60
+
+Filename: 0x7333e317c30996f42d0adb067ec6e93c1801f547_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+forsage.removeMinter(address) (0x7333e317c30996f42d0adb067ec6e93c1801f547_txOriginForAuthentication.sol#226-229) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x7333e317c30996f42d0adb067ec6e93c1801f547_txOriginForAuthentication.sol#227)
+ forsage.addMinter(address) (0x7333e317c30996f42d0adb067ec6e93c1801f547_txOriginForAuthentication.sol#221-224) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x7333e317c30996f42d0adb067ec6e93c1801f547_txOriginForAuthentication.sol#222)
+ forsage.setGovernance(address) (0x7333e317c30996f42d0adb067ec6e93c1801f547_txOriginForAuthentication.sol#216-219) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x7333e317c30996f42d0adb067ec6e93c1801f547_txOriginForAuthentication.sol#217)
+ 
+line_number: 217
+line_number: 222
+line_number: 227
+
+Filename: 0x7383757C8a2F4cbc6A21a26e1F33a0fd95e7bb77_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Owned.onlyOwner() (0x7383757C8a2F4cbc6A21a26e1F33a0fd95e7bb77_txOriginForAuthentication.sol#37-40) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,Must be owner) (0x7383757C8a2F4cbc6A21a26e1F33a0fd95e7bb77_txOriginForAuthentication.sol#38)
+ 
+line_number: 38
+
+Filename: 0x76cd26b301d40b41fb5819ffada0399271a00826_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+LFI.removeMinter(address) (0x76cd26b301d40b41fb5819ffada0399271a00826_txOriginForAuthentication.sol#225-228) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x76cd26b301d40b41fb5819ffada0399271a00826_txOriginForAuthentication.sol#226)
+ LFI.addMinter(address) (0x76cd26b301d40b41fb5819ffada0399271a00826_txOriginForAuthentication.sol#220-223) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x76cd26b301d40b41fb5819ffada0399271a00826_txOriginForAuthentication.sol#221)
+ LFI.setGovernance(address) (0x76cd26b301d40b41fb5819ffada0399271a00826_txOriginForAuthentication.sol#215-218) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x76cd26b301d40b41fb5819ffada0399271a00826_txOriginForAuthentication.sol#216)
+ 
+line_number: 216
+line_number: 221
+line_number: 226
+
+Filename: 0x7981a11c84f25eee8445b75a1a04ed9e63e90e69_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+SGCDEXETHSwap.updateExchangeFee(uint256) (0x7981a11c84f25eee8445b75a1a04ed9e63e90e69_txOriginForAuthentication.sol#40-44) uses tx.origin for authorization: require(bool)(owner == tx.origin) (0x7981a11c84f25eee8445b75a1a04ed9e63e90e69_txOriginForAuthentication.sol#41)
+ SGCDEXETHSwap.updateExchangeFeeAddress(address) (0x7981a11c84f25eee8445b75a1a04ed9e63e90e69_txOriginForAuthentication.sol#34-38) uses tx.origin for authorization: require(bool)(owner == tx.origin) (0x7981a11c84f25eee8445b75a1a04ed9e63e90e69_txOriginForAuthentication.sol#35)
+ 
+line_number: 35
+line_number: 41
+
+Filename: 0x7a1c0aa1e5bd4cc05af8c0283fd4aebedd7cadcf_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TAO.onlyVault() (0x7a1c0aa1e5bd4cc05af8c0283fd4aebedd7cadcf_txOriginForAuthentication.sol#281-284) uses tx.origin for authorization: require(bool)(tx.origin == vaultAddress) (0x7a1c0aa1e5bd4cc05af8c0283fd4aebedd7cadcf_txOriginForAuthentication.sol#282)
+ TheAO.setWhitelist(address,bool) (0x7a1c0aa1e5bd4cc05af8c0283fd4aebedd7cadcf_txOriginForAuthentication.sol#681-685) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x7a1c0aa1e5bd4cc05af8c0283fd4aebedd7cadcf_txOriginForAuthentication.sol#682)
+ TheAO.transferOwnership(address) (0x7a1c0aa1e5bd4cc05af8c0283fd4aebedd7cadcf_txOriginForAuthentication.sol#670-674) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x7a1c0aa1e5bd4cc05af8c0283fd4aebedd7cadcf_txOriginForAuthentication.sol#671)
+ 
+line_number: 282
+line_number: 671
+line_number: 682
+
+Filename: 0x7e2a98bf45687d8def095e93abcab42ea454542f_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+YamMigrationToV3.setGovernance(address) (0x7e2a98bf45687d8def095e93abcab42ea454542f_txOriginForAuthentication.sol#212-215) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x7e2a98bf45687d8def095e93abcab42ea454542f_txOriginForAuthentication.sol#213)
+ YamMigrationToV3.removeMinter(address) (0x7e2a98bf45687d8def095e93abcab42ea454542f_txOriginForAuthentication.sol#222-225) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x7e2a98bf45687d8def095e93abcab42ea454542f_txOriginForAuthentication.sol#223)
+ YamMigrationToV3.addMinter(address) (0x7e2a98bf45687d8def095e93abcab42ea454542f_txOriginForAuthentication.sol#217-220) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x7e2a98bf45687d8def095e93abcab42ea454542f_txOriginForAuthentication.sol#218)
+ 
+line_number: 213
+line_number: 218
+line_number: 223
+
+Filename: 0x7e522119a2a5929c5651552ab1ac35eff422218c_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+FLY.addMinter(address) (0x7e522119a2a5929c5651552ab1ac35eff422218c_txOriginForAuthentication.sol#220-223) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x7e522119a2a5929c5651552ab1ac35eff422218c_txOriginForAuthentication.sol#221)
+ FLY.setGovernance(address) (0x7e522119a2a5929c5651552ab1ac35eff422218c_txOriginForAuthentication.sol#215-218) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x7e522119a2a5929c5651552ab1ac35eff422218c_txOriginForAuthentication.sol#216)
+ FLY.constructor() (0x7e522119a2a5929c5651552ab1ac35eff422218c_txOriginForAuthentication.sol#206-208) uses tx.origin for authorization: governance = tx.origin (0x7e522119a2a5929c5651552ab1ac35eff422218c_txOriginForAuthentication.sol#207)
+ FLY.removeMinter(address) (0x7e522119a2a5929c5651552ab1ac35eff422218c_txOriginForAuthentication.sol#225-228) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x7e522119a2a5929c5651552ab1ac35eff422218c_txOriginForAuthentication.sol#226)
+ 
+line_number: 216
+line_number: 221
+line_number: 226
+
+Filename: 0x7ed0226b939f43efe0fc37537566cb642cb1da59_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x7ed0226b939f43efe0fc37537566cb642cb1da59_txOriginForAuthentication.sol#184-187) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x7ed0226b939f43efe0fc37537566cb642cb1da59_txOriginForAuthentication.sol#185)
+ 
+line_number: 185
+
+Filename: 0x7fdd6137f8bbc69143033d19207233b57fed38e2_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TAO.onlyVault() (0x7fdd6137f8bbc69143033d19207233b57fed38e2_txOriginForAuthentication.sol#297-300) uses tx.origin for authorization: require(bool)(tx.origin == vaultAddress) (0x7fdd6137f8bbc69143033d19207233b57fed38e2_txOriginForAuthentication.sol#298)
+ TheAO.transferOwnership(address) (0x7fdd6137f8bbc69143033d19207233b57fed38e2_txOriginForAuthentication.sol#686-690) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x7fdd6137f8bbc69143033d19207233b57fed38e2_txOriginForAuthentication.sol#687)
+ TheAO.setWhitelist(address,bool) (0x7fdd6137f8bbc69143033d19207233b57fed38e2_txOriginForAuthentication.sol#697-701) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0x7fdd6137f8bbc69143033d19207233b57fed38e2_txOriginForAuthentication.sol#698)
+ 
+line_number: 298
+line_number: 687
+line_number: 698
+
+Filename: 0x85e5cc7bb799b5abe00fd8ebb3edd4ff095789b9_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Claimable.onlyOwner() (0x85e5cc7bb799b5abe00fd8ebb3edd4ff095789b9_txOriginForAuthentication.sol#28-31) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x85e5cc7bb799b5abe00fd8ebb3edd4ff095789b9_txOriginForAuthentication.sol#29)
+ 
+line_number: 29
+
+Filename: 0x87B1d485175C17Af64691F096153e9CEAaDf8642_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+NOVA.withdraw() (0x87B1d485175C17Af64691F096153e9CEAaDf8642_txOriginForAuthentication.sol#264-267) uses tx.origin for authorization: require(bool,string)(tx.origin == admin,!not allowed) (0x87B1d485175C17Af64691F096153e9CEAaDf8642_txOriginForAuthentication.sol#265)
+ 
+line_number: 265
+
+Filename: 0x87dc0e4680b84199727dfb7db667af80e040bae0_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+owned.onlyOwner() (0x87dc0e4680b84199727dfb7db667af80e040bae0_txOriginForAuthentication.sol#53-56) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x87dc0e4680b84199727dfb7db667af80e040bae0_txOriginForAuthentication.sol#54)
+ 
+line_number: 54
+
+Filename: 0x884d2d79657bac17b964bc5d8bdfd80c3712db74_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+pLINKVault.setGovernance(address) (0x884d2d79657bac17b964bc5d8bdfd80c3712db74_txOriginForAuthentication.sol#243-246) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x884d2d79657bac17b964bc5d8bdfd80c3712db74_txOriginForAuthentication.sol#244)
+ 
+line_number: 244
+
+Filename: 0x8B90515C7a99b7Edd97702c04d1E3666281De1B0_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+P1FundingOracle.setFundingRate(SignedMath.Int) (0x8B90515C7a99b7Edd97702c04d1E3666281De1B0_txOriginForAuthentication.sol#897-919) uses tx.origin for authorization: require(bool,string)(tx.origin == _FUNDING_RATE_PROVIDER_,The funding rate can only be set by the funding rate provider) (0x8B90515C7a99b7Edd97702c04d1E3666281De1B0_txOriginForAuthentication.sol#903-906)
+ 
+line_number: 904
+
+Filename: 0x8cdd0cd56ae24422382c4a6ffef382732f43fe4c_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+ProofOfPerformance.onlyRigoblockDao() (0x8cdd0cd56ae24422382c4a6ffef382732f43fe4c_txOriginForAuthentication.sol#222-228) uses tx.origin for authorization: require(bool,string)(tx.origin == rigoblockDao,ONLY_RIGOBLOCK_DAO) (0x8cdd0cd56ae24422382c4a6ffef382732f43fe4c_txOriginForAuthentication.sol#223-226)
+ 
+line_number: 224
+
+Filename: 0x8d7f62f76adeaf5b3013bd0de09a11c7dc91f15c_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+$RCLETermsOfService.withdrawLEETH() (0x8d7f62f76adeaf5b3013bd0de09a11c7dc91f15c_txOriginForAuthentication.sol#102-105) uses tx.origin for authorization: require(bool,string)(tx.origin == offeror,Sender not authorized.) (0x8d7f62f76adeaf5b3013bd0de09a11c7dc91f15c_txOriginForAuthentication.sol#103)
+ $RCLETermsOfService.amendTerms(string) (0x8d7f62f76adeaf5b3013bd0de09a11c7dc91f15c_txOriginForAuthentication.sol#94-100) uses tx.origin for authorization: require(bool,string)(tx.origin == offeror,Sender not authorized.) (0x8d7f62f76adeaf5b3013bd0de09a11c7dc91f15c_txOriginForAuthentication.sol#95)
+ 
+line_number: 95
+line_number: 103
+
+Filename: 0x8e4ba3cdab76f7476dfcbf95d43263c6cec937b1_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x8e4ba3cdab76f7476dfcbf95d43263c6cec937b1_txOriginForAuthentication.sol#49-52) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x8e4ba3cdab76f7476dfcbf95d43263c6cec937b1_txOriginForAuthentication.sol#50)
+ 
+line_number: 50
+
+Filename: 0x8fff32c2fc7e5c904ee05374e0b484d7313ebfd0_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+pTUSDVault.setGovernance(address) (0x8fff32c2fc7e5c904ee05374e0b484d7313ebfd0_txOriginForAuthentication.sol#243-246) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x8fff32c2fc7e5c904ee05374e0b484d7313ebfd0_txOriginForAuthentication.sol#244)
+ 
+line_number: 244
+
+Filename: 0x90d7689c6d2f4d56671b24ca924f11715ec949c1_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0x90d7689c6d2f4d56671b24ca924f11715ec949c1_txOriginForAuthentication.sol#32-35) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0x90d7689c6d2f4d56671b24ca924f11715ec949c1_txOriginForAuthentication.sol#33)
+ 
+line_number: 33
+
+Filename: 0x93963e623d1f81e8de349364c82ee78721012541_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+YFTrade.setGovernance(address) (0x93963e623d1f81e8de349364c82ee78721012541_txOriginForAuthentication.sol#232-235) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x93963e623d1f81e8de349364c82ee78721012541_txOriginForAuthentication.sol#233)
+ YFTrade.addMinter(address) (0x93963e623d1f81e8de349364c82ee78721012541_txOriginForAuthentication.sol#237-240) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x93963e623d1f81e8de349364c82ee78721012541_txOriginForAuthentication.sol#238)
+ YFTrade.removeMinter(address) (0x93963e623d1f81e8de349364c82ee78721012541_txOriginForAuthentication.sol#242-245) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x93963e623d1f81e8de349364c82ee78721012541_txOriginForAuthentication.sol#243)
+ 
+line_number: 233
+line_number: 238
+line_number: 243
+
+Filename: 0x97990b693835da58a281636296d2bf02787dea17_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+YAMReserves2.onlyGov() (0x97990b693835da58a281636296d2bf02787dea17_txOriginForAuthentication.sol#688-691) uses tx.origin for authorization: require(bool)(tx.origin == gov) (0x97990b693835da58a281636296d2bf02787dea17_txOriginForAuthentication.sol#689)
+ 
+line_number: 689
+
+Filename: 0x996b396b88cc4a1d8df3dbd1c088cdfaee17e6d4_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+PegnetToken.changeOwner(address) (0x996b396b88cc4a1d8df3dbd1c088cdfaee17e6d4_txOriginForAuthentication.sol#104-107) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,only the owner can change ownership) (0x996b396b88cc4a1d8df3dbd1c088cdfaee17e6d4_txOriginForAuthentication.sol#105)
+ PegnetToken.burn(uint256) (0x996b396b88cc4a1d8df3dbd1c088cdfaee17e6d4_txOriginForAuthentication.sol#117-122) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,only contract owner can burn.) (0x996b396b88cc4a1d8df3dbd1c088cdfaee17e6d4_txOriginForAuthentication.sol#118)
+ PegnetToken.issue(address,uint256) (0x996b396b88cc4a1d8df3dbd1c088cdfaee17e6d4_txOriginForAuthentication.sol#109-114) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,only contract owner can issue.) (0x996b396b88cc4a1d8df3dbd1c088cdfaee17e6d4_txOriginForAuthentication.sol#110)
+ 
+line_number: 105
+line_number: 110
+line_number: 118
+
+Filename: 0x9Ad5cFf6edd868B7eE4792aaF36d15202f0A71aa_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+forsage.removeMinter(address) (0x9Ad5cFf6edd868B7eE4792aaF36d15202f0A71aa_txOriginForAuthentication.sol#226-229) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x9Ad5cFf6edd868B7eE4792aaF36d15202f0A71aa_txOriginForAuthentication.sol#227)
+ forsage.setGovernance(address) (0x9Ad5cFf6edd868B7eE4792aaF36d15202f0A71aa_txOriginForAuthentication.sol#216-219) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x9Ad5cFf6edd868B7eE4792aaF36d15202f0A71aa_txOriginForAuthentication.sol#217)
+ forsage.addMinter(address) (0x9Ad5cFf6edd868B7eE4792aaF36d15202f0A71aa_txOriginForAuthentication.sol#221-224) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x9Ad5cFf6edd868B7eE4792aaF36d15202f0A71aa_txOriginForAuthentication.sol#222)
+ 
+line_number: 217
+line_number: 222
+line_number: 227
+
+Filename: 0x9f6076321d8524f5a397144651b26c177009ffa6_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+DYM.constructor() (0x9f6076321d8524f5a397144651b26c177009ffa6_txOriginForAuthentication.sol#210-212) uses tx.origin for authorization: governance = tx.origin (0x9f6076321d8524f5a397144651b26c177009ffa6_txOriginForAuthentication.sol#211)
+ DYM.removeMinter(address) (0x9f6076321d8524f5a397144651b26c177009ffa6_txOriginForAuthentication.sol#229-232) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x9f6076321d8524f5a397144651b26c177009ffa6_txOriginForAuthentication.sol#230)
+ DYM.setGovernance(address) (0x9f6076321d8524f5a397144651b26c177009ffa6_txOriginForAuthentication.sol#219-222) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x9f6076321d8524f5a397144651b26c177009ffa6_txOriginForAuthentication.sol#220)
+ DYM.addMinter(address) (0x9f6076321d8524f5a397144651b26c177009ffa6_txOriginForAuthentication.sol#224-227) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x9f6076321d8524f5a397144651b26c177009ffa6_txOriginForAuthentication.sol#225)
+ 
+line_number: 220
+line_number: 225
+line_number: 230
+
+Filename: 0x9f84b5665ffbbed3f2f15138972f88f31a4e3e26_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+YearnRewards.seize(address,uint256) (0x9f84b5665ffbbed3f2f15138972f88f31a4e3e26_txOriginForAuthentication.sol#124-127) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x9f84b5665ffbbed3f2f15138972f88f31a4e3e26_txOriginForAuthentication.sol#125)
+ 
+line_number: 125
+
+Filename: 0x9fdc15106da755f9ffd5b0ba9854cfb89602e0fd_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+CageFree.fallback() (0x9fdc15106da755f9ffd5b0ba9854cfb89602e0fd_txOriginForAuthentication.sol#46-48) uses tx.origin for authorization: require(bool,string)(tx.origin == weth,Only WETH can send ETH) (0x9fdc15106da755f9ffd5b0ba9854cfb89602e0fd_txOriginForAuthentication.sol#47)
+ 
+line_number: 47
+
+Filename: 0xC5395f5290bc754352eBff6FfdB94E317Bf75222_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xC5395f5290bc754352eBff6FfdB94E317Bf75222_txOriginForAuthentication.sol#121-124) uses tx.origin for authorization: require(bool,string)(_owner == tx.origin,Ownable: caller is not the owner) (0xC5395f5290bc754352eBff6FfdB94E317Bf75222_txOriginForAuthentication.sol#122)
+ 
+line_number: 122
+
+Filename: 0xE8a76D2f37Fe50B6A95d27FB92291Fe0B57407d3_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Owned.onlyOwner() (0xE8a76D2f37Fe50B6A95d27FB92291Fe0B57407d3_txOriginForAuthentication.sol#137-140) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,Must be owner) (0xE8a76D2f37Fe50B6A95d27FB92291Fe0B57407d3_txOriginForAuthentication.sol#138)
+ 
+line_number: 138
+
+Filename: 0xa2c3b8de1d63beda54d817c88fa4073bc42e10c2_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+owned.onlyOwner() (0xa2c3b8de1d63beda54d817c88fa4073bc42e10c2_txOriginForAuthentication.sol#53-56) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xa2c3b8de1d63beda54d817c88fa4073bc42e10c2_txOriginForAuthentication.sol#54)
+ 
+line_number: 54
+
+Filename: 0xa2ea412af6baddecdd121b235855f790acbd6bcd_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TAO.onlyVault() (0xa2ea412af6baddecdd121b235855f790acbd6bcd_txOriginForAuthentication.sol#281-284) uses tx.origin for authorization: require(bool)(tx.origin == vaultAddress) (0xa2ea412af6baddecdd121b235855f790acbd6bcd_txOriginForAuthentication.sol#282)
+ TheAO.setWhitelist(address,bool) (0xa2ea412af6baddecdd121b235855f790acbd6bcd_txOriginForAuthentication.sol#681-685) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0xa2ea412af6baddecdd121b235855f790acbd6bcd_txOriginForAuthentication.sol#682)
+ TheAO.transferOwnership(address) (0xa2ea412af6baddecdd121b235855f790acbd6bcd_txOriginForAuthentication.sol#670-674) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0xa2ea412af6baddecdd121b235855f790acbd6bcd_txOriginForAuthentication.sol#671)
+ 
+line_number: 282
+line_number: 671
+line_number: 682
+
+Filename: 0xa42cf329478e15e337cbe0025d19295b72b4bb16_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TomatoSwap.removeMinter(address) (0xa42cf329478e15e337cbe0025d19295b72b4bb16_txOriginForAuthentication.sol#244-247) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xa42cf329478e15e337cbe0025d19295b72b4bb16_txOriginForAuthentication.sol#245)
+ TomatoSwap.setGovernance(address) (0xa42cf329478e15e337cbe0025d19295b72b4bb16_txOriginForAuthentication.sol#234-237) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xa42cf329478e15e337cbe0025d19295b72b4bb16_txOriginForAuthentication.sol#235)
+ TomatoSwap.addMinter(address) (0xa42cf329478e15e337cbe0025d19295b72b4bb16_txOriginForAuthentication.sol#239-242) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xa42cf329478e15e337cbe0025d19295b72b4bb16_txOriginForAuthentication.sol#240)
+ TomatoSwap.withdraw() (0xa42cf329478e15e337cbe0025d19295b72b4bb16_txOriginForAuthentication.sol#253-256) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xa42cf329478e15e337cbe0025d19295b72b4bb16_txOriginForAuthentication.sol#254)
+ 
+line_number: 235
+line_number: 240
+line_number: 245
+line_number: 254
+
+Filename: 0xa6FB1DF483b24EEAB569e19447E0e107003B9E15_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+ENB.setGovernance(address) (0xa6FB1DF483b24EEAB569e19447E0e107003B9E15_txOriginForAuthentication.sol#626-629) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xa6FB1DF483b24EEAB569e19447E0e107003B9E15_txOriginForAuthentication.sol#627)
+ ENB.addMinter(address) (0xa6FB1DF483b24EEAB569e19447E0e107003B9E15_txOriginForAuthentication.sol#631-634) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xa6FB1DF483b24EEAB569e19447E0e107003B9E15_txOriginForAuthentication.sol#632)
+ ENB.removeMinter(address) (0xa6FB1DF483b24EEAB569e19447E0e107003B9E15_txOriginForAuthentication.sol#636-639) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xa6FB1DF483b24EEAB569e19447E0e107003B9E15_txOriginForAuthentication.sol#637)
+ 
+line_number: 627
+line_number: 632
+line_number: 637
+
+Filename: 0xa7b136ac5a7fb163f57505753b79b30e101f3d28_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Adoption.onlyOwner() (0xa7b136ac5a7fb163f57505753b79b30e101f3d28_txOriginForAuthentication.sol#32-35) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xa7b136ac5a7fb163f57505753b79b30e101f3d28_txOriginForAuthentication.sol#33)
+ 
+line_number: 33
+
+Filename: 0xa81cf084b75949c743f519f44a9b39f0e821ff75_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xa81cf084b75949c743f519f44a9b39f0e821ff75_txOriginForAuthentication.sol#62-65) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xa81cf084b75949c743f519f44a9b39f0e821ff75_txOriginForAuthentication.sol#63)
+ 
+line_number: 63
+
+Filename: 0xaa33f177724b97834fd29828801fff3e2f55390e_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+COREI.addMinter(address) (0xaa33f177724b97834fd29828801fff3e2f55390e_txOriginForAuthentication.sol#221-224) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xaa33f177724b97834fd29828801fff3e2f55390e_txOriginForAuthentication.sol#222)
+ COREI.setGovernance(address) (0xaa33f177724b97834fd29828801fff3e2f55390e_txOriginForAuthentication.sol#216-219) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xaa33f177724b97834fd29828801fff3e2f55390e_txOriginForAuthentication.sol#217)
+ COREI.removeMinter(address) (0xaa33f177724b97834fd29828801fff3e2f55390e_txOriginForAuthentication.sol#226-229) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xaa33f177724b97834fd29828801fff3e2f55390e_txOriginForAuthentication.sol#227)
+ 
+line_number: 217
+line_number: 222
+line_number: 227
+
+Filename: 0xacd43e627e64355f1861cec6d3a6688b31a6f952_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+yVault.setController(address) (0xacd43e627e64355f1861cec6d3a6688b31a6f952_txOriginForAuthentication.sol#309-312) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xacd43e627e64355f1861cec6d3a6688b31a6f952_txOriginForAuthentication.sol#310)
+ yVault.setMin(uint256) (0xacd43e627e64355f1861cec6d3a6688b31a6f952_txOriginForAuthentication.sol#299-302) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xacd43e627e64355f1861cec6d3a6688b31a6f952_txOriginForAuthentication.sol#300)
+ yVault.setGovernance(address) (0xacd43e627e64355f1861cec6d3a6688b31a6f952_txOriginForAuthentication.sol#304-307) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xacd43e627e64355f1861cec6d3a6688b31a6f952_txOriginForAuthentication.sol#305)
+ yVault.harvest(address,uint256) (0xacd43e627e64355f1861cec6d3a6688b31a6f952_txOriginForAuthentication.sol#351-355) uses tx.origin for authorization: require(bool,string)(tx.origin == controller,!controller) (0xacd43e627e64355f1861cec6d3a6688b31a6f952_txOriginForAuthentication.sol#352)
+ 
+line_number: 300
+line_number: 305
+line_number: 310
+line_number: 352
+
+Filename: 0xaced1e7a912d69710d05ff855dc5a0024fe8922b_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TheAO.transferOwnership(address) (0xaced1e7a912d69710d05ff855dc5a0024fe8922b_txOriginForAuthentication.sol#686-690) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0xaced1e7a912d69710d05ff855dc5a0024fe8922b_txOriginForAuthentication.sol#687)
+ TheAO.setWhitelist(address,bool) (0xaced1e7a912d69710d05ff855dc5a0024fe8922b_txOriginForAuthentication.sol#697-701) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0xaced1e7a912d69710d05ff855dc5a0024fe8922b_txOriginForAuthentication.sol#698)
+ TAO.onlyVault() (0xaced1e7a912d69710d05ff855dc5a0024fe8922b_txOriginForAuthentication.sol#297-300) uses tx.origin for authorization: require(bool)(tx.origin == vaultAddress) (0xaced1e7a912d69710d05ff855dc5a0024fe8922b_txOriginForAuthentication.sol#298)
+ 
+line_number: 298
+line_number: 687
+line_number: 698
+
+Filename: 0xaebcc16ddf84830a163079ea4bc1c5a82819b2fa_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+yffhToken.removeMinter(address) (0xaebcc16ddf84830a163079ea4bc1c5a82819b2fa_txOriginForAuthentication.sol#225-228) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xaebcc16ddf84830a163079ea4bc1c5a82819b2fa_txOriginForAuthentication.sol#226)
+ yffhToken.setGovernance(address) (0xaebcc16ddf84830a163079ea4bc1c5a82819b2fa_txOriginForAuthentication.sol#215-218) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xaebcc16ddf84830a163079ea4bc1c5a82819b2fa_txOriginForAuthentication.sol#216)
+ yffhToken.addMinter(address) (0xaebcc16ddf84830a163079ea4bc1c5a82819b2fa_txOriginForAuthentication.sol#220-223) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xaebcc16ddf84830a163079ea4bc1c5a82819b2fa_txOriginForAuthentication.sol#221)
+ 
+line_number: 216
+line_number: 221
+line_number: 226
+
+Filename: 0xaf140e5321152eefcc0c6f212dded2b391af486b_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+yVault.setController(address) (0xaf140e5321152eefcc0c6f212dded2b391af486b_txOriginForAuthentication.sol#309-312) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xaf140e5321152eefcc0c6f212dded2b391af486b_txOriginForAuthentication.sol#310)
+ yVault.setGovernance(address) (0xaf140e5321152eefcc0c6f212dded2b391af486b_txOriginForAuthentication.sol#304-307) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xaf140e5321152eefcc0c6f212dded2b391af486b_txOriginForAuthentication.sol#305)
+ yVault.setMin(uint256) (0xaf140e5321152eefcc0c6f212dded2b391af486b_txOriginForAuthentication.sol#299-302) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xaf140e5321152eefcc0c6f212dded2b391af486b_txOriginForAuthentication.sol#300)
+ 
+line_number: 300
+line_number: 305
+line_number: 310
+
+Filename: 0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+HCVtoken.whitelist(address,bool) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#214-218) uses tx.origin for authorization: require(bool)(tx.origin == info.admin) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#215)
+ HCVtoken.setBurnPoolAddress(address) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#257-260) uses tx.origin for authorization: require(bool)(tx.origin == governance) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#258)
+ HCVtoken.setGovernance(address) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#158-161) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#159)
+ HCVtoken.addMinter(address) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#163-166) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#164)
+ HCVtoken.setBurnAmount(uint256) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#190-193) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#191)
+ HCVtoken.removeMinter(address) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#168-171) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#169)
+ HCVtoken.setAdminStatus(address) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#127-130) uses tx.origin for authorization: require(bool)(tx.origin == governance) (0xb682a88b6926b80a86a43a453d81a7dbbb7c665e_txOriginForAuthentication.sol#128)
+ 
+line_number: 128
+line_number: 159
+line_number: 164
+line_number: 169
+line_number: 191
+line_number: 215
+line_number: 258
+
+Filename: 0xb895fa349864b0fddb71b7e8c2234bfdefafb51a_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Yangue.stopped(bool) (0xb895fa349864b0fddb71b7e8c2234bfdefafb51a_txOriginForAuthentication.sol#58-61) uses tx.origin for authorization: require(bool)(tx.origin == info.admin) (0xb895fa349864b0fddb71b7e8c2234bfdefafb51a_txOriginForAuthentication.sol#59)
+ Yangue.whitelist(address,bool) (0xb895fa349864b0fddb71b7e8c2234bfdefafb51a_txOriginForAuthentication.sol#53-56) uses tx.origin for authorization: require(bool)(tx.origin == info.admin) (0xb895fa349864b0fddb71b7e8c2234bfdefafb51a_txOriginForAuthentication.sol#54)
+ 
+line_number: 54
+line_number: 59
+
+Filename: 0xb900e2bc24de2ad97f3b5d04e193ad256a77a5a6_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TomatoSwap.withdraw() (0xb900e2bc24de2ad97f3b5d04e193ad256a77a5a6_txOriginForAuthentication.sol#259-262) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xb900e2bc24de2ad97f3b5d04e193ad256a77a5a6_txOriginForAuthentication.sol#260)
+ TomatoSwap.removeMinter(address) (0xb900e2bc24de2ad97f3b5d04e193ad256a77a5a6_txOriginForAuthentication.sol#250-253) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xb900e2bc24de2ad97f3b5d04e193ad256a77a5a6_txOriginForAuthentication.sol#251)
+ TomatoSwap.setGovernance(address) (0xb900e2bc24de2ad97f3b5d04e193ad256a77a5a6_txOriginForAuthentication.sol#240-243) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xb900e2bc24de2ad97f3b5d04e193ad256a77a5a6_txOriginForAuthentication.sol#241)
+ TomatoSwap.addMinter(address) (0xb900e2bc24de2ad97f3b5d04e193ad256a77a5a6_txOriginForAuthentication.sol#245-248) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xb900e2bc24de2ad97f3b5d04e193ad256a77a5a6_txOriginForAuthentication.sol#246)
+ 
+line_number: 241
+line_number: 246
+line_number: 251
+line_number: 260
+
+Filename: 0xb9c37445b9564652a4b46ffbdf6dbf0d53e0605f_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+Not supported file type
+line_number: 11
+
+Filename: 0xbF501decd40D2b65d8A8a8215D54416666692E25_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+Not supported file type
+line_number: 35
+
+Filename: 0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+ANULNetwork.SetShareDividends(uint256) (0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol#198-202) uses tx.origin for authorization: require(bool)(tx.origin == info.admin) (0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol#199)
+ ANULNetwork.SetDestruction(uint256) (0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol#191-195) uses tx.origin for authorization: require(bool)(tx.origin == info.admin) (0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol#192)
+ ANULNetwork.SetPoolFee(uint256) (0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol#185-189) uses tx.origin for authorization: require(bool)(tx.origin == info.admin) (0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol#186)
+ ANULNetwork.SetXferFee(uint256) (0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol#179-183) uses tx.origin for authorization: require(bool)(tx.origin == info.admin) (0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol#180)
+ ANULNetwork.SetMaxUnStakeLimit(uint256) (0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol#210-214) uses tx.origin for authorization: require(bool)(tx.origin == info.admin) (0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol#211)
+ ANULNetwork.SetBaseProfit(uint256) (0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol#204-208) uses tx.origin for authorization: require(bool)(tx.origin == info.admin) (0xbfdb3ae8d7f0d2139b6d6fedf1b3db02a8322376_txOriginForAuthentication.sol#205)
+ 
+line_number: 180
+line_number: 186
+line_number: 192
+line_number: 199
+line_number: 205
+line_number: 211
+
+Filename: 0xc0183b13230990900fbd404c42904b1b8d0b601e_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Owned.onlyOwner() (0xc0183b13230990900fbd404c42904b1b8d0b601e_txOriginForAuthentication.sol#44-47) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xc0183b13230990900fbd404c42904b1b8d0b601e_txOriginForAuthentication.sol#45)
+ 
+line_number: 45
+
+Filename: 0xc1b6157d43e208b093847967c589488b517a9092_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TokenERC20.onlyOwner() (0xc1b6157d43e208b093847967c589488b517a9092_txOriginForAuthentication.sol#175-178) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xc1b6157d43e208b093847967c589488b517a9092_txOriginForAuthentication.sol#176)
+ 
+line_number: 176
+
+Filename: 0xc217f3aa0e1815143cf65349c0a788fc826b7f38_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xc217f3aa0e1815143cf65349c0a788fc826b7f38_txOriginForAuthentication.sol#212-215) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xc217f3aa0e1815143cf65349c0a788fc826b7f38_txOriginForAuthentication.sol#213)
+ 
+line_number: 213
+
+Filename: 0xc6363c1a05f840be2d185d7084b28af84c543d40_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xc6363c1a05f840be2d185d7084b28af84c543d40_txOriginForAuthentication.sol#61-64) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xc6363c1a05f840be2d185d7084b28af84c543d40_txOriginForAuthentication.sol#62)
+ 
+line_number: 62
+
+Filename: 0xcae8d3413debe1b874b99f28e9eefca54ac29cc2_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+L2L.isOwner() (0xcae8d3413debe1b874b99f28e9eefca54ac29cc2_txOriginForAuthentication.sol#62-65) uses tx.origin for authorization: assert(bool)(owner == tx.origin) (0xcae8d3413debe1b874b99f28e9eefca54ac29cc2_txOriginForAuthentication.sol#63)
+ 
+line_number: 63
+
+Filename: 0xcc555c9cec173ac0f7b897f97dc9e1f27eec5ec8_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Authorization.onlyOwner() (0xcc555c9cec173ac0f7b897f97dc9e1f27eec5ec8_txOriginForAuthentication.sol#48-52) uses tx.origin for authorization: assert(bool)(tx.origin == owner) (0xcc555c9cec173ac0f7b897f97dc9e1f27eec5ec8_txOriginForAuthentication.sol#50)
+ 
+line_number: 50
+
+Filename: 0xcd55151868ec87d4fce236f44134cbe096c6fa41_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+OwnerHelper.onlyOwner() (0xcd55151868ec87d4fce236f44134cbe096c6fa41_txOriginForAuthentication.sol#44-48) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xcd55151868ec87d4fce236f44134cbe096c6fa41_txOriginForAuthentication.sol#46)
+ 
+line_number: 46
+
+Filename: 0xcd56ea123192e9066efa1a5b56b2a574f75ca964_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Owner.isOwner() (0xcd56ea123192e9066efa1a5b56b2a574f75ca964_txOriginForAuthentication.sol#104-107) uses tx.origin for authorization: require(bool)(tx.origin == OwnerAddress) (0xcd56ea123192e9066efa1a5b56b2a574f75ca964_txOriginForAuthentication.sol#105)
+ 
+line_number: 105
+
+Filename: 0xcec7c850458e5b966df0e7aa6f8ab374e1cc2c68_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TAO.onlyVault() (0xcec7c850458e5b966df0e7aa6f8ab374e1cc2c68_txOriginForAuthentication.sol#344-347) uses tx.origin for authorization: require(bool)(tx.origin == vaultAddress) (0xcec7c850458e5b966df0e7aa6f8ab374e1cc2c68_txOriginForAuthentication.sol#345)
+ TheAO.transferOwnership(address) (0xcec7c850458e5b966df0e7aa6f8ab374e1cc2c68_txOriginForAuthentication.sol#59-63) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0xcec7c850458e5b966df0e7aa6f8ab374e1cc2c68_txOriginForAuthentication.sol#60)
+ TheAO.setWhitelist(address,bool) (0xcec7c850458e5b966df0e7aa6f8ab374e1cc2c68_txOriginForAuthentication.sol#70-74) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0xcec7c850458e5b966df0e7aa6f8ab374e1cc2c68_txOriginForAuthentication.sol#71)
+ 
+line_number: 60
+line_number: 71
+line_number: 345
+
+Filename: 0xcf0057a6b29d3fb4d0e970e8438d921e641d1066_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TAO.onlyVault() (0xcf0057a6b29d3fb4d0e970e8438d921e641d1066_txOriginForAuthentication.sol#281-284) uses tx.origin for authorization: require(bool)(tx.origin == vaultAddress) (0xcf0057a6b29d3fb4d0e970e8438d921e641d1066_txOriginForAuthentication.sol#282)
+ TheAO.setWhitelist(address,bool) (0xcf0057a6b29d3fb4d0e970e8438d921e641d1066_txOriginForAuthentication.sol#681-685) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0xcf0057a6b29d3fb4d0e970e8438d921e641d1066_txOriginForAuthentication.sol#682)
+ TheAO.transferOwnership(address) (0xcf0057a6b29d3fb4d0e970e8438d921e641d1066_txOriginForAuthentication.sol#670-674) uses tx.origin for authorization: require(bool)(tx.origin == theAO) (0xcf0057a6b29d3fb4d0e970e8438d921e641d1066_txOriginForAuthentication.sol#671)
+ 
+line_number: 282
+line_number: 671
+line_number: 682
+
+Filename: 0xcf27ca116dd5c7b4201c75b46489d1c075362087_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+YAMReserves.onlyGov() (0xcf27ca116dd5c7b4201c75b46489d1c075362087_txOriginForAuthentication.sol#687-690) uses tx.origin for authorization: require(bool)(tx.origin == gov) (0xcf27ca116dd5c7b4201c75b46489d1c075362087_txOriginForAuthentication.sol#688)
+ 
+line_number: 688
+
+Filename: 0xd075e95423c5c4ba1e122cae0f4cdfa19b82881b_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+WPE.setGovernance(address) (0xd075e95423c5c4ba1e122cae0f4cdfa19b82881b_txOriginForAuthentication.sol#215-218) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xd075e95423c5c4ba1e122cae0f4cdfa19b82881b_txOriginForAuthentication.sol#216)
+ WPE.addMinter(address) (0xd075e95423c5c4ba1e122cae0f4cdfa19b82881b_txOriginForAuthentication.sol#220-223) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xd075e95423c5c4ba1e122cae0f4cdfa19b82881b_txOriginForAuthentication.sol#221)
+ WPE.removeMinter(address) (0xd075e95423c5c4ba1e122cae0f4cdfa19b82881b_txOriginForAuthentication.sol#225-228) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xd075e95423c5c4ba1e122cae0f4cdfa19b82881b_txOriginForAuthentication.sol#226)
+ 
+line_number: 216
+line_number: 221
+line_number: 226
+
+Filename: 0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_txOriginForAuthentication.sol#13-16) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_txOriginForAuthentication.sol#14)
+ 
+line_number: 14
+
+Filename: 0xd22881e89f05ec219c908c117c0a4d15caaa64de_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xd22881e89f05ec219c908c117c0a4d15caaa64de_txOriginForAuthentication.sol#31-34) uses tx.origin for authorization: require(bool,string)(tx.origin == _owner,The owner should be the sender) (0xd22881e89f05ec219c908c117c0a4d15caaa64de_txOriginForAuthentication.sol#32)
+ 
+line_number: 32
+
+Filename: 0xd2e3430E72A4B294530Ce1FcDDe48fc5182FC948_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+FlipperMom.onlyOwner() (0xd2e3430E72A4B294530Ce1FcDDe48fc5182FC948_txOriginForAuthentication.sol#36) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,flipper-mom/only-owner) (0xd2e3430E72A4B294530Ce1FcDDe48fc5182FC948_txOriginForAuthentication.sol#36)
+ 
+line_number: 36
+
+Filename: 0xd96f6687f1b86892e932d68a2d3130c41f0402f5_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xd96f6687f1b86892e932d68a2d3130c41f0402f5_txOriginForAuthentication.sol#28-31) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xd96f6687f1b86892e932d68a2d3130c41f0402f5_txOriginForAuthentication.sol#29)
+ Ownable.onlyNewOwner() (0xd96f6687f1b86892e932d68a2d3130c41f0402f5_txOriginForAuthentication.sol#33-37) uses tx.origin for authorization: require(bool)(tx.origin == newOwner) (0xd96f6687f1b86892e932d68a2d3130c41f0402f5_txOriginForAuthentication.sol#35)
+ 
+line_number: 29
+line_number: 35
+
+Filename: 0xdbc9cf77cb0071af4a3211ac31f44db2e54f3c19_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+StandardToken.delegate(address,bytes) (0xdbc9cf77cb0071af4a3211ac31f44db2e54f3c19_txOriginForAuthentication.sol#279-282) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xdbc9cf77cb0071af4a3211ac31f44db2e54f3c19_txOriginForAuthentication.sol#280)
+ StandardToken.batchSend(address[],uint256) (0xdbc9cf77cb0071af4a3211ac31f44db2e54f3c19_txOriginForAuthentication.sol#284-296) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xdbc9cf77cb0071af4a3211ac31f44db2e54f3c19_txOriginForAuthentication.sol#285)
+ 
+line_number: 280
+line_number: 285
+
+Filename: 0xdc67ec98d4a690230089b2b5b509215e4a1570e6_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xdc67ec98d4a690230089b2b5b509215e4a1570e6_txOriginForAuthentication.sol#11-14) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,) (0xdc67ec98d4a690230089b2b5b509215e4a1570e6_txOriginForAuthentication.sol#12)
+ 
+line_number: 12
+
+Filename: 0xe3feaf932b660e5d04f75762bb6fdb2a542ef2fb_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+YFIA.removeMinter(address) (0xe3feaf932b660e5d04f75762bb6fdb2a542ef2fb_txOriginForAuthentication.sol#229-232) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xe3feaf932b660e5d04f75762bb6fdb2a542ef2fb_txOriginForAuthentication.sol#230)
+ YFIA.setGovernance(address) (0xe3feaf932b660e5d04f75762bb6fdb2a542ef2fb_txOriginForAuthentication.sol#219-222) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xe3feaf932b660e5d04f75762bb6fdb2a542ef2fb_txOriginForAuthentication.sol#220)
+ YFIA.addMinter(address) (0xe3feaf932b660e5d04f75762bb6fdb2a542ef2fb_txOriginForAuthentication.sol#224-227) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xe3feaf932b660e5d04f75762bb6fdb2a542ef2fb_txOriginForAuthentication.sol#225)
+ 
+line_number: 220
+line_number: 225
+line_number: 230
+
+Filename: 0xe42c7ccb8341da3b9d3757f290f02fa6ac613d44_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xe42c7ccb8341da3b9d3757f290f02fa6ac613d44_txOriginForAuthentication.sol#110-113) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xe42c7ccb8341da3b9d3757f290f02fa6ac613d44_txOriginForAuthentication.sol#111)
+ Ownable.onlyNewOwner() (0xe42c7ccb8341da3b9d3757f290f02fa6ac613d44_txOriginForAuthentication.sol#114-118) uses tx.origin for authorization: require(bool)(tx.origin == newOwner) (0xe42c7ccb8341da3b9d3757f290f02fa6ac613d44_txOriginForAuthentication.sol#116)
+ 
+line_number: 111
+line_number: 116
+
+Filename: 0xe84a9be02b159704303dac089bedcb62754b8731_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TFI.addMinter(address) (0xe84a9be02b159704303dac089bedcb62754b8731_txOriginForAuthentication.sol#220-223) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xe84a9be02b159704303dac089bedcb62754b8731_txOriginForAuthentication.sol#221)
+ TFI.constructor() (0xe84a9be02b159704303dac089bedcb62754b8731_txOriginForAuthentication.sol#206-208) uses tx.origin for authorization: governance = tx.origin (0xe84a9be02b159704303dac089bedcb62754b8731_txOriginForAuthentication.sol#207)
+ TFI.setGovernance(address) (0xe84a9be02b159704303dac089bedcb62754b8731_txOriginForAuthentication.sol#215-218) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xe84a9be02b159704303dac089bedcb62754b8731_txOriginForAuthentication.sol#216)
+ TFI.removeMinter(address) (0xe84a9be02b159704303dac089bedcb62754b8731_txOriginForAuthentication.sol#225-228) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xe84a9be02b159704303dac089bedcb62754b8731_txOriginForAuthentication.sol#226)
+ 
+line_number: 216
+line_number: 221
+line_number: 226
+
+Filename: 0xed39480b5bcd7c123f374b3b37366f60bc5d50e1_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+TimelockGovernance.setTargetGovernance(address) (0xed39480b5bcd7c123f374b3b37366f60bc5d50e1_txOriginForAuthentication.sol#76-80) uses tx.origin for authorization: require(bool)(governance == tx.origin) (0xed39480b5bcd7c123f374b3b37366f60bc5d50e1_txOriginForAuthentication.sol#77)
+ TimelockGovernance.setThisGovernance(address) (0xed39480b5bcd7c123f374b3b37366f60bc5d50e1_txOriginForAuthentication.sol#65-69) uses tx.origin for authorization: require(bool)(governance == tx.origin) (0xed39480b5bcd7c123f374b3b37366f60bc5d50e1_txOriginForAuthentication.sol#66)
+ 
+line_number: 66
+line_number: 77
+
+Filename: 0xee76c208fD0A57C2789863A76FA8532c06968265_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+MORB.setGovernance(address) (0xee76c208fD0A57C2789863A76FA8532c06968265_txOriginForAuthentication.sol#218-221) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xee76c208fD0A57C2789863A76FA8532c06968265_txOriginForAuthentication.sol#219)
+ MORB.removeMinter(address) (0xee76c208fD0A57C2789863A76FA8532c06968265_txOriginForAuthentication.sol#228-231) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xee76c208fD0A57C2789863A76FA8532c06968265_txOriginForAuthentication.sol#229)
+ MORB.addMinter(address) (0xee76c208fD0A57C2789863A76FA8532c06968265_txOriginForAuthentication.sol#223-226) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xee76c208fD0A57C2789863A76FA8532c06968265_txOriginForAuthentication.sol#224)
+ 
+line_number: 219
+line_number: 224
+line_number: 229
+
+Filename: 0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+StableAMM.setRouterAMM(address) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#343-346) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#344)
+ StableAMM.setRouter(address) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#318-321) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#319)
+ StableAMM.setLink(address) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#323-326) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#324)
+ StableAMM.setFactoryRouter(address) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#338-341) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#339)
+ StableAMM.setVault(address) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#328-331) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#329)
+ StableAMM.setGovernance(address) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#333-336) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#334)
+ StableAMM.claim(address,address,uint256) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#348-352) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0xf33608bea2dbb480e7d535515dd95ab607b7c75f_txOriginForAuthentication.sol#349)
+ 
+line_number: 319
+line_number: 324
+line_number: 329
+line_number: 334
+line_number: 339
+line_number: 344
+line_number: 349
+
+Filename: 0xf5be9621bc16f70b923eb3a3238e9c8a853ace0a_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xf5be9621bc16f70b923eb3a3238e9c8a853ace0a_txOriginForAuthentication.sol#63-66) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xf5be9621bc16f70b923eb3a3238e9c8a853ace0a_txOriginForAuthentication.sol#64)
+ 
+line_number: 64
+
+Filename: 0xf631e90c977d65425a38b25e1ec8516ce850bc38_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xf631e90c977d65425a38b25e1ec8516ce850bc38_txOriginForAuthentication.sol#109-112) uses tx.origin for authorization: require(bool)(tx.origin == _owner) (0xf631e90c977d65425a38b25e1ec8516ce850bc38_txOriginForAuthentication.sol#110)
+ 
+line_number: 110
+
+Filename: 0xf722b01910f93b84eda9ca128b9f05821a41eae1_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xf722b01910f93b84eda9ca128b9f05821a41eae1_txOriginForAuthentication.sol#35-38) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xf722b01910f93b84eda9ca128b9f05821a41eae1_txOriginForAuthentication.sol#36)
+ MintableTokenWithCap.hasMintPermission() (0xf722b01910f93b84eda9ca128b9f05821a41eae1_txOriginForAuthentication.sol#316-319) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xf722b01910f93b84eda9ca128b9f05821a41eae1_txOriginForAuthentication.sol#317)
+ 
+line_number: 36
+line_number: 317
+
+Filename: 0xf97b5d65da6b0468b90d531ddae2a69843e6797d_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+LEOcoin.onlyMinter() (0xf97b5d65da6b0468b90d531ddae2a69843e6797d_txOriginForAuthentication.sol#281-284) uses tx.origin for authorization: require(bool)(tx.origin == _isMinter) (0xf97b5d65da6b0468b90d531ddae2a69843e6797d_txOriginForAuthentication.sol#282)
+ 
+line_number: 282
+
+Filename: 0xff0d1d8d7d3599de7cf9a762feaf837e9bc17209_txOriginForAuthentication.sol
+Output: Detecting specific vulnerabilities
+check: tx-origin
+impact: Medium
+confidence: Medium
+description
+Ownable.onlyOwner() (0xff0d1d8d7d3599de7cf9a762feaf837e9bc17209_txOriginForAuthentication.sol#98-101) uses tx.origin for authorization: require(bool)(tx.origin == owner) (0xff0d1d8d7d3599de7cf9a762feaf837e9bc17209_txOriginForAuthentication.sol#99)
+ 
+line_number: 99
+

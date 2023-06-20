@@ -1,0 +1,619 @@
+
+Filename: 0x00c0443f42932d9efe27e64409b21d2e48928d66_wastefulContract.sol
+Output: INFO:Slither:0x00c0443f42932d9efe27e64409b21d2e48928d66_wastefulContract.sol analyzed (4 contracts with 1 detectors), 0 result(s) found
+line_number: 246
+
+Filename: 0x03e3fbc3820c1d1487cd7b275cc32c226caf5d18_wastefulContract.sol
+Output: INFO:Slither:0x03e3fbc3820c1d1487cd7b275cc32c226caf5d18_wastefulContract.sol analyzed (17 contracts with 1 detectors), 0 result(s) found
+line_number: 553
+
+Filename: 0x0693c3a780a0a757e803a4bd76bcf43d438f8806_wastefulContract.sol
+Output: INFO:Slither:0x0693c3a780a0a757e803a4bd76bcf43d438f8806_wastefulContract.sol analyzed (5 contracts with 1 detectors), 0 result(s) found
+line_number: 172
+
+Filename: 0x0b1388b295223252f6c023d1c7d994db285be072_wastefulContract.sol
+Output: Compilation warnings/errors on 0x0b1388b295223252f6c023d1c7d994db285be072_wastefulContract.sol:
+0x0b1388b295223252f6c023d1c7d994db285be072_wastefulContract.sol:69:9: Warning: Unused local variable.
+        uint256 balance = address(this).balance;
+        ^-------------^
+
+INFO:Slither:0x0b1388b295223252f6c023d1c7d994db285be072_wastefulContract.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 73
+
+Filename: 0x17ac4cC32696987CEa1737343188716b1D827E7B_wastefulContract.sol
+Output: Compilation warnings/errors on 0x17ac4cC32696987CEa1737343188716b1D827E7B_wastefulContract.sol:
+0x17ac4cC32696987CEa1737343188716b1D827E7B_wastefulContract.sol:24:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+0x17ac4cC32696987CEa1737343188716b1D827E7B_wastefulContract.sol:896:9: Warning: Unused local variable.
+        address marginToken = I_PerpetualV1(perpetual).getTokenContract();
+        ^-----------------^
+
+INFO:Slither:0x17ac4cC32696987CEa1737343188716b1D827E7B_wastefulContract.sol analyzed (10 contracts with 1 detectors), 0 result(s) found
+line_number: 53
+line_number: 915
+
+Filename: 0x1c1b3cdc3588eb96f228fb2c39c5613414c313ff_wastefulContract.sol
+Output: INFO:Slither:0x1c1b3cdc3588eb96f228fb2c39c5613414c313ff_wastefulContract.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 207
+
+Filename: 0x23297EE054e8f600AF482013dDBE856b7178a7d3_wastefulContract.sol
+Output: Compilation warnings/errors on 0x23297EE054e8f600AF482013dDBE856b7178a7d3_wastefulContract.sol:
+0x23297EE054e8f600AF482013dDBE856b7178a7d3_wastefulContract.sol:29:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+
+INFO:Slither:0x23297EE054e8f600AF482013dDBE856b7178a7d3_wastefulContract.sol analyzed (24 contracts with 1 detectors), 0 result(s) found
+line_number: 124
+
+Filename: 0x2eac0c3dcb5b05954f9abbb34a26dd05f863571c_wastefulContract.sol
+Output: INFO:Detectors:
+ETHSUPREME.checkout(address) (0x2eac0c3dcb5b05954f9abbb34a26dd05f863571c_wastefulContract.sol#94-106) uses a dangerous strict equality:
+	- secondsGone == 0 || user.timestamp == 0 (0x2eac0c3dcb5b05954f9abbb34a26dd05f863571c_wastefulContract.sol#98)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x2eac0c3dcb5b05954f9abbb34a26dd05f863571c_wastefulContract.sol analyzed (2 contracts with 1 detectors), 1 result(s) found
+line_number: 172
+line_number: 186
+line_number: 198
+line_number: 208
+line_number: 216
+
+Filename: 0x4328f2e4f89c01d6507611fd7d6d3ed3c629fc5c_wastefulContract.sol
+Output: Compilation warnings/errors on 0x4328f2e4f89c01d6507611fd7d6d3ed3c629fc5c_wastefulContract.sol:
+0x4328f2e4f89c01d6507611fd7d6d3ed3c629fc5c_wastefulContract.sol:75:9: Warning: Unused local variable.
+        uint256 balance = address(this).balance;
+        ^-------------^
+
+INFO:Slither:0x4328f2e4f89c01d6507611fd7d6d3ed3c629fc5c_wastefulContract.sol analyzed (4 contracts with 1 detectors), 0 result(s) found
+line_number: 79
+
+Filename: 0x456a605ce19d9df34fece0d11c9d7c4983c27d08_wastefulContract.sol
+Output: INFO:Slither:0x456a605ce19d9df34fece0d11c9d7c4983c27d08_wastefulContract.sol analyzed (7 contracts with 1 detectors), 0 result(s) found
+line_number: 303
+
+Filename: 0x4bdc1d5d7e286163abccb7e66e2c94eeeefdbfad_wastefulContract.sol
+Output: INFO:Slither:0x4bdc1d5d7e286163abccb7e66e2c94eeeefdbfad_wastefulContract.sol analyzed (5 contracts with 1 detectors), 0 result(s) found
+line_number: 366
+line_number: 398
+line_number: 405
+
+Filename: 0x534c5ec7bf392d0b6b228ebefbe3f6606a2b3484_wastefulContract.sol
+Output: INFO:Slither:0x534c5ec7bf392d0b6b228ebefbe3f6606a2b3484_wastefulContract.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 207
+
+Filename: 0x5d1710ec045aecb93b7968d016bd15699560237a_wastefulContract.sol
+Output: INFO:Slither:0x5d1710ec045aecb93b7968d016bd15699560237a_wastefulContract.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 77
+line_number: 92
+
+Filename: 0x5f79e30c5bb410b27195e72b9232b162b3d47d42_wastefulContract.sol
+Output: INFO:Slither:0x5f79e30c5bb410b27195e72b9232b162b3d47d42_wastefulContract.sol analyzed (17 contracts with 1 detectors), 0 result(s) found
+line_number: 1043
+
+Filename: 0x62748b8c0f8a1c8cb74c3dcee5f0082b752e0145_wastefulContract.sol
+Output: INFO:Slither:0x62748b8c0f8a1c8cb74c3dcee5f0082b752e0145_wastefulContract.sol analyzed (1 contracts with 1 detectors), 0 result(s) found
+line_number: 18
+
+Filename: 0x643f1a4724a834de32807a28e1553a1dc6982fe9_wastefulContract.sol
+Output: Compilation warnings/errors on 0x643f1a4724a834de32807a28e1553a1dc6982fe9_wastefulContract.sol:
+0x643f1a4724a834de32807a28e1553a1dc6982fe9_wastefulContract.sol:378:28: Warning: This declaration shadows an existing declaration.
+    function getAuthorizer(uint authorizerIndex) external view returns(address) {
+                           ^------------------^
+0x643f1a4724a834de32807a28e1553a1dc6982fe9_wastefulContract.sol:354:5: The shadowed declaration is here:
+    mapping(address => uint) authorizerIndex;
+    ^--------------------------------------^
+0x643f1a4724a834de32807a28e1553a1dc6982fe9_wastefulContract.sol:904:9: Warning: This declaration shadows an existing declaration.
+        ERC20 token = ERC20(_token);
+        ^---------^
+0x643f1a4724a834de32807a28e1553a1dc6982fe9_wastefulContract.sol:779:5: The shadowed declaration is here:
+    CBCToken public token = new CBCToken();
+    ^------------------------------------^
+
+INFO:Detectors:
+JackPot.getWinners() (0x643f1a4724a834de32807a28e1553a1dc6982fe9_wastefulContract.sol#191-218) uses a dangerous strict equality:
+	- randomNumber == 0 (0x643f1a4724a834de32807a28e1553a1dc6982fe9_wastefulContract.sol#205)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x643f1a4724a834de32807a28e1553a1dc6982fe9_wastefulContract.sol analyzed (15 contracts with 1 detectors), 1 result(s) found
+line_number: 25
+line_number: 266
+line_number: 815
+
+Filename: 0x6527aef0771f308503cdfe7f639224dcda7d18c6_wastefulContract.sol
+Output: INFO:Slither:0x6527aef0771f308503cdfe7f639224dcda7d18c6_wastefulContract.sol analyzed (7 contracts with 1 detectors), 0 result(s) found
+line_number: 236
+
+Filename: 0x69aa5381314cf9b37c438923e872868a1c32ad89_wastefulContract.sol
+Output: Compilation warnings/errors on 0x69aa5381314cf9b37c438923e872868a1c32ad89_wastefulContract.sol:
+0x69aa5381314cf9b37c438923e872868a1c32ad89_wastefulContract.sol:1426:9: Warning: Unused local variable.
+        uint endTime = timer.updateEndTime();
+        ^----------^
+
+INFO:Detectors:
+LidSimplifiedPresale.deposit(address) (0x69aa5381314cf9b37c438923e872868a1c32ad89_wastefulContract.sol#1420-1457) uses a dangerous strict equality:
+	- excess == 0 (0x69aa5381314cf9b37c438923e872868a1c32ad89_wastefulContract.sol#1446)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x69aa5381314cf9b37c438923e872868a1c32ad89_wastefulContract.sol analyzed (19 contracts with 1 detectors), 1 result(s) found
+line_number: 1410
+line_number: 1457
+
+Filename: 0x6f968fc93c23a877f0c3415534a8246fdeeeb09f_wastefulContract.sol
+Output: INFO:Slither:0x6f968fc93c23a877f0c3415534a8246fdeeeb09f_wastefulContract.sol analyzed (5 contracts with 1 detectors), 0 result(s) found
+line_number: 290
+line_number: 388
+
+Filename: 0x71e1c7f1656321a51def3050A53fD1c4d0b09D6a_wastefulContract.sol
+Output: INFO:Slither:0x71e1c7f1656321a51def3050A53fD1c4d0b09D6a_wastefulContract.sol analyzed (8 contracts with 1 detectors), 0 result(s) found
+line_number: 267
+
+Filename: 0x736d22180993e20cac87E9B2035560c1De455027_wastefulContract.sol
+Output: Compilation warnings/errors on 0x736d22180993e20cac87E9B2035560c1De455027_wastefulContract.sol:
+0x736d22180993e20cac87E9B2035560c1De455027_wastefulContract.sol:64:9: Warning: Unused local variable.
+        uint destinationAmount = synthetix.exchangeOnBehalf(order ...
+        ^--------------------^
+
+INFO:Slither:0x736d22180993e20cac87E9B2035560c1De455027_wastefulContract.sol analyzed (2 contracts with 1 detectors), 0 result(s) found
+line_number: 57
+line_number: 73
+
+Filename: 0x764a5b7399d552a029d6c8e4a2a71bb5e9c82bd6_wastefulContract.sol
+Output: INFO:Slither:0x764a5b7399d552a029d6c8e4a2a71bb5e9c82bd6_wastefulContract.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 211
+
+Filename: 0x7bbb301a2daed76da9d30889c7672e61c67ab90b_wastefulContract.sol
+Output: INFO:Slither:0x7bbb301a2daed76da9d30889c7672e61c67ab90b_wastefulContract.sol analyzed (8 contracts with 1 detectors), 0 result(s) found
+line_number: 282
+
+Filename: 0x7beebf4a6e5056f420f7c1ee13ca4349f383aea0_wastefulContract.sol
+Output: Compilation warnings/errors on 0x7beebf4a6e5056f420f7c1ee13ca4349f383aea0_wastefulContract.sol:
+0x7beebf4a6e5056f420f7c1ee13ca4349f383aea0_wastefulContract.sol:7:1: Error: Source file requires different compiler version (current compiler is 0.5.17+commit.d19bba13.Darwin.appleclang - note that nightly builds are considered to be strictly less than the released version
+pragma solidity 0.5.16;
+^---------------------^
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 561, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 810, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 156, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 285, in _get_targets_json
+    return _run_solc(
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 565, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation 0x7beebf4a6e5056f420f7c1ee13ca4349f383aea0_wastefulContract.sol:7:1: Error: Source file requires different compiler version (current compiler is 0.5.17+commit.d19bba13.Darwin.appleclang - note that nightly builds are considered to be strictly less than the released version
+pragma solidity 0.5.16;
+^---------------------^
+
+ERROR:root:Error in 0x7beebf4a6e5056f420f7c1ee13ca4349f383aea0_wastefulContract.sol
+ERROR:root:Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 561, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 810, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 156, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 285, in _get_targets_json
+    return _run_solc(
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 565, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation 0x7beebf4a6e5056f420f7c1ee13ca4349f383aea0_wastefulContract.sol:7:1: Error: Source file requires different compiler version (current compiler is 0.5.17+commit.d19bba13.Darwin.appleclang - note that nightly builds are considered to be strictly less than the released version
+pragma solidity 0.5.16;
+^---------------------^
+line_number: 463
+
+Filename: 0x81c939dc1db601add38a85ef9ea0c0e94277cc40_wastefulContract.sol
+Output: INFO:Slither:0x81c939dc1db601add38a85ef9ea0c0e94277cc40_wastefulContract.sol analyzed (12 contracts with 1 detectors), 0 result(s) found
+line_number: 267
+
+Filename: 0x87B1d485175C17Af64691F096153e9CEAaDf8642_wastefulContract.sol
+Output: INFO:Slither:0x87B1d485175C17Af64691F096153e9CEAaDf8642_wastefulContract.sol analyzed (8 contracts with 1 detectors), 0 result(s) found
+line_number: 267
+
+Filename: 0x8a807d6061ac959ad32415bfa8e01e0980a6d696_wastefulContract.sol
+Output: INFO:Slither:0x8a807d6061ac959ad32415bfa8e01e0980a6d696_wastefulContract.sol analyzed (7 contracts with 1 detectors), 0 result(s) found
+line_number: 508
+
+Filename: 0x8ec52fee6701b19e0dcdb7f7b17f479e0895b9fd_wastefulContract.sol
+Output: Compilation warnings/errors on 0x8ec52fee6701b19e0dcdb7f7b17f479e0895b9fd_wastefulContract.sol:
+0x8ec52fee6701b19e0dcdb7f7b17f479e0895b9fd_wastefulContract.sol:137:9: Warning: Unreachable code.
+        if (totalRemaining == 0) {
+        ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:Slither:0x8ec52fee6701b19e0dcdb7f7b17f479e0895b9fd_wastefulContract.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 194
+
+Filename: 0x939aa1eca62ddd3f782a61c1b346b53687252ef6_wastefulContract.sol
+Output: INFO:Detectors:
+Syndicate.isPaymentSettled(uint256) (0x939aa1eca62ddd3f782a61c1b346b53687252ef6_wastefulContract.sol#160-163) uses a dangerous strict equality:
+	- payments[index].weiValue == payments[index].weiPaid (0x939aa1eca62ddd3f782a61c1b346b53687252ef6_wastefulContract.sol#162)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x939aa1eca62ddd3f782a61c1b346b53687252ef6_wastefulContract.sol analyzed (1 contracts with 1 detectors), 1 result(s) found
+line_number: 180
+
+Filename: 0x99013a90e505c1fc153857a974b99790d1c9965a_wastefulContract.sol
+Output: Compilation warnings/errors on 0x99013a90e505c1fc153857a974b99790d1c9965a_wastefulContract.sol:
+0x99013a90e505c1fc153857a974b99790d1c9965a_wastefulContract.sol:23:9: Warning: Unused local variable.
+        uint256 ourBalanceInitial = address(this).balance;
+        ^-----------------------^
+0x99013a90e505c1fc153857a974b99790d1c9965a_wastefulContract.sol:25:10: Warning: Unused local variable.
+        (bool success, bytes memory data) = _targetAddress.call.value(_amount)("");
+         ^----------^
+
+INFO:Slither:0x99013a90e505c1fc153857a974b99790d1c9965a_wastefulContract.sol analyzed (1 contracts with 1 detectors), 0 result(s) found
+line_number: 34
+line_number: 38
+
+Filename: 0x9d1cbf4ef833340120e721e5028c326ec1066c7e_wastefulContract.sol
+Output: INFO:Slither:0x9d1cbf4ef833340120e721e5028c326ec1066c7e_wastefulContract.sol analyzed (5 contracts with 1 detectors), 0 result(s) found
+line_number: 400
+line_number: 407
+line_number: 413
+
+Filename: 0x9e67c652aef503926e0dbaad1535b604ddb72db7_wastefulContract.sol
+Output: Compilation warnings/errors on 0x9e67c652aef503926e0dbaad1535b604ddb72db7_wastefulContract.sol:
+0x9e67c652aef503926e0dbaad1535b604ddb72db7_wastefulContract.sol:424:28: Warning: This declaration shadows an existing declaration.
+    function getAuthorizer(uint authorizerIndex) external view returns(address) {
+                           ^------------------^
+0x9e67c652aef503926e0dbaad1535b604ddb72db7_wastefulContract.sol:400:5: The shadowed declaration is here:
+    mapping(address => uint) authorizerIndex;
+    ^--------------------------------------^
+
+0x9e67c652aef503926e0dbaad1535b604ddb72db7_wastefulContract.sol:950:9: Warning: This declaration shadows an existing declaration.
+        ERC20 token = ERC20(_token);
+        ^---------^
+0x9e67c652aef503926e0dbaad1535b604ddb72db7_wastefulContract.sol:825:5: The shadowed declaration is here:
+    CBCToken public token = new CBCToken();
+    ^------------------------------------^
+
+
+INFO:Detectors:
+Bank.getWinners() (0x9e67c652aef503926e0dbaad1535b604ddb72db7_wastefulContract.sol#177-204) uses a dangerous strict equality:
+	- randomNumber == 0 (0x9e67c652aef503926e0dbaad1535b604ddb72db7_wastefulContract.sol#191)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x9e67c652aef503926e0dbaad1535b604ddb72db7_wastefulContract.sol analyzed (15 contracts with 1 detectors), 1 result(s) found
+line_number: 252
+line_number: 323
+line_number: 861
+
+Filename: 0x9f7002b797ed7170d7e5c7326781bc0dd83055b9_wastefulContract.sol
+Output: INFO:Slither:0x9f7002b797ed7170d7e5c7326781bc0dd83055b9_wastefulContract.sol analyzed (4 contracts with 1 detectors), 0 result(s) found
+line_number: 239
+line_number: 252
+
+Filename: 0xa1250cf32c1f884e32b4da52f3b5f5120e668873_wastefulContract.sol
+Output: INFO:Slither:0xa1250cf32c1f884e32b4da52f3b5f5120e668873_wastefulContract.sol analyzed (14 contracts with 1 detectors), 0 result(s) found
+line_number: 564
+
+Filename: 0xc4FA447A0e77Eff9717b09C057B40570813bb642_wastefulContract.sol
+Output: Compilation warnings/errors on 0xc4FA447A0e77Eff9717b09C057B40570813bb642_wastefulContract.sol:
+0xc4FA447A0e77Eff9717b09C057B40570813bb642_wastefulContract.sol:227:10: Warning: Unused local variable.
+        (bool success, bytes memory returnData) = address(this).call.value(msg.value)(data);
+         ^----------^
+0xc4FA447A0e77Eff9717b09C057B40570813bb642_wastefulContract.sol:765:9: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+        address from,
+        ^----------^
+0xc4FA447A0e77Eff9717b09C057B40570813bb642_wastefulContract.sol:766:9: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+        address to,
+        ^--------^
+0xc4FA447A0e77Eff9717b09C057B40570813bb642_wastefulContract.sol:767:9: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+        uint256 value
+        ^-----------^
+
+INFO:Slither:0xc4FA447A0e77Eff9717b09C057B40570813bb642_wastefulContract.sol analyzed (25 contracts with 1 detectors), 0 result(s) found
+line_number: 229
+line_number: 2024
+
+Filename: 0xcb76c205866a58f6cee4f3d4035cee160d65f05d_wastefulContract.sol
+Output: INFO:Slither:0xcb76c205866a58f6cee4f3d4035cee160d65f05d_wastefulContract.sol analyzed (5 contracts with 1 detectors), 0 result(s) found
+line_number: 774
+
+Filename: 0xcec7c850458e5b966df0e7aa6f8ab374e1cc2c68_wastefulContract.sol
+Output: Compilation warnings/errors on 0xcec7c850458e5b966df0e7aa6f8ab374e1cc2c68_wastefulContract.sol:
+0xcec7c850458e5b966df0e7aa6f8ab374e1cc2c68_wastefulContract.sol:1112:3: Warning: Unused local variable.
+		address myAddress = address(this);
+		^---------------^
+
+INFO:Slither:0xcec7c850458e5b966df0e7aa6f8ab374e1cc2c68_wastefulContract.sol analyzed (14 contracts with 1 detectors), 0 result(s) found
+line_number: 852
+line_number: 1116
+
+Filename: 0xd03b6ae96cae26b743a6207dcee7cbe60a425c70_wastefulContract.sol
+Output: INFO:Slither:0xd03b6ae96cae26b743a6207dcee7cbe60a425c70_wastefulContract.sol analyzed (4 contracts with 1 detectors), 0 result(s) found
+line_number: 238
+
+Filename: 0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_wastefulContract.sol
+Output: INFO:Slither:0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_wastefulContract.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 114
+
+Filename: 0xd2e38ea195a2d1ad65da9864c82f52091ec0d3b5_wastefulContract.sol
+Output: INFO:Slither:0xd2e38ea195a2d1ad65da9864c82f52091ec0d3b5_wastefulContract.sol analyzed (8 contracts with 1 detectors), 0 result(s) found
+line_number: 289
+
+Filename: 0xd95e7d16000cbeb66acbf70b4a843d4346ff4555_wastefulContract.sol
+Output: INFO:Slither:0xd95e7d16000cbeb66acbf70b4a843d4346ff4555_wastefulContract.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 256
+
+Filename: 0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol
+Output: Compilation warnings/errors on 0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:376:148: Warning: This declaration shadows an existing declaration.
+ ... int16 auraYellow, uint16 auraBlue, string memory name, uint16 experience, uint64 lastBat ...
+                                        ^----------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:358:5: The shadowed declaration is here:
+    function name() external pure returns (string memory _name) ;
+    ^-----------------------------------------------------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:923:148: Warning: This declaration shadows an existing declaration.
+ ... int16 auraYellow, uint16 auraBlue, string memory name, uint16 experience, uint64 lastBat ...
+                                        ^----------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:645:5: The shadowed declaration is here:
+    function name() external pure returns (string memory _name) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:822:5: Error: Private functions cannot be overridden.
+    function addABTokenIdMapping(address _owner, uint256 _tokenId) private {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:370:5: Overridden function is here:
+    function addABTokenIdMapping(address _owner, uint256 _tokenId) private ;
+    ^----------------------------------------------------------------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:895:5: Error: Private functions cannot be overridden.
+    function getAngelPower(uint8 _angelSeriesId) private view returns (uint16) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:375:5: Overridden function is here:
+    function getAngelPower(uint8 _angelSeriesId) private view returns (uint16) ;
+    ^--------------------------------------------------------------------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:1105:5: Error: Private functions cannot be overridden.
+    function _clearApproval(uint256 tokenId) private {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:389:5: Overridden function is here:
+    function _clearApproval(uint256 tokenId) private ;
+    ^------------------------------------------------^
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 561, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 810, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 156, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 285, in _get_targets_json
+    return _run_solc(
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 565, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation 0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:376:148: Warning: This declaration shadows an existing declaration.
+ ... int16 auraYellow, uint16 auraBlue, string memory name, uint16 experience, uint64 lastBat ...
+                                        ^----------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:358:5: The shadowed declaration is here:
+    function name() external pure returns (string memory _name) ;
+    ^-----------------------------------------------------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:923:148: Warning: This declaration shadows an existing declaration.
+ ... int16 auraYellow, uint16 auraBlue, string memory name, uint16 experience, uint64 lastBat ...
+                                        ^----------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:645:5: The shadowed declaration is here:
+    function name() external pure returns (string memory _name) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:822:5: Error: Private functions cannot be overridden.
+    function addABTokenIdMapping(address _owner, uint256 _tokenId) private {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:370:5: Overridden function is here:
+    function addABTokenIdMapping(address _owner, uint256 _tokenId) private ;
+    ^----------------------------------------------------------------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:895:5: Error: Private functions cannot be overridden.
+    function getAngelPower(uint8 _angelSeriesId) private view returns (uint16) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:375:5: Overridden function is here:
+    function getAngelPower(uint8 _angelSeriesId) private view returns (uint16) ;
+    ^--------------------------------------------------------------------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:1105:5: Error: Private functions cannot be overridden.
+    function _clearApproval(uint256 tokenId) private {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:389:5: Overridden function is here:
+    function _clearApproval(uint256 tokenId) private ;
+    ^------------------------------------------------^
+
+ERROR:root:Error in 0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol
+ERROR:root:Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 561, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 810, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 156, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 285, in _get_targets_json
+    return _run_solc(
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 565, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation 0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:376:148: Warning: This declaration shadows an existing declaration.
+ ... int16 auraYellow, uint16 auraBlue, string memory name, uint16 experience, uint64 lastBat ...
+                                        ^----------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:358:5: The shadowed declaration is here:
+    function name() external pure returns (string memory _name) ;
+    ^-----------------------------------------------------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:923:148: Warning: This declaration shadows an existing declaration.
+ ... int16 auraYellow, uint16 auraBlue, string memory name, uint16 experience, uint64 lastBat ...
+                                        ^----------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:645:5: The shadowed declaration is here:
+    function name() external pure returns (string memory _name) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:822:5: Error: Private functions cannot be overridden.
+    function addABTokenIdMapping(address _owner, uint256 _tokenId) private {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:370:5: Overridden function is here:
+    function addABTokenIdMapping(address _owner, uint256 _tokenId) private ;
+    ^----------------------------------------------------------------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:895:5: Error: Private functions cannot be overridden.
+    function getAngelPower(uint8 _angelSeriesId) private view returns (uint16) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:375:5: Overridden function is here:
+    function getAngelPower(uint8 _angelSeriesId) private view returns (uint16) ;
+    ^--------------------------------------------------------------------------^
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:1105:5: Error: Private functions cannot be overridden.
+    function _clearApproval(uint256 tokenId) private {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xdc32ff5aada11b5ce3caf2d00459cfda05293f96_wastefulContract.sol:389:5: Overridden function is here:
+    function _clearApproval(uint256 tokenId) private ;
+    ^------------------------------------------------^
+line_number: 606
+
+Filename: 0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol
+Output: Compilation warnings/errors on 0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol:
+0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol:6:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol:58:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function add(uint x, uint y) internal pure returns (uint z) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol:66:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function mul(uint x, uint y) internal pure returns (uint z) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol:62:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function sub(uint x, uint y) internal pure returns (uint z) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol:58:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function add(uint x, uint y) internal pure returns (uint z) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol:66:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function mul(uint x, uint y) internal pure returns (uint z) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol:62:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function sub(uint x, uint y) internal pure returns (uint z) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol:58:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function add(uint x, uint y) internal pure returns (uint z) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol:66:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function mul(uint x, uint y) internal pure returns (uint z) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol:62:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function sub(uint x, uint y) internal pure returns (uint z) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol:378:3: Warning: Function state mutability can be restricted to view
+  function checkCommission(
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:Slither:0xea483a51abbb216bf7f35b7a8d7eb7f040fa2e4e_wastefulContract.sol analyzed (8 contracts with 1 detectors), 0 result(s) found
+line_number: 175
+
+Filename: 0xebbb82dfc397b42ee518a24deed51f04b3c7ca2e_wastefulContract.sol
+Output: INFO:Detectors:
+ERC721ProductKey._activate(uint256) (0xebbb82dfc397b42ee518a24deed51f04b3c7ca2e_wastefulContract.sol#1233-1250) uses a dangerous strict equality:
+	- require(bool)(productKeys[_keyId].expirationTime == 0) (0xebbb82dfc397b42ee518a24deed51f04b3c7ca2e_wastefulContract.sol#1236)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xebbb82dfc397b42ee518a24deed51f04b3c7ca2e_wastefulContract.sol analyzed (17 contracts with 1 detectors), 1 result(s) found
+line_number: 1302
+
+Filename: 0xf00a4223027d4c2177d1235f0724071757a2ce82_wastefulContract.sol
+Output: INFO:Slither:0xf00a4223027d4c2177d1235f0724071757a2ce82_wastefulContract.sol analyzed (1 contracts with 1 detectors), 0 result(s) found
+line_number: 13
+line_number: 19
+
+Filename: 0xf682f0417e31b79b8721098589da5d0a186eca86_wastefulContract.sol
+Output: INFO:Slither:0xf682f0417e31b79b8721098589da5d0a186eca86_wastefulContract.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 224
+
+Filename: 0xf7ae8c7366f35e2decb573fcf4310519b42403aa_wastefulContract.sol
+Output: Compilation warnings/errors on 0xf7ae8c7366f35e2decb573fcf4310519b42403aa_wastefulContract.sol:
+0xf7ae8c7366f35e2decb573fcf4310519b42403aa_wastefulContract.sol:298:9: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+        address from,
+        ^----------^
+0xf7ae8c7366f35e2decb573fcf4310519b42403aa_wastefulContract.sol:299:9: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+        address to,
+        ^--------^
+0xf7ae8c7366f35e2decb573fcf4310519b42403aa_wastefulContract.sol:300:9: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+        uint256 value
+        ^-----------^
+
+INFO:Slither:0xf7ae8c7366f35e2decb573fcf4310519b42403aa_wastefulContract.sol analyzed (19 contracts with 1 detectors), 0 result(s) found
+line_number: 1843
+
+Filename: 0xf8670a791e547184ac9833799bb4de9de8670d84_wastefulContract.sol
+Output: INFO:Slither:0xf8670a791e547184ac9833799bb4de9de8670d84_wastefulContract.sol analyzed (4 contracts with 1 detectors), 0 result(s) found
+line_number: 311
+line_number: 343
+line_number: 350
+
+Filename: 0xf8d47138161c8175538ea1300e7bf7afc073445a_wastefulContract.sol
+Output: INFO:Slither:0xf8d47138161c8175538ea1300e7bf7afc073445a_wastefulContract.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 207
+
+Filename: 0xf9bd51d756a3caf52348f2901b7eff9bd03398e7_wastefulContract.sol
+Output: INFO:Slither:0xf9bd51d756a3caf52348f2901b7eff9bd03398e7_wastefulContract.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 207
+
+Filename: 0xfb2e4c813451a441f26530642fc83bf14d3141cf_wastefulContract.sol
+Output: INFO:Slither:0xfb2e4c813451a441f26530642fc83bf14d3141cf_wastefulContract.sol analyzed (7 contracts with 1 detectors), 0 result(s) found
+line_number: 390
+

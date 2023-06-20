@@ -1,0 +1,563 @@
+
+Filename: 0x091e280aaf812e4cec2a006e28852f736795e58e_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+withdrawEther uses address(this).balance for authorization: require(bool)(balance >= amount) (0x091e280aaf812e4cec2a006e28852f736795e58e_forcedToReceiveEthers.sol#98)
+ fallback uses address(this).balance for authorization: require(bool)(address(this).balance == 0) (0x091e280aaf812e4cec2a006e28852f736795e58e_forcedToReceiveEthers.sol#195)
+ 
+line_number: 195
+
+Filename: 0x0ce881ab266e848c2a4d2d873b74dc7a1138ce6c_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+availableWithdraw uses address(this).balance for authorization: address(this).balance == 0 (0x0ce881ab266e848c2a4d2d873b74dc7a1138ce6c_forcedToReceiveEthers.sol#322)
+ 
+line_number: 322
+
+Filename: 0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+poke uses address(this).balance for authorization: require(bool,string)(address(this).balance == 1,Median/invalid-oracle) (0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol#100)
+ poke uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,Median/oracle-already-signed) (0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol#108)
+ 
+line_number: 43
+line_number: 61
+line_number: 100
+line_number: 108
+
+Filename: 0x0f449ce32456fbd823b7ac5d162826cd34c48784_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+line_number: 43
+line_number: 83
+
+Filename: 0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+borrowRatePerBlock uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,borrowRatePerBlock: interestRateModel.borrowRate failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1217)
+ supplyRatePerBlock uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,supplyRatePerBlock: calculating borrowRate failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1234)
+ 
+line_number: 1217
+line_number: 1234
+line_number: 1298
+line_number: 1344
+line_number: 2006
+
+Filename: 0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+getOrderInfo uses address(this).balance for authorization: address(this).balance == 0 (0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol#1285)
+ getOrderInfo uses address(this).balance for authorization: address(this).balance == 0 (0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol#1289)
+ 
+line_number: 1285
+line_number: 1289
+
+Filename: 0x21d40f44d3c93ba4f0d94fa212a666fec381e26c_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+Nothing to result
+line_number: 661
+
+Filename: 0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+Nothing to result
+line_number: 889
+line_number: 892
+line_number: 894
+
+Filename: 0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+addBeneficiary uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,Already a beneficiary) (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#76)
+ fallback uses address(this).balance for authorization: thisBalance > fundingCap (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#122)
+ withdrawFunding uses address(this).balance for authorization: require(bool,string)(address(this).balance >= fundingCap || block.timestamp >= IcoEndTime,ICO hasn't ended) (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#95)
+ withdrawFunding uses address(this).balance for authorization: address(this).balance == 0 (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#94)
+ fallback uses address(this).balance for authorization: oldBalance < thisBalance (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#134)
+ beneficiaryStash uses address(this).balance for authorization: address(this).balance == 0 (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#202)
+ 
+line_number: 76
+line_number: 94
+line_number: 202
+line_number: 232
+
+Filename: 0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+Create_UserAccount uses address(this).balance for authorization: require(bool)(address(this).balance == 0) (0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol#1108)
+ Start_NewRound uses address(this).balance for authorization: address(this).balance == 0 (0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol#1217)
+ Worship_LuGoddess uses address(this).balance for authorization: msg.value >= address(this).balance (0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol#549)
+ Withdraw uses address(this).balance for authorization: require(bool)(_Amount <= address(this).balance) (0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol#428)
+ 
+line_number: 258
+line_number: 1108
+line_number: 1217
+
+Filename: 0x306e505030c5f76b60c9561e88b57d1de60fb9ed_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+fallback uses address(this).balance for authorization: address(this).balance == 0 (0x306e505030c5f76b60c9561e88b57d1de60fb9ed_forcedToReceiveEthers.sol#47)
+ 
+line_number: 47
+
+Filename: 0x33feab4ecd7e9d491037c050e29b3f29899e7048_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+increaseProductivity uses address(this).balance for authorization: address(this).balance == 0 (0x33feab4ecd7e9d491037c050e29b3f29899e7048_forcedToReceiveEthers.sol#218)
+ 
+line_number: 155
+line_number: 218
+
+Filename: 0x3a29f2cf1120b9d65131079390eb8aef98c4425a_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+isMember uses address(this).balance for authorization: address(this).balance == 0 (0x3a29f2cf1120b9d65131079390eb8aef98c4425a_forcedToReceiveEthers.sol#181)
+ 
+line_number: 181
+
+Filename: 0x3fb111fed284aea5e3db069fa12045d61f78668a_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+reinvestProfit uses address(this).balance for authorization: require(bool,string)(address(this).balance.sub(profit) >= guaranteedBalance(),not enough funds) (0x3fb111fed284aea5e3db069fa12045d61f78668a_forcedToReceiveEthers.sol#326)
+ withdrawProfit uses address(this).balance for authorization: require(bool,string)(address(this).balance.sub(profit) >= guaranteedBalance(),not enough funds) (0x3fb111fed284aea5e3db069fa12045d61f78668a_forcedToReceiveEthers.sol#283)
+ withdrawAffiliateCommission uses address(this).balance for authorization: require(bool,string)(address(this).balance.sub(commission) >= guaranteedBalance(),not enough funds) (0x3fb111fed284aea5e3db069fa12045d61f78668a_forcedToReceiveEthers.sol#266)
+ invest uses address(this).balance for authorization: address(this).balance == 0 (0x3fb111fed284aea5e3db069fa12045d61f78668a_forcedToReceiveEthers.sol#216)
+ withdrawDevCommission uses address(this).balance for authorization: require(bool,string)(address(this).balance.sub(commission) >= lockboxTotal,not enough funds) (0x3fb111fed284aea5e3db069fa12045d61f78668a_forcedToReceiveEthers.sol#253)
+ 
+line_number: 216
+
+Filename: 0x401F6c983eA34274ec46f84D70b31C151321188b_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+setNextHeaderBlock uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,Invalid value) (0x401F6c983eA34274ec46f84D70b31C151321188b_forcedToReceiveEthers.sol#918)
+ 
+line_number: 918
+
+Filename: 0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+calPriceFeeHBWALLET uses address(this).balance for authorization: address(this).balance == 0 (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#205)
+ calPriceFeeEth uses address(this).balance for authorization: address(this).balance == 0 (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#160)
+ cancelBussiness uses address(this).balance for authorization: address(this).balance >= eth (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#285)
+ setPriceFeeEth uses address(this).balance for authorization: address(this).balance == 0 (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#180)
+ setPriceFeeHBWALLET uses address(this).balance for authorization: address(this).balance == 0 (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#227)
+ 
+line_number: 160
+line_number: 180
+line_number: 205
+line_number: 227
+
+Filename: 0x4c031a2f7e5b36d54be99717408f4d87d9871638_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+setPriceFeeHBWALLET uses address(this).balance for authorization: address(this).balance == 0 (0x4c031a2f7e5b36d54be99717408f4d87d9871638_forcedToReceiveEthers.sol#177)
+ setPriceFeeEth uses address(this).balance for authorization: address(this).balance == 0 (0x4c031a2f7e5b36d54be99717408f4d87d9871638_forcedToReceiveEthers.sol#151)
+ withdraw uses address(this).balance for authorization: require(bool)(_address != address(0) && amount > 0 && address(this).balance >= amount && _amountHB > 0 && hbwalletToken.balanceOf(address(this)) >= _amountHB) (0x4c031a2f7e5b36d54be99717408f4d87d9871638_forcedToReceiveEthers.sol#222)
+ cancelBussiness uses address(this).balance for authorization: prices[arrayTokenIdSale[i]].fee > 0 && address(this).balance >= prices[arrayTokenIdSale[i]].fee (0x4c031a2f7e5b36d54be99717408f4d87d9871638_forcedToReceiveEthers.sol#230)
+ 
+line_number: 151
+line_number: 177
+
+Filename: 0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+withdrawFees uses address(this).balance for authorization: address(this).balance == 3 (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#665)
+ playGame uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,Oops your limit is still remaining) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#310)
+ withdrawFees uses address(this).balance for authorization: address(this).balance >= _amount (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#659)
+ withdrawFees uses address(this).balance for authorization: address(this).balance >= _amount (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#651)
+ withdrawIncome uses address(this).balance for authorization: require(bool,string)(address(this).balance >= _earnings,Contract doesn't have sufficient amount to give you) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#589)
+ 
+line_number: 240
+line_number: 310
+line_number: 383
+line_number: 402
+line_number: 470
+line_number: 513
+line_number: 665
+
+Filename: 0x5f1a08554f0dc0cf79852c564a10981ffbd7c8af_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+Nothing to result
+line_number: 100
+
+Filename: 0x6209cfbdee10e7796bbcabfc6400acdc06ac26f2_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+withdrawTo uses address(this).balance for authorization: require(bool)(address(this).balance >= founds) (0x6209cfbdee10e7796bbcabfc6400acdc06ac26f2_forcedToReceiveEthers.sol#83)
+ 
+line_number: 172
+
+Filename: 0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+fallback uses address(this).balance for authorization: address(this).balance == 1 (0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol#143)
+ 
+line_number: 143
+line_number: 200
+line_number: 207
+
+Filename: 0x64976c5b5062c56d91dafe661cb85dcf7e349c9d_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+schedule uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,This spell has already been scheduled) (0x64976c5b5062c56d91dafe661cb85dcf7e349c9d_forcedToReceiveEthers.sol#139)
+ 
+line_number: 139
+
+Filename: 0x659046522c5c246a34a7eb17a814ca648436644a_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+burnTokensAndWithdrawChainFaces uses address(this).balance for authorization: address(this).balance == 0 (0x659046522c5c246a34a7eb17a814ca648436644a_forcedToReceiveEthers.sol#418)
+ 
+line_number: 418
+
+Filename: 0x6b175474e89094c44da98b954eedeac495271d0f_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+Nothing to result
+line_number: 79
+
+Filename: 0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+game_coin uses address(this).balance for authorization: require(bool)(address(this).balance == 1) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#127)
+ game_dice uses address(this).balance for authorization: require(bool)(address(this).balance == 0x0) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#176)
+ game_coin uses address(this).balance for authorization: require(bool)(address(this).balance == 0x0) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#126)
+ game_knb uses address(this).balance for authorization: require(bool)(address(this).balance == 0x0) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#152)
+ game_knb uses address(this).balance for authorization: require(bool)(address(this).balance == 1) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#153)
+ 
+line_number: 126
+line_number: 127
+line_number: 152
+line_number: 153
+line_number: 176
+
+Filename: 0x7816647dbfd5df766febb3a8e9f7a864447e9ed4_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+fallback uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,CErc20Delegator:fallback: cannot send value to fallback) (0x7816647dbfd5df766febb3a8e9f7a864447e9ed4_forcedToReceiveEthers.sol#577)
+ 
+line_number: 577
+
+Filename: 0x81c27d1a0a6413c6a6d6d8e54b0a9c869d16771c_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+mint uses address(this).balance for authorization: address(this).balance == 0 (0x81c27d1a0a6413c6a6d6d8e54b0a9c869d16771c_forcedToReceiveEthers.sol#314)
+ 
+line_number: 227
+line_number: 314
+
+Filename: 0x84f411093aed2e88e3d7f62a457cf77b3032ff2b_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+schedule uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,This spell has already been scheduled) (0x84f411093aed2e88e3d7f62a457cf77b3032ff2b_forcedToReceiveEthers.sol#217)
+ 
+line_number: 217
+
+Filename: 0xB72b3f5523851C2EB0cA14137803CA4ac7295f3F_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+balanceOf uses address(this).balance for authorization: address(this).balance == 0 (0xB72b3f5523851C2EB0cA14137803CA4ac7295f3F_forcedToReceiveEthers.sol#732)
+ 
+line_number: 732
+
+Filename: 0xa2a40929f0d69cc43c2f6024c4a671f249814add_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+isFreezed uses address(this).balance for authorization: address(this).balance == 0 (0xa2a40929f0d69cc43c2f6024c4a671f249814add_forcedToReceiveEthers.sol#373)
+ 
+line_number: 373
+
+Filename: 0xaa2cb1a1b014b92edb93b1f163c7ca40a07eecaa_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+addAdmin uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,Verification for this address was revoked, can not add) (0xaa2cb1a1b014b92edb93b1f163c7ca40a07eecaa_forcedToReceiveEthers.sol#456-459)
+ withdrawAllToWithdrawalAddress uses address(this).balance for authorization: ! withdrawalAddress.send(sum) (0xaa2cb1a1b014b92edb93b1f163c7ca40a07eecaa_forcedToReceiveEthers.sol#580)
+ signDisputeResolutionAgreementFor uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,Verification for this address was revoked, can not sign) (0xaa2cb1a1b014b92edb93b1f163c7ca40a07eecaa_forcedToReceiveEthers.sol#753-756)
+ 
+line_number: 457
+line_number: 754
+
+Filename: 0xaf140e5321152eefcc0c6f212dded2b391af486b_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+deposit uses address(this).balance for authorization: address(this).balance == 0 (0xaf140e5321152eefcc0c6f212dded2b391af486b_forcedToReceiveEthers.sol#330)
+ 
+line_number: 330
+
+Filename: 0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+withdrawFees uses address(this).balance for authorization: address(this).balance == 3 (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#949)
+ playGame uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,Oops your limit is still remaining) (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#328)
+ withdrawFees uses address(this).balance for authorization: address(this).balance >= _amount (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#943)
+ withdrawIncome uses address(this).balance for authorization: require(bool,string)(address(this).balance >= _earnings,Contract doesn't have sufficient amount to give you) (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#620)
+ withdrawFees uses address(this).balance for authorization: address(this).balance >= _amount (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#935)
+ 
+line_number: 255
+line_number: 328
+line_number: 414
+line_number: 433
+line_number: 501
+line_number: 544
+line_number: 949
+
+Filename: 0xb34d2ea7809d1def743989d078dcd52af2f1c6c8_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+takeStock uses address(this).balance for authorization: address(this).balance == 1 (0xb34d2ea7809d1def743989d078dcd52af2f1c6c8_forcedToReceiveEthers.sol#45)
+ 
+line_number: 45
+
+Filename: 0xbc2015a541e30c9c352ee2f2f9e90e5219b298e2_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+executeTransaction uses address(this).balance for authorization: address(this).balance == 0 (0xbc2015a541e30c9c352ee2f2f9e90e5219b298e2_forcedToReceiveEthers.sol#397)
+ 
+line_number: 397
+
+Filename: 0xcAAdcFC74404D54987D0763fa46484C74D166e92_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+schedule uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,This spell has already been scheduled) (0xcAAdcFC74404D54987D0763fa46484C74D166e92_forcedToReceiveEthers.sol#185)
+ 
+line_number: 185
+
+Filename: 0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+changePercents uses address(this).balance for authorization: require(bool)(address(this).balance == 100) (0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_forcedToReceiveEthers.sol#143)
+ 
+line_number: 143
+
+Filename: 0xd17abf984740145db4b3d61559eebe2170a3d6da_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+schedule uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,This spell has already been scheduled) (0xd17abf984740145db4b3d61559eebe2170a3d6da_forcedToReceiveEthers.sol#108)
+ 
+line_number: 108
+
+Filename: 0xd2127E16741Bb1Fd275E5E81F170b177698926D1_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+schedule uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,This spell has already been scheduled) (0xd2127E16741Bb1Fd275E5E81F170b177698926D1_forcedToReceiveEthers.sol#284)
+ 
+line_number: 284
+
+Filename: 0xd2179a3754b96f1cf19f07242d1107d2f68f01e6_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+Not supported file type
+line_number: 382
+
+Filename: 0xd3085707c2c612e81e6ddcd220d1ed1c1bdefff8_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+Nothing to result
+line_number: 206
+
+Filename: 0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+setPriceFeeHBWALLET uses address(this).balance for authorization: address(this).balance == 0 (0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol#177)
+ withdraw uses address(this).balance for authorization: require(bool)(_address != address(0) && amount > 0 && address(this).balance >= amount && _amountHB > 0 && hbwalletToken.balanceOf(address(this)) >= _amountHB) (0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol#222)
+ setPriceFeeEth uses address(this).balance for authorization: address(this).balance == 0 (0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol#151)
+ cancelBussiness uses address(this).balance for authorization: prices[arrayTokenIdSale[i]].fee > 0 && address(this).balance >= prices[arrayTokenIdSale[i]].fee (0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol#230)
+ 
+line_number: 151
+line_number: 177
+
+Filename: 0xd88a5a4926968bfbe0f100649dc7fc76a7df3302_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+Nothing to result
+line_number: 206
+
+Filename: 0xdc4a5151c0f29f6defa09b383d04b95d587fa275_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+unfreezeWithoutDelay uses address(this).balance for authorization: address(this).balance == 1 (0xdc4a5151c0f29f6defa09b383d04b95d587fa275_forcedToReceiveEthers.sol#1025)
+ 
+line_number: 1025
+
+Filename: 0xdfBCd11D7f62ECb1994bb63de574E6Bc019375aA_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+buy uses address(this).balance for authorization: require(bool,string)(address(this).balance == 0,Subscribe only once) (0xdfBCd11D7f62ECb1994bb63de574E6Bc019375aA_forcedToReceiveEthers.sol#392)
+ 
+line_number: 392
+
+Filename: 0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+exit uses address(this).balance for authorization: require(bool,string)(address(this).balance == 1,GemJoin8/implementation-invalid) (0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol#144)
+ join uses address(this).balance for authorization: require(bool,string)(address(this).balance == 1,GemJoin8/implementation-invalid) (0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol#136)
+ join uses address(this).balance for authorization: require(bool,string)(address(this).balance == 1,GemJoin8/not-live) (0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol#133)
+ 
+line_number: 99
+line_number: 133
+line_number: 136
+line_number: 144
+
+Filename: 0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+Create_UserAccount uses address(this).balance for authorization: require(bool)(address(this).balance == 0) (0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol#1104)
+ Worship_LuGoddess uses address(this).balance for authorization: msg.value >= address(this).balance (0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol#547)
+ Start_NewRound uses address(this).balance for authorization: address(this).balance == 0 (0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol#1213)
+ Withdraw uses address(this).balance for authorization: require(bool)(_Amount <= address(this).balance) (0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol#426)
+ 
+line_number: 258
+line_number: 1104
+line_number: 1213
+
+Filename: 0xee6bd04c6164d7f0fa1cb03277c855639d99a7f6_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+getCount uses address(this).balance for authorization: address(this).balance == 0 (0xee6bd04c6164d7f0fa1cb03277c855639d99a7f6_forcedToReceiveEthers.sol#396)
+ isInTerm uses address(this).balance for authorization: address(this).balance == 0 (0xee6bd04c6164d7f0fa1cb03277c855639d99a7f6_forcedToReceiveEthers.sol#387)
+ 
+line_number: 387
+line_number: 396
+
+Filename: 0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+check: address-this-balance
+impact: Medium
+confidence: Medium
+description
+calPriceFeeEth uses address(this).balance for authorization: address(this).balance == 0 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#297)
+ revenue uses address(this).balance for authorization: address(this).balance == 1 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#496)
+ revenue uses address(this).balance for authorization: address(this).balance == 1 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#493)
+ setPriceFeeEth uses address(this).balance for authorization: address(this).balance == 0 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#317)
+ setPriceFeeHBWALLET uses address(this).balance for authorization: address(this).balance == 0 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#368)
+ calPriceFeeHBWALLET uses address(this).balance for authorization: address(this).balance == 0 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#344)
+ 
+line_number: 297
+line_number: 317
+line_number: 344
+line_number: 368
+line_number: 426
+line_number: 432
+line_number: 493
+line_number: 496
+
+Filename: 0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol
+Output: Detecting specific vulnerabilities
+Nothing to result
+line_number: 907
+line_number: 910
+line_number: 912
+

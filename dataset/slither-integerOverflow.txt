@@ -1,0 +1,1252 @@
+
+Filename: 0x026195ce819f1cb4fa872ce306b14b91ab16a3ab_integerOverflow.sol
+Output: INFO:Slither:0x026195ce819f1cb4fa872ce306b14b91ab16a3ab_integerOverflow.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 78
+line_number: 91
+line_number: 105
+line_number: 116
+
+Filename: 0x03452e69ffcd9c45ca34ff4d9ba2209d38a8d56a_integerOverflow.sol
+Output: INFO:Detectors:
+VESTELLAToken.slitherConstructorConstantVariables() (0x03452e69ffcd9c45ca34ff4d9ba2209d38a8d56a_integerOverflow.sol#363-506) uses literals with too many digits:
+	- _INIT_TOTALSUPPLY = 15000000000 (0x03452e69ffcd9c45ca34ff4d9ba2209d38a8d56a_integerOverflow.sol#369)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x03452e69ffcd9c45ca34ff4d9ba2209d38a8d56a_integerOverflow.sol analyzed (7 contracts with 1 detectors), 1 result(s) found
+line_number: 184
+line_number: 219
+line_number: 237
+line_number: 258
+line_number: 276
+line_number: 292
+
+Filename: 0x034f8165470b0a26b8daac1c3cd1cc6156e8294d_integerOverflow.sol
+Output: INFO:Detectors:
+EracoinToken.constructor() (0x034f8165470b0a26b8daac1c3cd1cc6156e8294d_integerOverflow.sol#123-130) uses literals with too many digits:
+	- _totalSupply = 300000000 * 10 ** uint256(decimals) (0x034f8165470b0a26b8daac1c3cd1cc6156e8294d_integerOverflow.sol#127)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x034f8165470b0a26b8daac1c3cd1cc6156e8294d_integerOverflow.sol analyzed (5 contracts with 1 detectors), 1 result(s) found
+line_number: 155
+line_number: 157
+line_number: 189
+line_number: 191
+line_number: 193
+
+Filename: 0x0452dd090288a5197cb4c375611b70bcfa5eb18c_integerOverflow.sol
+Output: INFO:Detectors:
+ANASH.slitherConstructorConstantVariables() (0x0452dd090288a5197cb4c375611b70bcfa5eb18c_integerOverflow.sol#210-249) uses literals with too many digits:
+	- premined = 20000000000 (0x0452dd090288a5197cb4c375611b70bcfa5eb18c_integerOverflow.sol#214)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x0452dd090288a5197cb4c375611b70bcfa5eb18c_integerOverflow.sol analyzed (7 contracts with 1 detectors), 1 result(s) found
+line_number: 112
+line_number: 120
+line_number: 163
+line_number: 171
+line_number: 193
+line_number: 203
+
+Filename: 0x0785d6edc7c7a19cbcc5fb56a406b1351fc907dc_integerOverflow.sol
+Output: INFO:Detectors:
+GoldToken.slitherConstructorConstantVariables() (0x0785d6edc7c7a19cbcc5fb56a406b1351fc907dc_integerOverflow.sol#290-303) uses literals with too many digits:
+	- INITIAL_SUPPLY = 500000000 * (10 ** decimals) (0x0785d6edc7c7a19cbcc5fb56a406b1351fc907dc_integerOverflow.sol#295)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x0785d6edc7c7a19cbcc5fb56a406b1351fc907dc_integerOverflow.sol analyzed (12 contracts with 1 detectors), 1 result(s) found
+line_number: 77
+line_number: 97
+line_number: 99
+line_number: 123
+line_number: 141
+line_number: 152
+
+Filename: 0x08cc7bba91b849156e9c44ded51896b38400f55b_integerOverflow.sol
+Output: INFO:Detectors:
+GenesisProtocolLogic._stake(bytes32,uint256,uint256,address) (0x08cc7bba91b849156e9c44ded51896b38400f55b_integerOverflow.sol#2040-2079) uses literals with too many digits:
+	- require(bool,string)(staker.amount <= 0x100000000000000000000000000000000,staking amount is too high) (0x08cc7bba91b849156e9c44ded51896b38400f55b_integerOverflow.sol#2067)
+GenesisProtocolLogic._stake(bytes32,uint256,uint256,address) (0x08cc7bba91b849156e9c44ded51896b38400f55b_integerOverflow.sol#2040-2079) uses literals with too many digits:
+	- require(bool,string)(proposal.totalStakes <= uint256(0x100000000000000000000000000000000).sub(proposal.daoBountyRemain),total stakes is too high) (0x08cc7bba91b849156e9c44ded51896b38400f55b_integerOverflow.sol#2068-2069)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x08cc7bba91b849156e9c44ded51896b38400f55b_integerOverflow.sol analyzed (24 contracts with 1 detectors), 2 result(s) found
+line_number: 543
+line_number: 563
+line_number: 582
+line_number: 1640
+line_number: 1827
+
+Filename: 0x0a6460ee3a05ea700e77d63dbb19528fbaab0d4f_integerOverflow.sol
+Output: INFO:Slither:0x0a6460ee3a05ea700e77d63dbb19528fbaab0d4f_integerOverflow.sol analyzed (12 contracts with 1 detectors), 0 result(s) found
+line_number: 215
+line_number: 235
+line_number: 254
+
+Filename: 0x0a9308e51504365675fbfaa59f236bdf20497d5c_integerOverflow.sol
+Output: INFO:Detectors:
+Jamiecoin.slitherConstructorConstantVariables() (0x0a9308e51504365675fbfaa59f236bdf20497d5c_integerOverflow.sol#130-143) uses literals with too many digits:
+	- INITIAL_SUPPLY = 1000000 * (10 ** decimals) (0x0a9308e51504365675fbfaa59f236bdf20497d5c_integerOverflow.sol#134)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x0a9308e51504365675fbfaa59f236bdf20497d5c_integerOverflow.sol analyzed (4 contracts with 1 detectors), 1 result(s) found
+line_number: 83
+line_number: 85
+line_number: 108
+line_number: 121
+
+Filename: 0x0f1cf425dd760f2ce2ba369cf30b3cb93de54668_integerOverflow.sol
+Output: INFO:Detectors:
+NewToken.slitherConstructorConstantVariables() (0x0f1cf425dd760f2ce2ba369cf30b3cb93de54668_integerOverflow.sol#242-260) uses literals with too many digits:
+	- initialSupply = 1000000000 (0x0f1cf425dd760f2ce2ba369cf30b3cb93de54668_integerOverflow.sol#248)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x0f1cf425dd760f2ce2ba369cf30b3cb93de54668_integerOverflow.sol analyzed (7 contracts with 1 detectors), 1 result(s) found
+line_number: 121
+line_number: 168
+line_number: 214
+line_number: 234
+
+Filename: 0x0f736ec150749f8064fc96626eb36607ebad97e2_integerOverflow.sol
+Output: INFO:Detectors:
+GenesisProtocolLogic._stake(bytes32,uint256,uint256,address) (0x0f736ec150749f8064fc96626eb36607ebad97e2_integerOverflow.sol#2039-2077) uses literals with too many digits:
+	- require(bool,string)(staker.amount <= 0x100000000000000000000000000000000,staking amount is too high) (0x0f736ec150749f8064fc96626eb36607ebad97e2_integerOverflow.sol#2066)
+GenesisProtocolLogic._stake(bytes32,uint256,uint256,address) (0x0f736ec150749f8064fc96626eb36607ebad97e2_integerOverflow.sol#2039-2077) uses literals with too many digits:
+	- require(bool,string)(proposal.totalStakes <= 0x100000000000000000000000000000000,total stakes is too high) (0x0f736ec150749f8064fc96626eb36607ebad97e2_integerOverflow.sol#2067)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x0f736ec150749f8064fc96626eb36607ebad97e2_integerOverflow.sol analyzed (24 contracts with 1 detectors), 2 result(s) found
+line_number: 1838
+
+Filename: 0x133db2e37d8676e425eca72d3ffc3b97855d31d3_integerOverflow.sol
+Output: INFO:Detectors:
+LeaxToken.slitherConstructorConstantVariables() (0x133db2e37d8676e425eca72d3ffc3b97855d31d3_integerOverflow.sol#269-289) uses literals with too many digits:
+	- initial_supply = 21000000000 * (10 ** 18) (0x133db2e37d8676e425eca72d3ffc3b97855d31d3_integerOverflow.sol#274)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x133db2e37d8676e425eca72d3ffc3b97855d31d3_integerOverflow.sol analyzed (6 contracts with 1 detectors), 1 result(s) found
+line_number: 137
+line_number: 139
+line_number: 167
+line_number: 169
+line_number: 171
+line_number: 213
+line_number: 231
+
+Filename: 0x1b33d4ba1635442c484dcb9ce8c18d0f3d308e85_integerOverflow.sol
+Output: INFO:Slither:0x1b33d4ba1635442c484dcb9ce8c18d0f3d308e85_integerOverflow.sol analyzed (10 contracts with 1 detectors), 0 result(s) found
+line_number: 815
+
+Filename: 0x1fd8dfd8ee9ce53b62c2d5bc944d5f40da5330c1_integerOverflow.sol
+Output: INFO:Slither:0x1fd8dfd8ee9ce53b62c2d5bc944d5f40da5330c1_integerOverflow.sol analyzed (9 contracts with 1 detectors), 0 result(s) found
+line_number: 182
+line_number: 202
+line_number: 221
+
+Filename: 0x2121a1b68e9c2cc8ff4bfd8bcd0f891ece331c51_integerOverflow.sol
+Output: INFO:Slither:0x2121a1b68e9c2cc8ff4bfd8bcd0f891ece331c51_integerOverflow.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 95
+line_number: 97
+line_number: 108
+line_number: 110
+line_number: 112
+
+Filename: 0x2784dcd08f4b1bb25af84fd0b702e2aa5d5d1d64_integerOverflow.sol
+Output: INFO:Slither:0x2784dcd08f4b1bb25af84fd0b702e2aa5d5d1d64_integerOverflow.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 179
+line_number: 181
+line_number: 202
+line_number: 204
+line_number: 206
+line_number: 331
+line_number: 336
+line_number: 338
+
+Filename: 0x284399c033bd1c4ec811ed6ea1f1a8a1f18d7541_integerOverflow.sol
+Output: INFO:Detectors:
+BOGGED.slitherConstructorVariables() (0x284399c033bd1c4ec811ed6ea1f1a8a1f18d7541_integerOverflow.sol#99-279) uses literals with too many digits:
+	- _totalSupply = 100000 * 1e18 (0x284399c033bd1c4ec811ed6ea1f1a8a1f18d7541_integerOverflow.sol#105)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x284399c033bd1c4ec811ed6ea1f1a8a1f18d7541_integerOverflow.sol analyzed (4 contracts with 1 detectors), 1 result(s) found
+line_number: 167
+line_number: 205
+
+Filename: 0x2867e2d426c091c07d5d32fdbd58bd8b0259b092_integerOverflow.sol
+Output: Compilation warnings/errors on 0x2867e2d426c091c07d5d32fdbd58bd8b0259b092_integerOverflow.sol:
+0x2867e2d426c091c07d5d32fdbd58bd8b0259b092_integerOverflow.sol:6:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+
+INFO:Slither:0x2867e2d426c091c07d5d32fdbd58bd8b0259b092_integerOverflow.sol analyzed (12 contracts with 1 detectors), 0 result(s) found
+line_number: 949
+line_number: 955
+
+Filename: 0x298b28BEf5E0847C0F4fD8ac615bcA5f6F4B7491_integerOverflow.sol
+Output: INFO:Detectors:
+DappChannel.slitherConstructorConstantVariables() (0x298b28BEf5E0847C0F4fD8ac615bcA5f6F4B7491_integerOverflow.sol#160-173) uses literals with too many digits:
+	- INITIAL_SUPPLY = 1000000 * (10 ** decimals) (0x298b28BEf5E0847C0F4fD8ac615bcA5f6F4B7491_integerOverflow.sol#164)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x298b28BEf5E0847C0F4fD8ac615bcA5f6F4B7491_integerOverflow.sol analyzed (4 contracts with 1 detectors), 1 result(s) found
+line_number: 94
+line_number: 96
+line_number: 138
+line_number: 151
+
+Filename: 0x2ada3f0bedaffb5f3dfe0aeac43ac34f893d02ea_integerOverflow.sol
+Output: INFO:Slither:0x2ada3f0bedaffb5f3dfe0aeac43ac34f893d02ea_integerOverflow.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 336
+
+Filename: 0x2b6dd33b57579d93f0fb799abbc47e16d589a024_integerOverflow.sol
+Output: INFO:Slither:0x2b6dd33b57579d93f0fb799abbc47e16d589a024_integerOverflow.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 158
+line_number: 177
+line_number: 188
+
+Filename: 0x2bd057cfdeeb330132ed5a820d9690f3b279c7a6_integerOverflow.sol
+Output: INFO:Detectors:
+crad.slitherConstructorConstantVariables() (0x2bd057cfdeeb330132ed5a820d9690f3b279c7a6_integerOverflow.sol#169-180) uses literals with too many digits:
+	- initialSupply = 10000000 * 10 ** uint256(decimals) (0x2bd057cfdeeb330132ed5a820d9690f3b279c7a6_integerOverflow.sol#173)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x2bd057cfdeeb330132ed5a820d9690f3b279c7a6_integerOverflow.sol analyzed (6 contracts with 1 detectors), 1 result(s) found
+line_number: 152
+line_number: 154
+
+Filename: 0x3054748ef31cc936e4f057c89078a4a8574fa5e9_integerOverflow.sol
+Output: Compilation warnings/errors on 0x3054748ef31cc936e4f057c89078a4a8574fa5e9_integerOverflow.sol:
+0x3054748ef31cc936e4f057c89078a4a8574fa5e9_integerOverflow.sol:226:31: Warning: This declaration shadows an existing declaration.
+    function appointDelegator(address delegator) public onlyOwner returns (bool) {
+                              ^---------------^
+0x3054748ef31cc936e4f057c89078a4a8574fa5e9_integerOverflow.sol:190:5: The shadowed declaration is here:
+    function delegator() public view returns (address) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x3054748ef31cc936e4f057c89078a4a8574fa5e9_integerOverflow.sol:249:32: Warning: This declaration shadows an existing declaration.
+    function _appointDelegator(address delegator) private returns (bool) {
+                               ^---------------^
+0x3054748ef31cc936e4f057c89078a4a8574fa5e9_integerOverflow.sol:190:5: The shadowed declaration is here:
+    function delegator() public view returns (address) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x3054748ef31cc936e4f057c89078a4a8574fa5e9_integerOverflow.sol:736:5: Warning: Function state mutability can be restricted to view
+    function isContract(address addr) private returns (bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:Detectors:
+SymToken.constructor() (0x3054748ef31cc936e4f057c89078a4a8574fa5e9_integerOverflow.sol#748-752) uses literals with too many digits:
+	- _totalSupply = 900000000 * (10 ** decimals) (0x3054748ef31cc936e4f057c89078a4a8574fa5e9_integerOverflow.sol#749)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x3054748ef31cc936e4f057c89078a4a8574fa5e9_integerOverflow.sol analyzed (6 contracts with 1 detectors), 1 result(s) found
+line_number: 348
+line_number: 367
+line_number: 369
+line_number: 525
+line_number: 546
+line_number: 548
+line_number: 575
+line_number: 577
+line_number: 579
+line_number: 600
+line_number: 620
+
+Filename: 0x33e1b26d699d923e4cdba286cc5783d3c04831c3_integerOverflow.sol
+Output: INFO:Slither:0x33e1b26d699d923e4cdba286cc5783d3c04831c3_integerOverflow.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 102
+line_number: 104
+line_number: 115
+line_number: 117
+line_number: 119
+
+Filename: 0x385351ff78653c3226f4a1d67a332dc05f731f0b_integerOverflow.sol
+Output: Compilation warnings/errors on 0x385351ff78653c3226f4a1d67a332dc05f731f0b_integerOverflow.sol:
+0x385351ff78653c3226f4a1d67a332dc05f731f0b_integerOverflow.sol:78:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+                                       ^------------------------^
+
+INFO:Slither:0x385351ff78653c3226f4a1d67a332dc05f731f0b_integerOverflow.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 649
+line_number: 658
+line_number: 665
+line_number: 667
+
+Filename: 0x385baa6B28106672e6B11b014F5A8EDB4ac04dE1_integerOverflow.sol
+Output: Compilation warnings/errors on 0x385baa6B28106672e6B11b014F5A8EDB4ac04dE1_integerOverflow.sol:
+0x385baa6B28106672e6B11b014F5A8EDB4ac04dE1_integerOverflow.sol:92:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+                                       ^------------------------^
+
+INFO:Slither:0x385baa6B28106672e6B11b014F5A8EDB4ac04dE1_integerOverflow.sol analyzed (10 contracts with 1 detectors), 0 result(s) found
+line_number: 554
+line_number: 556
+line_number: 562
+line_number: 564
+
+Filename: 0x38c5499ac70df829ba90d05be65f69365ceaeef8_integerOverflow.sol
+Output: INFO:Detectors:
+SkyWay.slitherConstructorVariables() (0x38c5499ac70df829ba90d05be65f69365ceaeef8_integerOverflow.sol#186-194) uses literals with too many digits:
+	- INITIAL_SUPPLY = 1000000000e18 (0x38c5499ac70df829ba90d05be65f69365ceaeef8_integerOverflow.sol#187)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x38c5499ac70df829ba90d05be65f69365ceaeef8_integerOverflow.sol analyzed (5 contracts with 1 detectors), 1 result(s) found
+line_number: 105
+line_number: 115
+line_number: 124
+
+Filename: 0x3e39505167639ce7852c1f521f2926a01928a0cf_integerOverflow.sol
+Output: Compilation warnings/errors on 0x3e39505167639ce7852c1f521f2926a01928a0cf_integerOverflow.sol:
+0x3e39505167639ce7852c1f521f2926a01928a0cf_integerOverflow.sol:161:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+                                       ^------------------------^
+
+INFO:Slither:0x3e39505167639ce7852c1f521f2926a01928a0cf_integerOverflow.sol analyzed (21 contracts with 1 detectors), 0 result(s) found
+line_number: 1312
+
+Filename: 0x43d99d54f14c64994fd9666beab6023b0069de20_integerOverflow.sol
+Output: INFO:Slither:0x43d99d54f14c64994fd9666beab6023b0069de20_integerOverflow.sol analyzed (10 contracts with 1 detectors), 0 result(s) found
+line_number: 535
+line_number: 537
+line_number: 592
+line_number: 594
+
+Filename: 0x440a803b42a78d93a1fe5da29a9fb37ecf193786_integerOverflow.sol
+Output: Compilation warnings/errors on 0x440a803b42a78d93a1fe5da29a9fb37ecf193786_integerOverflow.sol:
+0x440a803b42a78d93a1fe5da29a9fb37ecf193786_integerOverflow.sol:390:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+
+INFO:Slither:0x440a803b42a78d93a1fe5da29a9fb37ecf193786_integerOverflow.sol analyzed (8 contracts with 1 detectors), 0 result(s) found
+line_number: 260
+line_number: 280
+line_number: 299
+
+Filename: 0x448a3a18c0c06335edda45cb3fd2fe5a87c020e7_integerOverflow.sol
+Output: INFO:Detectors:
+GenesisProtocolLogic._stake(bytes32,uint256,uint256,address) (0x448a3a18c0c06335edda45cb3fd2fe5a87c020e7_integerOverflow.sol#2039-2077) uses literals with too many digits:
+	- require(bool,string)(staker.amount <= 0x100000000000000000000000000000000,staking amount is too high) (0x448a3a18c0c06335edda45cb3fd2fe5a87c020e7_integerOverflow.sol#2066)
+GenesisProtocolLogic._stake(bytes32,uint256,uint256,address) (0x448a3a18c0c06335edda45cb3fd2fe5a87c020e7_integerOverflow.sol#2039-2077) uses literals with too many digits:
+	- require(bool,string)(proposal.totalStakes <= 0x100000000000000000000000000000000,total stakes is too high) (0x448a3a18c0c06335edda45cb3fd2fe5a87c020e7_integerOverflow.sol#2067)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x448a3a18c0c06335edda45cb3fd2fe5a87c020e7_integerOverflow.sol analyzed (24 contracts with 1 detectors), 2 result(s) found
+line_number: 1838
+
+Filename: 0x469202bb405f940cd908ddbc28155a70703a4840_integerOverflow.sol
+Output: INFO:Detectors:
+Full.slitherConstructorVariables() (0x469202bb405f940cd908ddbc28155a70703a4840_integerOverflow.sol#184-192) uses literals with too many digits:
+	- INITIAL_SUPPLY = 1000000000e4 (0x469202bb405f940cd908ddbc28155a70703a4840_integerOverflow.sol#185)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x469202bb405f940cd908ddbc28155a70703a4840_integerOverflow.sol analyzed (5 contracts with 1 detectors), 1 result(s) found
+line_number: 103
+line_number: 113
+line_number: 122
+
+Filename: 0x508b2b1dd87fa37238e008dc00b47f433aa8c4b1_integerOverflow.sol
+Output: INFO:Slither:0x508b2b1dd87fa37238e008dc00b47f433aa8c4b1_integerOverflow.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 78
+line_number: 91
+line_number: 105
+line_number: 116
+
+Filename: 0x524d76a99a48a9761f9a5f9f6a050b406043912d_integerOverflow.sol
+Output: INFO:Detectors:
+ANASH.slitherConstructorConstantVariables() (0x524d76a99a48a9761f9a5f9f6a050b406043912d_integerOverflow.sol#217-254) uses literals with too many digits:
+	- premined = 20000000000 (0x524d76a99a48a9761f9a5f9f6a050b406043912d_integerOverflow.sol#221)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x524d76a99a48a9761f9a5f9f6a050b406043912d_integerOverflow.sol analyzed (7 contracts with 1 detectors), 1 result(s) found
+line_number: 113
+line_number: 121
+line_number: 165
+line_number: 173
+line_number: 198
+line_number: 209
+
+Filename: 0x528732d7ff76a31bd419f1d57d549d7643c02db2_integerOverflow.sol
+Output: INFO:Slither:0x528732d7ff76a31bd419f1d57d549d7643c02db2_integerOverflow.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 496
+line_number: 514
+line_number: 597
+
+Filename: 0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol
+Output: INFO:Detectors:
+PARAGON.constructor() (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#179-199) uses literals with too many digits:
+	- totalTokenSupply = 10000000000 * E18 (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#185)
+PARAGON.slitherConstructorConstantVariables() (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#117-524) uses literals with too many digits:
+	- E18 = 1000000000000000000 (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#125)
+PARAGON.slitherConstructorConstantVariables() (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#117-524) uses literals with too many digits:
+	- maxTotalSupply = 10000000000 * E18 (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#128)
+PARAGON.slitherConstructorConstantVariables() (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#117-524) uses literals with too many digits:
+	- maxSaleSupply = 2000000000 * E18 (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#130)
+PARAGON.slitherConstructorConstantVariables() (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#117-524) uses literals with too many digits:
+	- maxCrowdSupply = 1600000000 * E18 (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#131)
+PARAGON.slitherConstructorConstantVariables() (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#117-524) uses literals with too many digits:
+	- maxMktSupply = 2800000000 * E18 (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#132)
+PARAGON.slitherConstructorConstantVariables() (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#117-524) uses literals with too many digits:
+	- maxTeamSupply = 1600000000 * E18 (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#133)
+PARAGON.slitherConstructorConstantVariables() (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#117-524) uses literals with too many digits:
+	- maxReserveSupply = 1600000000 * E18 (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#134)
+PARAGON.slitherConstructorConstantVariables() (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#117-524) uses literals with too many digits:
+	- maxAdvisorSupply = 400000000 * E18 (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#135)
+PARAGON.slitherConstructorConstantVariables() (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#117-524) uses literals with too many digits:
+	- teamVestingSupplyPerTime = 100000000 * E18 (0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol#137)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x535801ba07b9d346b0425d913fbdebd0788c2e40_integerOverflow.sol analyzed (4 contracts with 1 detectors), 10 result(s) found
+line_number: 221
+line_number: 254
+
+Filename: 0x565a093f3230ade853c45c5cd7c84344e75b4393_integerOverflow.sol
+Output: INFO:Detectors:
+NRTManager.constructor() (0x565a093f3230ade853c45c5cd7c84344e75b4393_integerOverflow.sol#563-568) uses literals with too many digits:
+	- AnnualNRTAmount = 819000000000000000000000000 (0x565a093f3230ade853c45c5cd7c84344e75b4393_integerOverflow.sol#565)
+EraswapERC20.constructor() (0x565a093f3230ade853c45c5cd7c84344e75b4393_integerOverflow.sol#418-420) uses literals with too many digits:
+	- mint(msg.sender,910000000000000000000000000) (0x565a093f3230ade853c45c5cd7c84344e75b4393_integerOverflow.sol#419)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x565a093f3230ade853c45c5cd7c84344e75b4393_integerOverflow.sol analyzed (16 contracts with 1 detectors), 2 result(s) found
+line_number: 42
+line_number: 237
+line_number: 318
+line_number: 359
+line_number: 361
+line_number: 724
+line_number: 737
+line_number: 908
+line_number: 915
+line_number: 1007
+line_number: 1010
+
+Filename: 0x5c2e024d836e651629f0dc18273068424087ac2e_integerOverflow.sol
+Output: INFO:Slither:0x5c2e024d836e651629f0dc18273068424087ac2e_integerOverflow.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 78
+line_number: 91
+line_number: 105
+line_number: 116
+
+Filename: 0x5cd5cff91fc3bfd3aaf1d769b1e040a88266bac5_integerOverflow.sol
+Output: INFO:Detectors:
+GCM.constructor() (0x5cd5cff91fc3bfd3aaf1d769b1e040a88266bac5_integerOverflow.sol#305-315) uses literals with too many digits:
+	- totalSupply = 750000000 * 1000000000000000000 (0x5cd5cff91fc3bfd3aaf1d769b1e040a88266bac5_integerOverflow.sol#309)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x5cd5cff91fc3bfd3aaf1d769b1e040a88266bac5_integerOverflow.sol analyzed (9 contracts with 1 detectors), 1 result(s) found
+line_number: 120
+line_number: 122
+line_number: 162
+line_number: 203
+line_number: 214
+line_number: 377
+line_number: 379
+
+Filename: 0x5e44414f186e763f376e9ede66aec2ac24bea086_integerOverflow.sol
+Output: INFO:Detectors:
+URACCrowdSale.buyURAC(address) (0x5e44414f186e763f376e9ede66aec2ac24bea086_integerOverflow.sol#633-661) uses literals with too many digits:
+	- require(bool)(tx.gasprice <= 100000000000) (0x5e44414f186e763f376e9ede66aec2ac24bea086_integerOverflow.sol#644)
+URACCrowdSale.slitherConstructorConstantVariables() (0x5e44414f186e763f376e9ede66aec2ac24bea086_integerOverflow.sol#460-730) uses literals with too many digits:
+	- URAC_TOTAL_SUPPLY = 3500000000000000000000000000 (0x5e44414f186e763f376e9ede66aec2ac24bea086_integerOverflow.sol#465)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x5e44414f186e763f376e9ede66aec2ac24bea086_integerOverflow.sol analyzed (10 contracts with 1 detectors), 2 result(s) found
+line_number: 164
+line_number: 220
+line_number: 264
+line_number: 285
+line_number: 394
+line_number: 396
+line_number: 417
+line_number: 420
+line_number: 423
+
+Filename: 0x6508fb1ed4d7ece18dfff05c834e44124edbd910_integerOverflow.sol
+Output: Compilation warnings/errors on 0x6508fb1ed4d7ece18dfff05c834e44124edbd910_integerOverflow.sol:
+0x6508fb1ed4d7ece18dfff05c834e44124edbd910_integerOverflow.sol:62:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+                                       ^------------------------^
+
+INFO:Slither:0x6508fb1ed4d7ece18dfff05c834e44124edbd910_integerOverflow.sol analyzed (13 contracts with 1 detectors), 0 result(s) found
+line_number: 1017
+line_number: 1102
+line_number: 1122
+
+Filename: 0x6925b397ed7394573bb68bac9d9e1ff39e976d62_integerOverflow.sol
+Output: INFO:Detectors:
+KugulaToken.constructor() (0x6925b397ed7394573bb68bac9d9e1ff39e976d62_integerOverflow.sol#184-187) uses literals with too many digits:
+	- totalSupply_ = 10000000000000000000000000 (0x6925b397ed7394573bb68bac9d9e1ff39e976d62_integerOverflow.sol#185)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x6925b397ed7394573bb68bac9d9e1ff39e976d62_integerOverflow.sol analyzed (6 contracts with 1 detectors), 1 result(s) found
+line_number: 65
+line_number: 67
+line_number: 69
+line_number: 86
+line_number: 118
+line_number: 120
+line_number: 136
+line_number: 158
+line_number: 169
+
+Filename: 0x6a61da5e3e26e38029f36282331f2e6b2624b202_integerOverflow.sol
+Output: Compilation warnings/errors on 0x6a61da5e3e26e38029f36282331f2e6b2624b202_integerOverflow.sol:
+0x6a61da5e3e26e38029f36282331f2e6b2624b202_integerOverflow.sol:216:5: Warning: Unused local variable.
+    address _tokenA = tokenA;
+    ^-------------^
+0x6a61da5e3e26e38029f36282331f2e6b2624b202_integerOverflow.sol:217:5: Warning: Unused local variable.
+    address _tokenB = tokenB;
+    ^-------------^
+
+INFO:Slither:0x6a61da5e3e26e38029f36282331f2e6b2624b202_integerOverflow.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 63
+line_number: 71
+line_number: 74
+line_number: 76
+line_number: 89
+line_number: 91
+line_number: 256
+
+Filename: 0x721e0193cb5986cddc0142726bea3aeb742a27b2_integerOverflow.sol
+Output: INFO:Detectors:
+MxnToken.slitherConstructorVariables() (0x721e0193cb5986cddc0142726bea3aeb742a27b2_integerOverflow.sol#441-452) uses literals with too many digits:
+	- INITIAL_SUPPLY = 2000000000000000000000000000 (0x721e0193cb5986cddc0142726bea3aeb742a27b2_integerOverflow.sol#445)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x721e0193cb5986cddc0142726bea3aeb742a27b2_integerOverflow.sol analyzed (9 contracts with 1 detectors), 1 result(s) found
+line_number: 103
+line_number: 174
+line_number: 255
+
+Filename: 0x771ad2c58c747b428beacd389896650dd826d150_integerOverflow.sol
+Output: INFO:Detectors:
+UniswapV2Factory.createPair(address,address) (0x771ad2c58c747b428beacd389896650dd826d150_integerOverflow.sol#420-435) uses literals with too many digits:
+	- bytecode = type(address)(UniswapV2Pair).creationCode (0x771ad2c58c747b428beacd389896650dd826d150_integerOverflow.sol#425)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x771ad2c58c747b428beacd389896650dd826d150_integerOverflow.sol analyzed (11 contracts with 1 detectors), 1 result(s) found
+line_number: 189
+
+Filename: 0x786001c9c5CA6E502dEB8a8a72480d2147891f32_integerOverflow.sol
+Output: Compilation warnings/errors on 0x786001c9c5CA6E502dEB8a8a72480d2147891f32_integerOverflow.sol:
+0x786001c9c5CA6E502dEB8a8a72480d2147891f32_integerOverflow.sol:79:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+                                       ^------------------------^
+
+INFO:Detectors:
+BetProtocolToken.slitherConstructorConstantVariables() (0x786001c9c5CA6E502dEB8a8a72480d2147891f32_integerOverflow.sol#493-508) uses literals with too many digits:
+	- TOTAL_CAP = 10000000000 * 1000000000000000000 (0x786001c9c5CA6E502dEB8a8a72480d2147891f32_integerOverflow.sol#499)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x786001c9c5CA6E502dEB8a8a72480d2147891f32_integerOverflow.sol analyzed (10 contracts with 1 detectors), 1 result(s) found
+line_number: 209
+line_number: 265
+line_number: 309
+line_number: 330
+
+Filename: 0x7A11DC809Ec055AC4FdeF704a37Cd2Dc669B29AB_integerOverflow.sol
+Output: Compilation warnings/errors on 0x7A11DC809Ec055AC4FdeF704a37Cd2Dc669B29AB_integerOverflow.sol:
+0x7A11DC809Ec055AC4FdeF704a37Cd2Dc669B29AB_integerOverflow.sol:132:9: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+        string memory errorMessage
+        ^------------------------^
+
+INFO:Slither:0x7A11DC809Ec055AC4FdeF704a37Cd2Dc669B29AB_integerOverflow.sol analyzed (12 contracts with 1 detectors), 0 result(s) found
+line_number: 712
+line_number: 714
+line_number: 720
+line_number: 722
+line_number: 849
+line_number: 859
+
+Filename: 0x7ed0226b939f43efe0fc37537566cb642cb1da59_integerOverflow.sol
+Output: INFO:Slither:0x7ed0226b939f43efe0fc37537566cb642cb1da59_integerOverflow.sol analyzed (5 contracts with 1 detectors), 0 result(s) found
+line_number: 298
+
+Filename: 0x7ee78165525e6788b46c405e59baa957f25ebca8_integerOverflow.sol
+Output: INFO:Slither:0x7ee78165525e6788b46c405e59baa957f25ebca8_integerOverflow.sol analyzed (9 contracts with 1 detectors), 0 result(s) found
+line_number: 182
+line_number: 202
+line_number: 221
+
+Filename: 0x801b78222c990fd44c9e21a922f90799c39597bc_integerOverflow.sol
+Output: Compilation warnings/errors on 0x801b78222c990fd44c9e21a922f90799c39597bc_integerOverflow.sol:
+0x801b78222c990fd44c9e21a922f90799c39597bc_integerOverflow.sol:78:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+                                       ^------------------------^
+
+INFO:Slither:0x801b78222c990fd44c9e21a922f90799c39597bc_integerOverflow.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 649
+line_number: 658
+line_number: 665
+line_number: 667
+
+Filename: 0x8496a4a2678348e55c3ad1c45e53aadba5eb970c_integerOverflow.sol
+Output: INFO:Slither:0x8496a4a2678348e55c3ad1c45e53aadba5eb970c_integerOverflow.sol analyzed (5 contracts with 1 detectors), 0 result(s) found
+line_number: 180
+line_number: 215
+
+Filename: 0x84d40b26da4838eacec9ea1822db346e0f185086_integerOverflow.sol
+Output: INFO:Slither:0x84d40b26da4838eacec9ea1822db346e0f185086_integerOverflow.sol analyzed (9 contracts with 1 detectors), 0 result(s) found
+line_number: 164
+line_number: 220
+line_number: 264
+line_number: 285
+line_number: 371
+line_number: 376
+line_number: 378
+line_number: 383
+line_number: 385
+
+Filename: 0x854893ea9c4c579522e06a2fbbb523e71120f716_integerOverflow.sol
+Output: INFO:Detectors:
+GovernanceGomics.slitherConstructorConstantVariables() (0x854893ea9c4c579522e06a2fbbb523e71120f716_integerOverflow.sol#188-462) uses literals with too many digits:
+	- initialSupply = 10000000000 * (10 ** uint256(decimals)) (0x854893ea9c4c579522e06a2fbbb523e71120f716_integerOverflow.sol#192)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x854893ea9c4c579522e06a2fbbb523e71120f716_integerOverflow.sol analyzed (4 contracts with 1 detectors), 1 result(s) found
+line_number: 118
+line_number: 386
+line_number: 398
+line_number: 428
+line_number: 445
+
+Filename: 0x88af2c90fa9cf19cf08c8229fd8d9d2ddae47a72_integerOverflow.sol
+Output: Compilation warnings/errors on 0x88af2c90fa9cf19cf08c8229fd8d9d2ddae47a72_integerOverflow.sol:
+0x88af2c90fa9cf19cf08c8229fd8d9d2ddae47a72_integerOverflow.sol:163:3: Warning: Function state mutability can be restricted to view
+  function isContract(address _addr) private returns (bool is_contract) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:Slither:0x88af2c90fa9cf19cf08c8229fd8d9d2ddae47a72_integerOverflow.sol analyzed (5 contracts with 1 detectors), 0 result(s) found
+line_number: 156
+line_number: 158
+
+Filename: 0x8c152e933e7f20c3cca0ab7cad4d4bf1bc6e00e4_integerOverflow.sol
+Output: INFO:Detectors:
+_0xLitecoin.slitherConstructorConstantVariables() (0x8c152e933e7f20c3cca0ab7cad4d4bf1bc6e00e4_integerOverflow.sol#306-322) uses literals with too many digits:
+	- initialSupply = 84000000 (0x8c152e933e7f20c3cca0ab7cad4d4bf1bc6e00e4_integerOverflow.sol#310)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x8c152e933e7f20c3cca0ab7cad4d4bf1bc6e00e4_integerOverflow.sol analyzed (7 contracts with 1 detectors), 1 result(s) found
+line_number: 174
+line_number: 207
+line_number: 224
+line_number: 244
+
+Filename: 0x8f6e944c3a6a875499d0360e8acf793effc410ff_integerOverflow.sol
+Output: INFO:Detectors:
+GenesisProtocolLogic._stake(bytes32,uint256,uint256,address) (0x8f6e944c3a6a875499d0360e8acf793effc410ff_integerOverflow.sol#2036-2074) uses literals with too many digits:
+	- require(bool,string)(staker.amount <= 0x100000000000000000000000000000000,staking amount is too high) (0x8f6e944c3a6a875499d0360e8acf793effc410ff_integerOverflow.sol#2063)
+GenesisProtocolLogic._stake(bytes32,uint256,uint256,address) (0x8f6e944c3a6a875499d0360e8acf793effc410ff_integerOverflow.sol#2036-2074) uses literals with too many digits:
+	- require(bool,string)(proposal.totalStakes <= 0x100000000000000000000000000000000,total stakes is too high) (0x8f6e944c3a6a875499d0360e8acf793effc410ff_integerOverflow.sol#2064)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x8f6e944c3a6a875499d0360e8acf793effc410ff_integerOverflow.sol analyzed (24 contracts with 1 detectors), 2 result(s) found
+line_number: 1838
+
+Filename: 0x94534caebd1887be3d57179728a670a3436bb443_integerOverflow.sol
+Output: INFO:Detectors:
+IrbisToken.slitherConstructorVariables() (0x94534caebd1887be3d57179728a670a3436bb443_integerOverflow.sol#309-328) uses literals with too many digits:
+	- INITIAL_SUPPLY = 100000000 * 1000000000000000000 (0x94534caebd1887be3d57179728a670a3436bb443_integerOverflow.sol#317)
+IEOIBS.constructor(address) (0x94534caebd1887be3d57179728a670a3436bb443_integerOverflow.sol#343-353) uses literals with too many digits:
+	- firstLimit = 60000000 * 1000000000000000000 (0x94534caebd1887be3d57179728a670a3436bb443_integerOverflow.sol#349)
+IEOIBS.constructor(address) (0x94534caebd1887be3d57179728a670a3436bb443_integerOverflow.sol#343-353) uses literals with too many digits:
+	- secondLimit = 30000000 * 1000000000000000000 (0x94534caebd1887be3d57179728a670a3436bb443_integerOverflow.sol#350)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x94534caebd1887be3d57179728a670a3436bb443_integerOverflow.sol analyzed (8 contracts with 1 detectors), 3 result(s) found
+line_number: 147
+line_number: 218
+line_number: 299
+
+Filename: 0x946551dd05c5abd7cc808927480225ce36d8c475_integerOverflow.sol
+Output: INFO:Slither:0x946551dd05c5abd7cc808927480225ce36d8c475_integerOverflow.sol analyzed (7 contracts with 1 detectors), 0 result(s) found
+line_number: 214
+line_number: 254
+line_number: 311
+line_number: 318
+line_number: 320
+
+Filename: 0x9582bea37cc8881fb36277d7675c45bcd9334e1a_integerOverflow.sol
+Output: INFO:Slither:0x9582bea37cc8881fb36277d7675c45bcd9334e1a_integerOverflow.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 78
+line_number: 91
+line_number: 105
+line_number: 116
+
+Filename: 0x98439bb859c63cf1b0b24610d4e83ca2c0e8981f_integerOverflow.sol
+Output: INFO:Detectors:
+SafeLife.slitherConstructorConstantVariables() (0x98439bb859c63cf1b0b24610d4e83ca2c0e8981f_integerOverflow.sol#186-450) uses literals with too many digits:
+	- initialSupply = 500000000 * (10 ** uint256(decimals)) (0x98439bb859c63cf1b0b24610d4e83ca2c0e8981f_integerOverflow.sol#190)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0x98439bb859c63cf1b0b24610d4e83ca2c0e8981f_integerOverflow.sol analyzed (4 contracts with 1 detectors), 1 result(s) found
+line_number: 122
+line_number: 133
+line_number: 143
+line_number: 381
+line_number: 391
+line_number: 416
+line_number: 431
+
+Filename: 0xB59c30C7d55d719641d7120EF099c49f456622fB_integerOverflow.sol
+Output: INFO:Slither:0xB59c30C7d55d719641d7120EF099c49f456622fB_integerOverflow.sol analyzed (4 contracts with 1 detectors), 0 result(s) found
+line_number: 94
+line_number: 96
+line_number: 138
+line_number: 151
+
+Filename: 0xC5395f5290bc754352eBff6FfdB94E317Bf75222_integerOverflow.sol
+Output: INFO:Detectors:
+DJCoin.slitherConstructorConstantVariables() (0xC5395f5290bc754352eBff6FfdB94E317Bf75222_integerOverflow.sol#141-304) uses literals with too many digits:
+	- INITIAL_FRAGMENTS_SUPPLY = 210000000 * 10 ** DECIMALS (0xC5395f5290bc754352eBff6FfdB94E317Bf75222_integerOverflow.sol#162)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xC5395f5290bc754352eBff6FfdB94E317Bf75222_integerOverflow.sol analyzed (4 contracts with 1 detectors), 1 result(s) found
+line_number: 193
+line_number: 249
+line_number: 279
+line_number: 291
+
+Filename: 0xa3ee21c306a700e682abcdfe9baa6a08f3820419_integerOverflow.sol
+Output: INFO:Detectors:
+GluwaCreditcoinVestingToken.slitherConstructorConstantVariables() (0xa3ee21c306a700e682abcdfe9baa6a08f3820419_integerOverflow.sol#165-549) uses literals with too many digits:
+	- creditcoinLimitInFrac = 2000000000 * FRAC_IN1UNIT (0xa3ee21c306a700e682abcdfe9baa6a08f3820419_integerOverflow.sol#161)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xa3ee21c306a700e682abcdfe9baa6a08f3820419_integerOverflow.sol analyzed (6 contracts with 1 detectors), 1 result(s) found
+line_number: 243
+line_number: 259
+
+Filename: 0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol
+Output: INFO:Detectors:
+BITFRIENDZ.constructor() (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#113-123) uses literals with too many digits:
+	- _balances[0x14fBA4aa05AEeC42336CB75bc30bF78dbC6b3f9F] = 2000000000 * 10 ** decimals (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#115)
+BITFRIENDZ.constructor() (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#113-123) uses literals with too many digits:
+	- Transfer(address(0),0x14fBA4aa05AEeC42336CB75bc30bF78dbC6b3f9F,2000000000 * 10 ** decimals) (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#116)
+BITFRIENDZ.constructor() (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#113-123) uses literals with too many digits:
+	- _balances[0xdA78d97Fb07d945691916798CFF57324770a6C34] = 2000000000 * 10 ** decimals (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#117)
+BITFRIENDZ.constructor() (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#113-123) uses literals with too many digits:
+	- Transfer(address(0),0xdA78d97Fb07d945691916798CFF57324770a6C34,2000000000 * 10 ** decimals) (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#118)
+BITFRIENDZ.constructor() (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#113-123) uses literals with too many digits:
+	- _balances[0xF07e6A0EAbF18A3D8bB10e6E63c2E9e2d101C160] = 1000000000 * 10 ** decimals (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#119)
+BITFRIENDZ.constructor() (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#113-123) uses literals with too many digits:
+	- Transfer(address(0),0xF07e6A0EAbF18A3D8bB10e6E63c2E9e2d101C160,1000000000 * 10 ** decimals) (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#120)
+BITFRIENDZ.constructor() (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#113-123) uses literals with too many digits:
+	- _balances[address(this)] = 15000000000 * 10 ** decimals (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#121)
+BITFRIENDZ.constructor() (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#113-123) uses literals with too many digits:
+	- Transfer(address(0),address(this),15000000000 * 10 ** decimals) (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#122)
+BITFRIENDZ.slitherConstructorVariables() (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#109-248) uses literals with too many digits:
+	- supply = 20000000000 * 10 ** decimals (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#132)
+BITFRIENDZ.slitherConstructorVariables() (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#109-248) uses literals with too many digits:
+	- tokenPrice = 50000000000 (0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol#134)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xa562dc7657c333cac710175ae658ffa6f9414bbc_integerOverflow.sol analyzed (4 contracts with 1 detectors), 10 result(s) found
+line_number: 165
+line_number: 183
+line_number: 185
+line_number: 187
+line_number: 243
+
+Filename: 0xa79b2c8eb39dde841bd1981c48e012eff156ba5e_integerOverflow.sol
+Output: INFO:Slither:0xa79b2c8eb39dde841bd1981c48e012eff156ba5e_integerOverflow.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 315
+
+Filename: 0xac39a4f0a3e5ae216f0d37838d271113353b2d3f_integerOverflow.sol
+Output: Compilation warnings/errors on 0xac39a4f0a3e5ae216f0d37838d271113353b2d3f_integerOverflow.sol:
+0xac39a4f0a3e5ae216f0d37838d271113353b2d3f_integerOverflow.sol:99:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+                                       ^------------------------^
+
+INFO:Slither:0xac39a4f0a3e5ae216f0d37838d271113353b2d3f_integerOverflow.sol analyzed (10 contracts with 1 detectors), 0 result(s) found
+line_number: 582
+line_number: 584
+line_number: 590
+line_number: 592
+
+Filename: 0xb22c2786a549b008517b67625f5296e8faf9589e_integerOverflow.sol
+Output: INFO:Detectors:
+RentalProcessorToken.constructor() (0xb22c2786a549b008517b67625f5296e8faf9589e_integerOverflow.sol#281-283) uses literals with too many digits:
+	- _mint(msg.sender,2000000000 * (10 ** decimals)) (0xb22c2786a549b008517b67625f5296e8faf9589e_integerOverflow.sol#282)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xb22c2786a549b008517b67625f5296e8faf9589e_integerOverflow.sol analyzed (4 contracts with 1 detectors), 1 result(s) found
+line_number: 172
+line_number: 192
+line_number: 211
+
+Filename: 0xb2e6e3d9af235434385c28bd31d98041a48226a6_integerOverflow.sol
+Output: Compilation warnings/errors on 0xb2e6e3d9af235434385c28bd31d98041a48226a6_integerOverflow.sol:
+0xb2e6e3d9af235434385c28bd31d98041a48226a6_integerOverflow.sol:339:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+                                       ^------------------------^
+
+INFO:Detectors:
+FixidityLib.fixed1() (0xb2e6e3d9af235434385c28bd31d98041a48226a6_integerOverflow.sol#1237-1239) uses literals with too many digits:
+	- 1000000000000000000000000 (0xb2e6e3d9af235434385c28bd31d98041a48226a6_integerOverflow.sol#1238)
+FixidityLib.mulPrecision() (0xb2e6e3d9af235434385c28bd31d98041a48226a6_integerOverflow.sol#1246-1248) uses literals with too many digits:
+	- 1000000000000 (0xb2e6e3d9af235434385c28bd31d98041a48226a6_integerOverflow.sol#1247)
+FixidityLib.maxFixedDivisor() (0xb2e6e3d9af235434385c28bd31d98041a48226a6_integerOverflow.sol#1343-1345) uses literals with too many digits:
+	- 1000000000000000000000000000000000000000000000000 (0xb2e6e3d9af235434385c28bd31d98041a48226a6_integerOverflow.sol#1344)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xb2e6e3d9af235434385c28bd31d98041a48226a6_integerOverflow.sol analyzed (19 contracts with 1 detectors), 3 result(s) found
+line_number: 945
+line_number: 2274
+line_number: 2276
+
+Filename: 0xb7918f5808257e4b7e5e303c33f7bb0364b620aa_integerOverflow.sol
+Output: Compilation warnings/errors on 0xb7918f5808257e4b7e5e303c33f7bb0364b620aa_integerOverflow.sol:
+0xb7918f5808257e4b7e5e303c33f7bb0364b620aa_integerOverflow.sol:90:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+                                       ^------------------------^
+
+INFO:Slither:0xb7918f5808257e4b7e5e303c33f7bb0364b620aa_integerOverflow.sol analyzed (11 contracts with 1 detectors), 0 result(s) found
+line_number: 687
+line_number: 689
+line_number: 697
+line_number: 699
+
+Filename: 0xb9c37445b9564652a4b46ffbdf6dbf0d53e0605f_integerOverflow.sol
+Output: Compilation warnings/errors on 0xb9c37445b9564652a4b46ffbdf6dbf0d53e0605f_integerOverflow.sol:
+0xb9c37445b9564652a4b46ffbdf6dbf0d53e0605f_integerOverflow.sol:40:15: Error: Referenced declaration is neither modifier nor base class.
+constructor() CoinZoneToken() public {
+              ^-------------^
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 561, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 810, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 156, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 285, in _get_targets_json
+    return _run_solc(
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 565, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation 0xb9c37445b9564652a4b46ffbdf6dbf0d53e0605f_integerOverflow.sol:40:15: Error: Referenced declaration is neither modifier nor base class.
+constructor() CoinZoneToken() public {
+              ^-------------^
+
+ERROR:root:Error in 0xb9c37445b9564652a4b46ffbdf6dbf0d53e0605f_integerOverflow.sol
+ERROR:root:Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 561, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 810, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 156, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 285, in _get_targets_json
+    return _run_solc(
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 565, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation 0xb9c37445b9564652a4b46ffbdf6dbf0d53e0605f_integerOverflow.sol:40:15: Error: Referenced declaration is neither modifier nor base class.
+constructor() CoinZoneToken() public {
+              ^-------------^
+line_number: 57
+line_number: 59
+line_number: 70
+line_number: 72
+line_number: 74
+
+Filename: 0xbaf33a94e7d2b50822e9f6047689d3e87673de6a_integerOverflow.sol
+Output: INFO:Slither:0xbaf33a94e7d2b50822e9f6047689d3e87673de6a_integerOverflow.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 95
+line_number: 97
+line_number: 108
+line_number: 110
+line_number: 112
+
+Filename: 0xbca22aa04ced4458c287df14dff8cb427b2466d5_integerOverflow.sol
+Output: Compilation warnings/errors on 0xbca22aa04ced4458c287df14dff8cb427b2466d5_integerOverflow.sol:
+0xbca22aa04ced4458c287df14dff8cb427b2466d5_integerOverflow.sol:54:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+                                       ^------------------------^
+
+INFO:Slither:0xbca22aa04ced4458c287df14dff8cb427b2466d5_integerOverflow.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 921
+line_number: 930
+line_number: 937
+line_number: 939
+
+Filename: 0xbd87e086b2ac6b84eb84b9fa4459f3c22543742d_integerOverflow.sol
+Output: INFO:Detectors:
+LIFE.constructor() (0xbd87e086b2ac6b84eb84b9fa4459f3c22543742d_integerOverflow.sol#305-313) uses literals with too many digits:
+	- totalSupply = 100000000 * 1000000000000000000 (0xbd87e086b2ac6b84eb84b9fa4459f3c22543742d_integerOverflow.sol#309)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xbd87e086b2ac6b84eb84b9fa4459f3c22543742d_integerOverflow.sol analyzed (9 contracts with 1 detectors), 1 result(s) found
+line_number: 120
+line_number: 122
+line_number: 162
+line_number: 203
+line_number: 214
+line_number: 375
+line_number: 377
+
+Filename: 0xbfec19e7cd47fe4b1022fdc4c652ee7bd85a9d13_integerOverflow.sol
+Output: INFO:Slither:0xbfec19e7cd47fe4b1022fdc4c652ee7bd85a9d13_integerOverflow.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 78
+line_number: 91
+line_number: 105
+line_number: 116
+
+Filename: 0xc00e1664bb61fdcca66e5abee64e7c3b675869e5_integerOverflow.sol
+Output: INFO:Detectors:
+NZT.constructor() (0xc00e1664bb61fdcca66e5abee64e7c3b675869e5_integerOverflow.sol#305-313) uses literals with too many digits:
+	- totalSupply = 50000000 * 1000000000000000000 (0xc00e1664bb61fdcca66e5abee64e7c3b675869e5_integerOverflow.sol#309)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xc00e1664bb61fdcca66e5abee64e7c3b675869e5_integerOverflow.sol analyzed (9 contracts with 1 detectors), 1 result(s) found
+line_number: 120
+line_number: 122
+line_number: 162
+line_number: 203
+line_number: 214
+line_number: 375
+line_number: 377
+
+Filename: 0xc3c94c3f602e9b6991157bc223c9269d499019e2_integerOverflow.sol
+Output: Compilation warnings/errors on 0xc3c94c3f602e9b6991157bc223c9269d499019e2_integerOverflow.sol:
+0xc3c94c3f602e9b6991157bc223c9269d499019e2_integerOverflow.sol:220:5: Warning: Unused local variable.
+    address _tokenA = tokenA;
+    ^-------------^
+0xc3c94c3f602e9b6991157bc223c9269d499019e2_integerOverflow.sol:221:5: Warning: Unused local variable.
+    address _tokenB = tokenB;
+    ^-------------^
+
+INFO:Slither:0xc3c94c3f602e9b6991157bc223c9269d499019e2_integerOverflow.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 63
+line_number: 71
+line_number: 74
+line_number: 76
+line_number: 89
+line_number: 91
+line_number: 260
+
+Filename: 0xc6a57e7fe10b37d1e1f678247b9b25c6a2d8d7f7_integerOverflow.sol
+Output: INFO:Slither:0xc6a57e7fe10b37d1e1f678247b9b25c6a2d8d7f7_integerOverflow.sol analyzed (14 contracts with 1 detectors), 0 result(s) found
+line_number: 942
+line_number: 944
+
+Filename: 0xc94551ac84557c143f0905c6afff09f58c453361_integerOverflow.sol
+Output: INFO:Slither:0xc94551ac84557c143f0905c6afff09f58c453361_integerOverflow.sol analyzed (13 contracts with 1 detectors), 0 result(s) found
+line_number: 884
+line_number: 886
+line_number: 900
+line_number: 902
+line_number: 917
+line_number: 919
+line_number: 931
+line_number: 933
+line_number: 947
+line_number: 949
+line_number: 965
+
+Filename: 0xccbc1cce102a7656f1e2f0d59a5be8c1faf35850_integerOverflow.sol
+Output: INFO:Detectors:
+BZQToken.constructor() (0xccbc1cce102a7656f1e2f0d59a5be8c1faf35850_integerOverflow.sol#241-242) uses literals with too many digits:
+	- TokenERC20(1000000000,BZQToken,BZQ) (0xccbc1cce102a7656f1e2f0d59a5be8c1faf35850_integerOverflow.sol#241)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xccbc1cce102a7656f1e2f0d59a5be8c1faf35850_integerOverflow.sol analyzed (6 contracts with 1 detectors), 1 result(s) found
+line_number: 185
+line_number: 212
+line_number: 214
+line_number: 222
+line_number: 224
+line_number: 226
+
+Filename: 0xcd10fb882c05e7d16483522ff98a2fe2efbe0cf9_integerOverflow.sol
+Output: INFO:Slither:0xcd10fb882c05e7d16483522ff98a2fe2efbe0cf9_integerOverflow.sol analyzed (3 contracts with 1 detectors), 0 result(s) found
+line_number: 78
+line_number: 91
+line_number: 105
+line_number: 116
+
+Filename: 0xcdc7671af48ab852484838945b2b35dfeb9f49cb_integerOverflow.sol
+Output: INFO:Detectors:
+MilliMeter.slitherConstructorConstantVariables() (0xcdc7671af48ab852484838945b2b35dfeb9f49cb_integerOverflow.sol#291-574) uses literals with too many digits:
+	- initialSupply = 2000000000 * (10 ** uint256(decimals)) (0xcdc7671af48ab852484838945b2b35dfeb9f49cb_integerOverflow.sol#295)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xcdc7671af48ab852484838945b2b35dfeb9f49cb_integerOverflow.sol analyzed (4 contracts with 1 detectors), 1 result(s) found
+line_number: 186
+line_number: 206
+line_number: 225
+line_number: 505
+line_number: 515
+line_number: 540
+line_number: 555
+
+Filename: 0xcf0057a6b29d3fb4d0e970e8438d921e641d1066_integerOverflow.sol
+Output: INFO:Slither:0xcf0057a6b29d3fb4d0e970e8438d921e641d1066_integerOverflow.sol analyzed (10 contracts with 1 detectors), 0 result(s) found
+line_number: 815
+
+Filename: 0xd67b1Db49801b6F4c96a01a4F7964233150dc58b_integerOverflow.sol
+Output: INFO:Slither:0xd67b1Db49801b6F4c96a01a4F7964233150dc58b_integerOverflow.sol analyzed (8 contracts with 1 detectors), 0 result(s) found
+line_number: 80
+line_number: 119
+line_number: 159
+line_number: 170
+line_number: 277
+
+Filename: 0xd7ba91b3ede1698a7d1f991d7d5bd9c0c8995a58_integerOverflow.sol
+Output: INFO:Slither:0xd7ba91b3ede1698a7d1f991d7d5bd9c0c8995a58_integerOverflow.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 158
+line_number: 160
+line_number: 162
+line_number: 170
+line_number: 172
+line_number: 174
+line_number: 176
+line_number: 184
+line_number: 186
+line_number: 188
+line_number: 196
+line_number: 198
+line_number: 200
+line_number: 202
+line_number: 207
+line_number: 209
+line_number: 211
+
+Filename: 0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol
+Output: Compilation warnings/errors on 0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol:
+0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol:424:28: Warning: This declaration shadows an existing declaration.
+    function getAuthorizer(uint authorizerIndex) external view returns(address) {
+                           ^------------------^
+0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol:400:5: The shadowed declaration is here:
+    mapping(address => uint) authorizerIndex;
+    ^--------------------------------------^
+
+0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol:957:9: Warning: This declaration shadows an existing declaration.
+        ERC20 token = ERC20(_token);
+        ^---------^
+0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol:832:5: The shadowed declaration is here:
+    CBCToken public token = new CBCToken();
+    ^------------------------------------^
+
+
+INFO:Detectors:
+Bears.constructor(address,address) (0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol#38-43) uses literals with too many digits:
+	- CBCTokenContract.approve(_bankAddress,9999999999999999999000000000000000000) (0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol#42)
+Bulls.constructor(address,address) (0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol#50-55) uses literals with too many digits:
+	- CBCTokenContract.approve(_bankAddress,9999999999999999999000000000000000000) (0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol#54)
+MainSale.slitherConstructorVariables() (0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol#825-970) uses literals with too many digits:
+	- hardcap = 100000000000000000000000000000000 (0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol#836)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xd9df383b7ef9b8a5cebb5af0d902591f87f218bb_integerOverflow.sol analyzed (15 contracts with 1 detectors), 3 result(s) found
+line_number: 615
+line_number: 617
+line_number: 660
+line_number: 662
+line_number: 664
+line_number: 727
+line_number: 729
+
+Filename: 0xdc2b59ae20b5ea70557cf053de990f997f32640b_integerOverflow.sol
+Output: Compilation warnings/errors on 0xdc2b59ae20b5ea70557cf053de990f997f32640b_integerOverflow.sol:
+0xdc2b59ae20b5ea70557cf053de990f997f32640b_integerOverflow.sol:26:3: Warning: Function state mutability can be restricted to pure
+  function mul(uint256 a, uint256 b) internal  returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0xdc2b59ae20b5ea70557cf053de990f997f32640b_integerOverflow.sol:32:3: Warning: Function state mutability can be restricted to pure
+  function div(uint256 a, uint256 b) internal  returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0xdc2b59ae20b5ea70557cf053de990f997f32640b_integerOverflow.sol:39:3: Warning: Function state mutability can be restricted to pure
+  function sub(uint256 a, uint256 b) internal  returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0xdc2b59ae20b5ea70557cf053de990f997f32640b_integerOverflow.sol:51:3: Warning: Function state mutability can be restricted to pure
+  function add(uint256 a, uint256 b) internal  returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:Detectors:
+TokenERC20.slitherConstructorConstantVariables() (0xdc2b59ae20b5ea70557cf053de990f997f32640b_integerOverflow.sol#58-322) uses literals with too many digits:
+	- totalsupply_ = 700000000000000000 (0xdc2b59ae20b5ea70557cf053de990f997f32640b_integerOverflow.sol#71)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xdc2b59ae20b5ea70557cf053de990f997f32640b_integerOverflow.sol analyzed (3 contracts with 1 detectors), 1 result(s) found
+line_number: 184
+
+Filename: 0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol
+Output: INFO:Detectors:
+VantaToken.slitherConstructorConstantVariables() (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#124-534) uses literals with too many digits:
+	- E18 = 1000000000000000000 (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#132)
+VantaToken.slitherConstructorConstantVariables() (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#124-534) uses literals with too many digits:
+	- maxTotalSupply = 56200000000 * E18 (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#135)
+VantaToken.slitherConstructorConstantVariables() (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#124-534) uses literals with too many digits:
+	- maxSaleSupply = 19670000000 * E18 (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#137)
+VantaToken.slitherConstructorConstantVariables() (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#124-534) uses literals with too many digits:
+	- maxBdevSupply = 8430000000 * E18 (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#138)
+VantaToken.slitherConstructorConstantVariables() (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#124-534) uses literals with too many digits:
+	- maxMktSupply = 8430000000 * E18 (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#139)
+VantaToken.slitherConstructorConstantVariables() (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#124-534) uses literals with too many digits:
+	- maxRndSupply = 8430000000 * E18 (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#140)
+VantaToken.slitherConstructorConstantVariables() (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#124-534) uses literals with too many digits:
+	- maxTeamSupply = 5620000000 * E18 (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#141)
+VantaToken.slitherConstructorConstantVariables() (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#124-534) uses literals with too many digits:
+	- maxReserveSupply = 2810000000 * E18 (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#142)
+VantaToken.slitherConstructorConstantVariables() (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#124-534) uses literals with too many digits:
+	- maxAdvisorSupply = 2810000000 * E18 (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#143)
+VantaToken.slitherConstructorConstantVariables() (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#124-534) uses literals with too many digits:
+	- advisorVestingSupplyPerTime = 702500000 * E18 (0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol#146)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xdcc27bbaa14cafd8a6aeb847e1b01c5dffb70935_integerOverflow.sol analyzed (4 contracts with 1 detectors), 10 result(s) found
+line_number: 235
+line_number: 268
+
+Filename: 0xdfcc3668a5d426114270ee57206e98c6856f3dee_integerOverflow.sol
+Output: INFO:Detectors:
+SwapdexFactory.createPair(address,address) (0xdfcc3668a5d426114270ee57206e98c6856f3dee_integerOverflow.sol#420-435) uses literals with too many digits:
+	- bytecode = type(address)(SwapdexPair).creationCode (0xdfcc3668a5d426114270ee57206e98c6856f3dee_integerOverflow.sol#425)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xdfcc3668a5d426114270ee57206e98c6856f3dee_integerOverflow.sol analyzed (11 contracts with 1 detectors), 1 result(s) found
+line_number: 189
+
+Filename: 0xe3e5ccc9c8ee95ddbeb08daa7c5001b88c0d632a_integerOverflow.sol
+Output: INFO:Slither:0xe3e5ccc9c8ee95ddbeb08daa7c5001b88c0d632a_integerOverflow.sol analyzed (7 contracts with 1 detectors), 0 result(s) found
+line_number: 63
+line_number: 75
+line_number: 115
+line_number: 126
+line_number: 247
+line_number: 249
+
+Filename: 0xe80b90fdabcc18932e2bcda61df6010df69091c7_integerOverflow.sol
+Output: INFO:Detectors:
+CryptoControlToken.constructor() (0xe80b90fdabcc18932e2bcda61df6010df69091c7_integerOverflow.sol#426) uses literals with too many digits:
+	- CappedToken(10000000000000000000) (0xe80b90fdabcc18932e2bcda61df6010df69091c7_integerOverflow.sol#426)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xe80b90fdabcc18932e2bcda61df6010df69091c7_integerOverflow.sol analyzed (13 contracts with 1 detectors), 1 result(s) found
+line_number: 178
+line_number: 219
+line_number: 286
+line_number: 309
+line_number: 343
+line_number: 345
+
+Filename: 0xeaddd1db4fe9d8fd2a0edfd59521b7e7c57cfa3e_integerOverflow.sol
+Output: INFO:Detectors:
+master.slitherConstructorVariables() (0xeaddd1db4fe9d8fd2a0edfd59521b7e7c57cfa3e_integerOverflow.sol#97-231) uses literals with too many digits:
+	- _totalSupply = 20000000 * 100000000 (0xeaddd1db4fe9d8fd2a0edfd59521b7e7c57cfa3e_integerOverflow.sol#109)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xeaddd1db4fe9d8fd2a0edfd59521b7e7c57cfa3e_integerOverflow.sol analyzed (5 contracts with 1 detectors), 1 result(s) found
+line_number: 119
+line_number: 182
+
+Filename: 0xecf8c26e45eebd78ca4577f319b9db198089b935_integerOverflow.sol
+Output: INFO:Slither:0xecf8c26e45eebd78ca4577f319b9db198089b935_integerOverflow.sol analyzed (10 contracts with 1 detectors), 0 result(s) found
+line_number: 815
+
+Filename: 0xf57d52855ca38228cf37c0ba0fc4f98845e16c4c_integerOverflow.sol
+Output: INFO:Detectors:
+GoldenCoinP.constructor() (0xf57d52855ca38228cf37c0ba0fc4f98845e16c4c_integerOverflow.sol#117-124) uses literals with too many digits:
+	- totalSupply = 777000000000000000000000000000 (0xf57d52855ca38228cf37c0ba0fc4f98845e16c4c_integerOverflow.sol#118)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+INFO:Slither:0xf57d52855ca38228cf37c0ba0fc4f98845e16c4c_integerOverflow.sol analyzed (3 contracts with 1 detectors), 1 result(s) found
+line_number: 78
+line_number: 85
+
+Filename: 0xf7914ebf0f021adaf95114b068502d0c7d107bc9_integerOverflow.sol
+Output: INFO:Slither:0xf7914ebf0f021adaf95114b068502d0c7d107bc9_integerOverflow.sol analyzed (9 contracts with 1 detectors), 0 result(s) found
+line_number: 1577
+
+Filename: 0xfacd9086c6647c589e6c39dddfecf9cea40d92aa_integerOverflow.sol
+Output: Compilation warnings/errors on 0xfacd9086c6647c589e6c39dddfecf9cea40d92aa_integerOverflow.sol:
+0xfacd9086c6647c589e6c39dddfecf9cea40d92aa_integerOverflow.sol:9:11: Error: Expected '(' but got identifier
+	function mul(uint256 a,uint256 b)internal pure returns (uint256){if(a==0){return 0;}uint256 c=a*b;require(c/a==b);return c;}
+	         ^-^
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 561, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 810, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 156, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 285, in _get_targets_json
+    return _run_solc(
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 565, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation 0xfacd9086c6647c589e6c39dddfecf9cea40d92aa_integerOverflow.sol:9:11: Error: Expected '(' but got identifier
+	function mul(uint256 a,uint256 b)internal pure returns (uint256){if(a==0){return 0;}uint256 c=a*b;require(c/a==b);return c;}
+	         ^-^
+
+ERROR:root:Error in 0xfacd9086c6647c589e6c39dddfecf9cea40d92aa_integerOverflow.sol
+ERROR:root:Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 561, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 810, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 156, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 285, in _get_targets_json
+    return _run_solc(
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 565, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation 0xfacd9086c6647c589e6c39dddfecf9cea40d92aa_integerOverflow.sol:9:11: Error: Expected '(' but got identifier
+	function mul(uint256 a,uint256 b)internal pure returns (uint256){if(a==0){return 0;}uint256 c=a*b;require(c/a==b);return c;}
+	         ^-^
+line_number: 74
+line_number: 78
+line_number: 89
+line_number: 93
+
+Filename: 0xfb594b9a0cacd9a4e4c506b4d318f7a7aa1cadc9_integerOverflow.sol
+Output: Compilation warnings/errors on 0xfb594b9a0cacd9a4e4c506b4d318f7a7aa1cadc9_integerOverflow.sol:
+0xfb594b9a0cacd9a4e4c506b4d318f7a7aa1cadc9_integerOverflow.sol:115:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+                                       ^------------------------^
+
+INFO:Slither:0xfb594b9a0cacd9a4e4c506b4d318f7a7aa1cadc9_integerOverflow.sol analyzed (7 contracts with 1 detectors), 0 result(s) found
+line_number: 314
+
+Filename: 0xfcb7a9da74be3606e398acff8a87e9dc519ab8fa_integerOverflow.sol
+Output: INFO:Slither:0xfcb7a9da74be3606e398acff8a87e9dc519ab8fa_integerOverflow.sol analyzed (4 contracts with 1 detectors), 0 result(s) found
+line_number: 105
+line_number: 107
+line_number: 120
+line_number: 122
+line_number: 124
+
+Filename: 0xff759254e578bc7f725428cecb612a502e604f42_integerOverflow.sol
+Output: INFO:Slither:0xff759254e578bc7f725428cecb612a502e604f42_integerOverflow.sol analyzed (6 contracts with 1 detectors), 0 result(s) found
+line_number: 95
+line_number: 97
+line_number: 108
+line_number: 110
+line_number: 112
+

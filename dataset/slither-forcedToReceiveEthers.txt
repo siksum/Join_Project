@@ -1,0 +1,885 @@
+
+Filename: 0x091e280aaf812e4cec2a006e28852f736795e58e_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Get102Token.fallback() (0x091e280aaf812e4cec2a006e28852f736795e58e_forcedToReceiveEthers.sol#192-220) uses a dangerous strict equality:
+	- require(bool)(address(this).balance == 0) (0x091e280aaf812e4cec2a006e28852f736795e58e_forcedToReceiveEthers.sol#195)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x091e280aaf812e4cec2a006e28852f736795e58e_forcedToReceiveEthers.sol analyzed (7 contracts with 1 detectors), 1 result(s) found
+line_number: 195
+
+Filename: 0x0ce881ab266e848c2a4d2d873b74dc7a1138ce6c_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+pYFIIVault.availableWithdraw(address) (0x0ce881ab266e848c2a4d2d873b74dc7a1138ce6c_forcedToReceiveEthers.sol#318-325) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x0ce881ab266e848c2a4d2d873b74dc7a1138ce6c_forcedToReceiveEthers.sol#322)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x0ce881ab266e848c2a4d2d873b74dc7a1138ce6c_forcedToReceiveEthers.sol analyzed (7 contracts with 1 detectors), 1 result(s) found
+line_number: 322
+
+Filename: 0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Median.auth() (0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol#42-45) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 1,Median/not-authorized) (0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol#43)
+Median.poke(uint256[],uint256[],uint8[],bytes32[],bytes32[]) (0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol#86-116) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 1,Median/invalid-oracle) (0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol#100)
+Median.poke(uint256[],uint256[],uint8[],bytes32[],bytes32[]) (0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol#86-116) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,Median/oracle-already-signed) (0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol#108)
+Median.toll() (0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol#61) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 1,Median/contract-not-whitelisted) (0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol#61)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x0d50fbf0774339417ac43427b238897352a31ff1_forcedToReceiveEthers.sol analyzed (3 contracts with 1 detectors), 4 result(s) found
+line_number: 43
+line_number: 61
+line_number: 100
+line_number: 108
+
+Filename: 0x0f449ce32456fbd823b7ac5d162826cd34c48784_forcedToReceiveEthers.sol
+Output: Compilation warnings/errors on 0x0f449ce32456fbd823b7ac5d162826cd34c48784_forcedToReceiveEthers.sol:
+0x0f449ce32456fbd823b7ac5d162826cd34c48784_forcedToReceiveEthers.sol:41:5: Warning: Function state mutability can be restricted to view
+    function execute() external {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:Detectors:
+SpellAction.execute() (0x0f449ce32456fbd823b7ac5d162826cd34c48784_forcedToReceiveEthers.sol#41-44) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 1,no-access) (0x0f449ce32456fbd823b7ac5d162826cd34c48784_forcedToReceiveEthers.sol#43)
+DssSpell.schedule() (0x0f449ce32456fbd823b7ac5d162826cd34c48784_forcedToReceiveEthers.sol#81-86) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,This spell has already been scheduled) (0x0f449ce32456fbd823b7ac5d162826cd34c48784_forcedToReceiveEthers.sol#83)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x0f449ce32456fbd823b7ac5d162826cd34c48784_forcedToReceiveEthers.sol analyzed (4 contracts with 1 detectors), 2 result(s) found
+line_number: 43
+line_number: 83
+
+Filename: 0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol
+Output: Compilation warnings/errors on 0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol:
+0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol:1216:10: Warning: Unused local variable.
+        (uint opaqueErr, uint borrowRateMantissa) = interestRateModel.getBorrowRate(getCashPrior(), totalBorrows, totalReserves);
+         ^------------^
+0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol:1233:10: Warning: Unused local variable.
+        (uint e0, uint borrowRateMantissa) = interestRateModel.getBorrowRate(getCashPrior(), totalBorrows, totalReserves);
+         ^-----^
+
+INFO:Detectors:
+CToken.accrueInterest() (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1402-1466) uses a dangerous strict equality:
+	- assert(bool)(vars.mathErr == MathError.NO_ERROR) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1417)
+CToken.balanceOfUnderlying(address) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1170-1175) uses a dangerous strict equality:
+	- require(bool)(mErr == MathError.NO_ERROR) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1173)
+CToken.borrowBalanceStored(address) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1275-1279) uses a dangerous strict equality:
+	- require(bool,string)(err == MathError.NO_ERROR,borrowBalanceStored: borrowBalanceStoredInternal failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1277)
+CToken.borrowBalanceStoredInternal(address) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1286-1316) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1298)
+CToken.borrowFresh(address,uint256) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1755-1820) uses a dangerous strict equality:
+	- require(bool,string)(vars.err == Error.NO_ERROR,borrow transfer out failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1806)
+CToken.borrowRatePerBlock() (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1215-1219) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,borrowRatePerBlock: interestRateModel.borrowRate failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1217)
+CToken.constructor(ComptrollerInterface,InterestRateModel,uint256,string,string,uint256) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1008-1036) uses a dangerous strict equality:
+	- require(bool,string)(err == uint256(Error.NO_ERROR),Setting comptroller failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1023)
+CToken.constructor(ComptrollerInterface,InterestRateModel,uint256,string,string,uint256) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1008-1036) uses a dangerous strict equality:
+	- require(bool,string)(err == uint256(Error.NO_ERROR),Setting interest rate model failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1031)
+CarefulMath.divUInt(uint256,uint256) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#336-342) uses a dangerous strict equality:
+	- b == 0 (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#337)
+CToken.exchangeRateStored() (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1332-1336) uses a dangerous strict equality:
+	- require(bool,string)(err == MathError.NO_ERROR,exchangeRateStored: exchangeRateStoredInternal failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1334)
+CToken.exchangeRateStoredInternal() (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1343-1372) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1344)
+CToken.liquidateBorrowFresh(address,address,uint256,CToken) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1983-2043) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#2006)
+Exponential.mulExp(Exponential.Exp,Exponential.Exp) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#523-543) uses a dangerous strict equality:
+	- assert(bool)(err2 == MathError.NO_ERROR) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#540)
+CarefulMath.mulUInt(uint256,uint256) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#319-331) uses a dangerous strict equality:
+	- a == 0 (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#320)
+CToken.redeemFresh(address,uint256,uint256) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1629-1725) uses a dangerous strict equality:
+	- require(bool,string)(vars.err == Error.NO_ERROR,redeem transfer out failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1711)
+CToken.repayBorrowFresh(address,address,uint256) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1870-1947) uses a dangerous strict equality:
+	- require(bool,string)(vars.err == Error.NO_ERROR,repay borrow transfer in failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1933)
+CToken.supplyRatePerBlock() (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1225-1249) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,supplyRatePerBlock: calculating borrowRate failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1234)
+CToken.supplyRatePerBlock() (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1225-1249) uses a dangerous strict equality:
+	- require(bool,string)(e1 == MathError.NO_ERROR,supplyRatePerBlock: calculating underlying failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1237)
+CToken.supplyRatePerBlock() (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1225-1249) uses a dangerous strict equality:
+	- require(bool,string)(e2 == MathError.NO_ERROR,supplyRatePerBlock: calculating borrowsPer failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1240)
+CToken.supplyRatePerBlock() (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1225-1249) uses a dangerous strict equality:
+	- require(bool,string)(e3 == MathError.NO_ERROR,supplyRatePerBlock: calculating oneMinusReserveFactor failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1243)
+CToken.supplyRatePerBlock() (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1225-1249) uses a dangerous strict equality:
+	- require(bool,string)(e4 == MathError.NO_ERROR,supplyRatePerBlock: calculating supplyRate failed) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1246)
+CToken.transfer(address,uint256) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1115-1117) uses a dangerous strict equality:
+	- transferTokens(msg.sender,msg.sender,dst,amount) == uint256(Error.NO_ERROR) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1116)
+CToken.transferFrom(address,address,uint256) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1126-1128) uses a dangerous strict equality:
+	- transferTokens(msg.sender,src,dst,amount) == uint256(Error.NO_ERROR) (0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol#1127)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x0f69f08f872f366ad8edde03dae8812619a17536_forcedToReceiveEthers.sol analyzed (11 contracts with 1 detectors), 23 result(s) found
+line_number: 1217
+line_number: 1234
+line_number: 1298
+line_number: 1344
+line_number: 2006
+
+Filename: 0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol
+Output: Compilation warnings/errors on 0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol:
+0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol:881:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol:355:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function add(uint256 a, uint256 b) internal pure returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol:333:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function div(uint256 a, uint256 b) internal pure returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol:366:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function mod(uint256 a, uint256 b) internal pure returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol:316:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function mul(uint256 a, uint256 b) internal pure returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol:345:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function sub(uint256 a, uint256 b) internal pure returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:Detectors:
+EverbloomExchange.getOrderInfo(Common.Order) (0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol#1263-1308) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol#1285)
+EverbloomExchange.getOrderInfo(Common.Order) (0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol#1263-1308) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol#1289)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x146f603102d322c1aebf3d7be8b2d54e64e33327_forcedToReceiveEthers.sol analyzed (8 contracts with 1 detectors), 2 result(s) found
+line_number: 1285
+line_number: 1289
+
+Filename: 0x21d40f44d3c93ba4f0d94fa212a666fec381e26c_forcedToReceiveEthers.sol
+Output: Compilation warnings/errors on 0x21d40f44d3c93ba4f0d94fa212a666fec381e26c_forcedToReceiveEthers.sol:
+0x21d40f44d3c93ba4f0d94fa212a666fec381e26c_forcedToReceiveEthers.sol:696:30: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function calImpliedVolLn(uint32 underlying,uint256 currentPrice,uint256 strikePrice,int48 paramd)internal view returns(int256){
+                             ^---------------^
+0x21d40f44d3c93ba4f0d94fa212a666fec381e26c_forcedToReceiveEthers.sol:696:5: Warning: Function state mutability can be restricted to pure
+    function calImpliedVolLn(uint32 underlying,uint256 currentPrice,uint256 strikePrice,int48 paramd)internal view returns(int256){
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:Detectors:
+ImpliedVolatility.calATMIv(uint32,uint256) (0x21d40f44d3c93ba4f0d94fa212a666fec381e26c_forcedToReceiveEthers.sol#658-670) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x21d40f44d3c93ba4f0d94fa212a666fec381e26c_forcedToReceiveEthers.sol#661)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x21d40f44d3c93ba4f0d94fa212a666fec381e26c_forcedToReceiveEthers.sol analyzed (7 contracts with 1 detectors), 1 result(s) found
+line_number: 661
+
+Filename: 0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol
+Output: Compilation warnings/errors on 0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:6:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:893:17: Warning: Unused local variable.
+                uint256 result = LibBytes.readUint256(resultData, 0);
+                ^------------^
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1088:5: Warning: Function state mutability can be restricted to pure
+    function _getKyberNetworkProxyAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1098:5: Warning: Function state mutability can be restricted to pure
+    function _getKyberHintHandlerAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1108:5: Warning: Function state mutability can be restricted to pure
+    function _getWethAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1118:5: Warning: Function state mutability can be restricted to pure
+    function _getUniswapExchangeFactoryAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1128:5: Warning: Function state mutability can be restricted to pure
+    function _getUniswapV2Router01Address()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1138:5: Warning: Function state mutability can be restricted to pure
+    function _getEth2DaiAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1148:5: Warning: Function state mutability can be restricted to pure
+    function _getERC20BridgeProxyAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1158:5: Warning: Function state mutability can be restricted to pure
+    function _getDaiAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1168:5: Warning: Function state mutability can be restricted to pure
+    function _getChaiAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1178:5: Warning: Function state mutability can be restricted to pure
+    function _getDevUtilsAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1188:5: Warning: Function state mutability can be restricted to pure
+    function _getDydxAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1198:5: Warning: Function state mutability can be restricted to pure
+    function _getGstAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1208:5: Warning: Function state mutability can be restricted to pure
+    function _getGstCollectorAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1218:5: Warning: Function state mutability can be restricted to pure
+    function _getMUsdAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1228:5: Warning: Function state mutability can be restricted to pure
+    function _getMooniswapAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol:1238:5: Warning: Function state mutability can be restricted to pure
+    function _getShellAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:Detectors:
+LibERC20Token._callWithOptionalBooleanResult(address,bytes) (0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol#881-900) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol#889)
+LibERC20Token._callWithOptionalBooleanResult(address,bytes) (0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol#881-900) uses a dangerous strict equality:
+	- address(this).balance == 32 (0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol#892)
+LibERC20Token._callWithOptionalBooleanResult(address,bytes) (0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol#881-900) uses a dangerous strict equality:
+	- address(this).balance == 1 (0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol#894)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x21fb3862eed7911e0f8219a077247b849846728d_forcedToReceiveEthers.sol analyzed (10 contracts with 1 detectors), 3 result(s) found
+line_number: 889
+line_number: 892
+line_number: 894
+
+Filename: 0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+ICOToken.actualTransfer(address,address,uint256,bytes,string,bool) (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#221-244) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#232)
+ICOToken.addBeneficiary(address,uint256) (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#74-80) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,Already a beneficiary) (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#76)
+ICOToken.beneficiaryStash(address) (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#200-209) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#202)
+ICOToken.fallback() (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#113-167) uses a dangerous strict equality:
+	- require(bool,string)(icoFunding == 0 && block.timestamp < IcoEndTime,ICO has ended) (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#115)
+ICOToken.withdrawFunding(uint256) (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#93-111) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol#94)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x236149288602c07b84387d0d75784d73f133142b_forcedToReceiveEthers.sol analyzed (4 contracts with 1 detectors), 5 result(s) found
+line_number: 76
+line_number: 94
+line_number: 202
+line_number: 232
+
+Filename: 0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol
+Output: Compilation warnings/errors on 0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol:
+0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol:539:9: Warning: Return value of low-level calls not used.
+        _Address.call.value(msg.value)(_Data);
+        ^-----------------------------------^
+
+INFO:Detectors:
+Lets_Play_Blackjack.Create_UserAccount(uint256,string,string) (0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol#1104-1124) uses a dangerous strict equality:
+	- require(bool)(address(this).balance == 0) (0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol#1108)
+Blackjack_Functionality.Im_Cute_RecusiveFunction(uint256,uint256[]) (0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol#935-951) uses a dangerous strict equality:
+	- Im_UnCheck_Number == CheckNumberSet[_Im_CheckCounter] (0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol#943)
+AccessControl.StandCheck_AllPlayer(uint256) (0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol#250-261) uses a dangerous strict equality:
+	- require(bool)(address(this).balance == 1111) (0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol#258)
+Lets_Play_Blackjack.Start_NewRound(uint256) (0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol#1207-1248) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol#1217)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x2545ca44b7220e4a640b40696e7318b360e18920_forcedToReceiveEthers.sol analyzed (8 contracts with 1 detectors), 4 result(s) found
+line_number: 258
+line_number: 1108
+line_number: 1217
+
+Filename: 0x306e505030c5f76b60c9561e88b57d1de60fb9ed_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+KodDeneg.fallback() (0x306e505030c5f76b60c9561e88b57d1de60fb9ed_forcedToReceiveEthers.sol#45-50) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x306e505030c5f76b60c9561e88b57d1de60fb9ed_forcedToReceiveEthers.sol#47)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x306e505030c5f76b60c9561e88b57d1de60fb9ed_forcedToReceiveEthers.sol analyzed (3 contracts with 1 detectors), 1 result(s) found
+line_number: 47
+
+Filename: 0x33feab4ecd7e9d491037c050e29b3f29899e7048_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+MintToken.increaseProductivity(address,uint256) (0x33feab4ecd7e9d491037c050e29b3f29899e7048_forcedToReceiveEthers.sol#214-225) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x33feab4ecd7e9d491037c050e29b3f29899e7048_forcedToReceiveEthers.sol#218)
+MintToken.lock() (0x33feab4ecd7e9d491037c050e29b3f29899e7048_forcedToReceiveEthers.sol#154-159) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 1,Locked) (0x33feab4ecd7e9d491037c050e29b3f29899e7048_forcedToReceiveEthers.sol#155)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x33feab4ecd7e9d491037c050e29b3f29899e7048_forcedToReceiveEthers.sol analyzed (6 contracts with 1 detectors), 2 result(s) found
+line_number: 155
+line_number: 218
+
+Filename: 0x3a29f2cf1120b9d65131079390eb8aef98c4425a_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+MemberDripDrop.isMember(address) (0x3a29f2cf1120b9d65131079390eb8aef98c4425a_forcedToReceiveEthers.sol#180-183) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x3a29f2cf1120b9d65131079390eb8aef98c4425a_forcedToReceiveEthers.sol#181)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x3a29f2cf1120b9d65131079390eb8aef98c4425a_forcedToReceiveEthers.sol analyzed (2 contracts with 1 detectors), 1 result(s) found
+line_number: 181
+
+Filename: 0x3fb111fed284aea5e3db069fa12045d61f78668a_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Onigiri.invest(address) (0x3fb111fed284aea5e3db069fa12045d61f78668a_forcedToReceiveEthers.sol#202-234) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x3fb111fed284aea5e3db069fa12045d61f78668a_forcedToReceiveEthers.sol#216)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x3fb111fed284aea5e3db069fa12045d61f78668a_forcedToReceiveEthers.sol analyzed (2 contracts with 1 detectors), 1 result(s) found
+line_number: 216
+
+Filename: 0x401F6c983eA34274ec46f84D70b31C151321188b_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+RootChain.setNextHeaderBlock(uint256) (0x401F6c983eA34274ec46f84D70b31C151321188b_forcedToReceiveEthers.sol#917-925) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,Invalid value) (0x401F6c983eA34274ec46f84D70b31C151321188b_forcedToReceiveEthers.sol#918)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x401F6c983eA34274ec46f84D70b31C151321188b_forcedToReceiveEthers.sol analyzed (22 contracts with 1 detectors), 1 result(s) found
+line_number: 918
+
+Filename: 0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Bussiness.calPriceFeeEth(uint256,uint256,uint256) (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#151-170) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#160)
+Bussiness.calPriceFeeHBWALLET(uint256,uint256,uint256) (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#193-214) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#205)
+Bussiness.setPriceFeeEth(uint256,uint256,uint256) (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#171-192) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#180)
+Bussiness.setPriceFeeHBWALLET(uint256,uint256,uint256) (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#215-243) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol#227)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x42ab724e2a6a75930d6735189fc4f7b2edaffc72_forcedToReceiveEthers.sol analyzed (4 contracts with 1 detectors), 4 result(s) found
+line_number: 160
+line_number: 180
+line_number: 205
+line_number: 227
+
+Filename: 0x4c031a2f7e5b36d54be99717408f4d87d9871638_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Bussiness.setPriceFeeEth(uint256,uint256,bool) (0x4c031a2f7e5b36d54be99717408f4d87d9871638_forcedToReceiveEthers.sol#142-163) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x4c031a2f7e5b36d54be99717408f4d87d9871638_forcedToReceiveEthers.sol#151)
+Bussiness.setPriceFeeHBWALLET(uint256,uint256,bool) (0x4c031a2f7e5b36d54be99717408f4d87d9871638_forcedToReceiveEthers.sol#165-193) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x4c031a2f7e5b36d54be99717408f4d87d9871638_forcedToReceiveEthers.sol#177)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x4c031a2f7e5b36d54be99717408f4d87d9871638_forcedToReceiveEthers.sol analyzed (4 contracts with 1 detectors), 2 result(s) found
+line_number: 151
+line_number: 177
+
+Filename: 0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Ether5.isallowedValue(uint256) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#239-242) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,Amount should be in multiple of 0.1 ETH please) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#240)
+Ether5.playGame(address) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#264-370) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,Oops your limit is still remaining) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#310)
+Ether5.referralBonusTransferDailyROI(address,uint256) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#460-525) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#470)
+Ether5.referralBonusTransferDailyROI(address,uint256) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#460-525) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#513)
+Ether5.referralBonusTransferDirect(address,uint256) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#372-456) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#383)
+Ether5.referralBonusTransferDirect(address,uint256) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#372-456) uses a dangerous strict equality:
+	- address(this).balance == 1 (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#402)
+Ether5.withdrawFees(uint256,address,uint256) (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#647-670) uses a dangerous strict equality:
+	- address(this).balance == 3 (0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol#665)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x5ef4db94eeb174f06b977a0e7a8273f077b9ac11_forcedToReceiveEthers.sol analyzed (3 contracts with 1 detectors), 7 result(s) found
+line_number: 240
+line_number: 310
+line_number: 383
+line_number: 402
+line_number: 470
+line_number: 513
+line_number: 665
+
+Filename: 0x5f1a08554f0dc0cf79852c564a10981ffbd7c8af_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+AssetAdapter.noEther() (0x5f1a08554f0dc0cf79852c564a10981ffbd7c8af_forcedToReceiveEthers.sol#99-102) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,this asset doesn't accept ether) (0x5f1a08554f0dc0cf79852c564a10981ffbd7c8af_forcedToReceiveEthers.sol#100)
+AbstractRampSwaps.requireSwapNotExists(bytes32) (0x5f1a08554f0dc0cf79852c564a10981ffbd7c8af_forcedToReceiveEthers.sol#600-602) uses a dangerous strict equality:
+	- require(bool,string)(swaps[swapHash] == 0,swap already exists) (0x5f1a08554f0dc0cf79852c564a10981ffbd7c8af_forcedToReceiveEthers.sol#601)
+AbstractRampSwaps.requireSwapUnclaimed(bytes32) (0x5f1a08554f0dc0cf79852c564a10981ffbd7c8af_forcedToReceiveEthers.sol#604-606) uses a dangerous strict equality:
+	- require(bool,string)(swaps[swapHash] == SWAP_UNCLAIMED,swap already claimed or invalid) (0x5f1a08554f0dc0cf79852c564a10981ffbd7c8af_forcedToReceiveEthers.sol#605)
+AbstractRampSwaps.requireSwapUnclaimedOrExpired(bytes32) (0x5f1a08554f0dc0cf79852c564a10981ffbd7c8af_forcedToReceiveEthers.sol#612-619) uses a dangerous strict equality:
+	- require(bool,string)((swaps[swapHash] > MIN_ACTUAL_TIMESTAMP && block.timestamp > swaps[swapHash]) || swaps[swapHash] == SWAP_UNCLAIMED,swap not expired or invalid) (0x5f1a08554f0dc0cf79852c564a10981ffbd7c8af_forcedToReceiveEthers.sol#613-618)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x5f1a08554f0dc0cf79852c564a10981ffbd7c8af_forcedToReceiveEthers.sol analyzed (7 contracts with 1 detectors), 4 result(s) found
+line_number: 100
+
+Filename: 0x6209cfbdee10e7796bbcabfc6400acdc06ac26f2_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+cTokenKyberBridge.executeSwap(address,address,uint256) (0x6209cfbdee10e7796bbcabfc6400acdc06ac26f2_forcedToReceiveEthers.sol#198-254) uses a dangerous strict equality:
+	- require(bool,string)(ok == true,Unable to execute swap) (0x6209cfbdee10e7796bbcabfc6400acdc06ac26f2_forcedToReceiveEthers.sol#243)
+cTokenKyberBridge.redeemFromCompound(uint256,bool,address) (0x6209cfbdee10e7796bbcabfc6400acdc06ac26f2_forcedToReceiveEthers.sol#157-175) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,redeemResult error) (0x6209cfbdee10e7796bbcabfc6400acdc06ac26f2_forcedToReceiveEthers.sol#172)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x6209cfbdee10e7796bbcabfc6400acdc06ac26f2_forcedToReceiveEthers.sol analyzed (6 contracts with 1 detectors), 2 result(s) found
+line_number: 172
+
+Filename: 0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol
+Output: Compilation warnings/errors on 0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol:
+0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol:150:34: Warning: Unused local variable.
+                (bool chIsExist, uint256 chId, uint256 chReferrerID)  = viewCHUser(msg.sender);
+                                 ^----------^
+0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol:303:14: Warning: Unused local variable.
+            (bool chIsExist, uint256 chId, uint256 chReferrerID)  = viewCHUser(chReferrerAddress); 
+             ^------------^
+0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol:303:30: Warning: Unused local variable.
+            (bool chIsExist, uint256 chId, uint256 chReferrerID)  = viewCHUser(chReferrerAddress); 
+                             ^----------^
+
+INFO:Detectors:
+Forbestnet.buyLevel(uint256) (0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol#196-215) uses a dangerous strict equality:
+	- address(this).balance == 1 (0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol#200)
+Forbestnet.buyLevel(uint256) (0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol#196-215) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol#207)
+Forbestnet.fallback() (0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol#117-164) uses a dangerous strict equality:
+	- address(this).balance == 1 (0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol#143)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x63a6547ba6bff7438a7d5e1117e5e68150ea803c_forcedToReceiveEthers.sol analyzed (2 contracts with 1 detectors), 3 result(s) found
+line_number: 143
+line_number: 200
+line_number: 207
+
+Filename: 0x64976c5b5062c56d91dafe661cb85dcf7e349c9d_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+DssSpell.schedule() (0x64976c5b5062c56d91dafe661cb85dcf7e349c9d_forcedToReceiveEthers.sol#137-145) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,This spell has already been scheduled) (0x64976c5b5062c56d91dafe661cb85dcf7e349c9d_forcedToReceiveEthers.sol#139)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x64976c5b5062c56d91dafe661cb85dcf7e349c9d_forcedToReceiveEthers.sol analyzed (6 contracts with 1 detectors), 1 result(s) found
+line_number: 139
+
+Filename: 0x659046522c5c246a34a7eb17a814ca648436644a_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+WrappedCF.burnTokensAndWithdrawChainFaces(uint256[],address[]) (0x659046522c5c246a34a7eb17a814ca648436644a_forcedToReceiveEthers.sol#408-428) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x659046522c5c246a34a7eb17a814ca648436644a_forcedToReceiveEthers.sol#418)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x659046522c5c246a34a7eb17a814ca648436644a_forcedToReceiveEthers.sol analyzed (6 contracts with 1 detectors), 1 result(s) found
+line_number: 418
+
+Filename: 0x6b175474e89094c44da98b954eedeac495271d0f_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Dai.auth() (0x6b175474e89094c44da98b954eedeac495271d0f_forcedToReceiveEthers.sol#78-81) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 1,Dai/not-authorized) (0x6b175474e89094c44da98b954eedeac495271d0f_forcedToReceiveEthers.sol#79)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x6b175474e89094c44da98b954eedeac495271d0f_forcedToReceiveEthers.sol analyzed (2 contracts with 1 detectors), 1 result(s) found
+line_number: 79
+
+Filename: 0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+PlayToWinGames.game_coin(bytes,bytes32) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#122-142) uses a dangerous strict equality:
+	- require(bool)(address(this).balance == 0x0) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#126)
+PlayToWinGames.game_coin(bytes,bytes32) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#122-142) uses a dangerous strict equality:
+	- require(bool)(address(this).balance == 1) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#127)
+PlayToWinGames.game_dice(bytes,bytes32) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#174-190) uses a dangerous strict equality:
+	- require(bool)(address(this).balance == 0x0) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#176)
+PlayToWinGames.game_knb(bytes,bytes32) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#148-169) uses a dangerous strict equality:
+	- require(bool)(address(this).balance == 0x0) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#152)
+PlayToWinGames.game_knb(bytes,bytes32) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#148-169) uses a dangerous strict equality:
+	- require(bool)(address(this).balance == 1) (0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol#153)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x777777ce6c4d11c8aa5e1280638f64c8fd0a852a_forcedToReceiveEthers.sol analyzed (2 contracts with 1 detectors), 5 result(s) found
+line_number: 126
+line_number: 127
+line_number: 152
+line_number: 153
+line_number: 176
+
+Filename: 0x7816647dbfd5df766febb3a8e9f7a864447e9ed4_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+DErc20Delegator.fallback() (0x7816647dbfd5df766febb3a8e9f7a864447e9ed4_forcedToReceiveEthers.sol#576-581) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,CErc20Delegator:fallback: cannot send value to fallback) (0x7816647dbfd5df766febb3a8e9f7a864447e9ed4_forcedToReceiveEthers.sol#577)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x7816647dbfd5df766febb3a8e9f7a864447e9ed4_forcedToReceiveEthers.sol analyzed (8 contracts with 1 detectors), 1 result(s) found
+line_number: 577
+
+Filename: 0x81c27d1a0a6413c6a6d6d8e54b0a9c869d16771c_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+EliteswapV2Pair._safeTransfer(address,address,uint256) (0x81c27d1a0a6413c6a6d6d8e54b0a9c869d16771c_forcedToReceiveEthers.sol#239-242) uses a dangerous strict equality:
+	- require(bool,string)(success && (data.length == 0 || abi.decode(data,(bool))),EliteswapV2: TRANSFER_FAILED) (0x81c27d1a0a6413c6a6d6d8e54b0a9c869d16771c_forcedToReceiveEthers.sol#241)
+EliteswapV2Pair.lock() (0x81c27d1a0a6413c6a6d6d8e54b0a9c869d16771c_forcedToReceiveEthers.sol#226-231) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 1,EliteswapV2: LOCKED) (0x81c27d1a0a6413c6a6d6d8e54b0a9c869d16771c_forcedToReceiveEthers.sol#227)
+EliteswapV2Pair.mint(address) (0x81c27d1a0a6413c6a6d6d8e54b0a9c869d16771c_forcedToReceiveEthers.sol#305-326) uses a dangerous strict equality:
+	- address(this).balance == 0 (0x81c27d1a0a6413c6a6d6d8e54b0a9c869d16771c_forcedToReceiveEthers.sol#314)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x81c27d1a0a6413c6a6d6d8e54b0a9c869d16771c_forcedToReceiveEthers.sol analyzed (11 contracts with 1 detectors), 3 result(s) found
+line_number: 227
+line_number: 314
+
+Filename: 0x84f411093aed2e88e3d7f62a457cf77b3032ff2b_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+DssSpell.schedule() (0x84f411093aed2e88e3d7f62a457cf77b3032ff2b_forcedToReceiveEthers.sol#215-220) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,This spell has already been scheduled) (0x84f411093aed2e88e3d7f62a457cf77b3032ff2b_forcedToReceiveEthers.sol#217)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0x84f411093aed2e88e3d7f62a457cf77b3032ff2b_forcedToReceiveEthers.sol analyzed (7 contracts with 1 detectors), 1 result(s) found
+line_number: 217
+
+Filename: 0xB72b3f5523851C2EB0cA14137803CA4ac7295f3F_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+OUSD.balanceOf(address) (0xB72b3f5523851C2EB0cA14137803CA4ac7295f3F_forcedToReceiveEthers.sol#731-734) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xB72b3f5523851C2EB0cA14137803CA4ac7295f3F_forcedToReceiveEthers.sol#732)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xB72b3f5523851C2EB0cA14137803CA4ac7295f3F_forcedToReceiveEthers.sol analyzed (10 contracts with 1 detectors), 1 result(s) found
+line_number: 732
+
+Filename: 0xa2a40929f0d69cc43c2f6024c4a671f249814add_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Freeze.isFreezed(address) (0xa2a40929f0d69cc43c2f6024c4a671f249814add_forcedToReceiveEthers.sol#367-395) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xa2a40929f0d69cc43c2f6024c4a671f249814add_forcedToReceiveEthers.sol#373)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xa2a40929f0d69cc43c2f6024c4a671f249814add_forcedToReceiveEthers.sol analyzed (10 contracts with 1 detectors), 1 result(s) found
+line_number: 373
+
+Filename: 0xaa2cb1a1b014b92edb93b1f163c7ca40a07eecaa_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+BillsOfExchange.signDisputeResolutionAgreementFor(address,string) (0xaa2cb1a1b014b92edb93b1f163c7ca40a07eecaa_forcedToReceiveEthers.sol#734-766) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,Verification for this address was revoked, can not sign) (0xaa2cb1a1b014b92edb93b1f163c7ca40a07eecaa_forcedToReceiveEthers.sol#753-756)
+ManagedContract.addAdmin(address) (0xaa2cb1a1b014b92edb93b1f163c7ca40a07eecaa_forcedToReceiveEthers.sol#448-466) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,Verification for this address was revoked, can not add) (0xaa2cb1a1b014b92edb93b1f163c7ca40a07eecaa_forcedToReceiveEthers.sol#456-459)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xaa2cb1a1b014b92edb93b1f163c7ca40a07eecaa_forcedToReceiveEthers.sol analyzed (10 contracts with 1 detectors), 2 result(s) found
+line_number: 457
+line_number: 754
+
+Filename: 0xaf140e5321152eefcc0c6f212dded2b391af486b_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+yVault.deposit(uint256) (0xaf140e5321152eefcc0c6f212dded2b391af486b_forcedToReceiveEthers.sol#326-336) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xaf140e5321152eefcc0c6f212dded2b391af486b_forcedToReceiveEthers.sol#330)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xaf140e5321152eefcc0c6f212dded2b391af486b_forcedToReceiveEthers.sol analyzed (10 contracts with 1 detectors), 1 result(s) found
+line_number: 330
+
+Filename: 0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Emclassic.isallowedValue(uint256) (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#254-257) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,Amount should be in multiple of 0.1 ETH please) (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#255)
+Emclassic.playGame(address) (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#279-392) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,Oops your limit is still remaining) (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#328)
+Emclassic.referralBonusTransferDailyROI(address,uint256) (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#491-556) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#501)
+Emclassic.referralBonusTransferDailyROI(address,uint256) (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#491-556) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#544)
+Emclassic.referralBonusTransferDirect(address,uint256) (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#403-487) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#414)
+Emclassic.referralBonusTransferDirect(address,uint256) (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#403-487) uses a dangerous strict equality:
+	- address(this).balance == 1 (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#433)
+Emclassic.withdrawFees(uint256,address,uint256) (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#931-954) uses a dangerous strict equality:
+	- address(this).balance == 3 (0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol#949)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xb1508E97C68c4aeB9B77b05Ab40Cb9e1eB733A51_forcedToReceiveEthers.sol analyzed (3 contracts with 1 detectors), 7 result(s) found
+line_number: 255
+line_number: 328
+line_number: 414
+line_number: 433
+line_number: 501
+line_number: 544
+line_number: 949
+
+Filename: 0xb34d2ea7809d1def743989d078dcd52af2f1c6c8_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+TokenMerge.takeStock(address[],uint256[],address[]) (0xb34d2ea7809d1def743989d078dcd52af2f1c6c8_forcedToReceiveEthers.sol#41-56) uses a dangerous strict equality:
+	- address(this).balance == 1 (0xb34d2ea7809d1def743989d078dcd52af2f1c6c8_forcedToReceiveEthers.sol#45)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xb34d2ea7809d1def743989d078dcd52af2f1c6c8_forcedToReceiveEthers.sol analyzed (3 contracts with 1 detectors), 1 result(s) found
+line_number: 45
+
+Filename: 0xbc2015a541e30c9c352ee2f2f9e90e5219b298e2_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Timelock.executeTransaction(address,uint256,string,bytes,uint256) (0xbc2015a541e30c9c352ee2f2f9e90e5219b298e2_forcedToReceiveEthers.sol#361-418) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xbc2015a541e30c9c352ee2f2f9e90e5219b298e2_forcedToReceiveEthers.sol#397)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xbc2015a541e30c9c352ee2f2f9e90e5219b298e2_forcedToReceiveEthers.sol analyzed (2 contracts with 1 detectors), 1 result(s) found
+line_number: 397
+
+Filename: 0xcAAdcFC74404D54987D0763fa46484C74D166e92_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+DssSpell.schedule() (0xcAAdcFC74404D54987D0763fa46484C74D166e92_forcedToReceiveEthers.sol#183-188) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,This spell has already been scheduled) (0xcAAdcFC74404D54987D0763fa46484C74D166e92_forcedToReceiveEthers.sol#185)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xcAAdcFC74404D54987D0763fa46484C74D166e92_forcedToReceiveEthers.sol analyzed (9 contracts with 1 detectors), 1 result(s) found
+line_number: 185
+
+Filename: 0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_forcedToReceiveEthers.sol
+Output: Compilation warnings/errors on 0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_forcedToReceiveEthers.sol:
+0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_forcedToReceiveEthers.sol:142:9: Warning: Unused local variable.
+        uint total = _toWinner.add(_toNextRound).add(_toWallet).add(_toJackPot);
+        ^--------^
+
+INFO:Detectors:
+FastnFurious.changePercents(uint256,uint256,uint256,uint256) (0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_forcedToReceiveEthers.sol#141-148) uses a dangerous strict equality:
+	- require(bool)(address(this).balance == 100) (0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_forcedToReceiveEthers.sol#143)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xd0faa64b3de3ceca7ddf5d47cc2a13b1f208cb01_forcedToReceiveEthers.sol analyzed (3 contracts with 1 detectors), 1 result(s) found
+line_number: 143
+
+Filename: 0xd17abf984740145db4b3d61559eebe2170a3d6da_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+DssSpell.schedule() (0xd17abf984740145db4b3d61559eebe2170a3d6da_forcedToReceiveEthers.sol#106-111) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,This spell has already been scheduled) (0xd17abf984740145db4b3d61559eebe2170a3d6da_forcedToReceiveEthers.sol#108)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xd17abf984740145db4b3d61559eebe2170a3d6da_forcedToReceiveEthers.sol analyzed (5 contracts with 1 detectors), 1 result(s) found
+line_number: 108
+
+Filename: 0xd2127E16741Bb1Fd275E5E81F170b177698926D1_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+DssSpell.schedule() (0xd2127E16741Bb1Fd275E5E81F170b177698926D1_forcedToReceiveEthers.sol#282-287) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,This spell has already been scheduled) (0xd2127E16741Bb1Fd275E5E81F170b177698926D1_forcedToReceiveEthers.sol#284)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xd2127E16741Bb1Fd275E5E81F170b177698926D1_forcedToReceiveEthers.sol analyzed (6 contracts with 1 detectors), 1 result(s) found
+line_number: 284
+
+Filename: 0xd2179a3754b96f1cf19f07242d1107d2f68f01e6_forcedToReceiveEthers.sol
+Output: Compilation warnings/errors on 0xd2179a3754b96f1cf19f07242d1107d2f68f01e6_forcedToReceiveEthers.sol:
+0xd2179a3754b96f1cf19f07242d1107d2f68f01e6_forcedToReceiveEthers.sol:11:1: Error: Source file requires different compiler version (current compiler is 0.5.17+commit.d19bba13.Darwin.appleclang - note that nightly builds are considered to be strictly less than the released version
+pragma solidity 0.5.16;
+^---------------------^
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 561, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 810, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 156, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 285, in _get_targets_json
+    return _run_solc(
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 565, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation 0xd2179a3754b96f1cf19f07242d1107d2f68f01e6_forcedToReceiveEthers.sol:11:1: Error: Source file requires different compiler version (current compiler is 0.5.17+commit.d19bba13.Darwin.appleclang - note that nightly builds are considered to be strictly less than the released version
+pragma solidity 0.5.16;
+^---------------------^
+
+ERROR:root:Error in 0xd2179a3754b96f1cf19f07242d1107d2f68f01e6_forcedToReceiveEthers.sol
+ERROR:root:Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 561, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 810, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/Library/Python/3.9/site-packages/slither_analyzer-0.9.3-py3.9.egg/slither/__main__.py", line 90, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 643, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 131, in __init__
+    self._compile(**kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/crytic_compile.py", line 553, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 156, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 285, in _get_targets_json
+    return _run_solc(
+  File "/Library/Python/3.9/site-packages/crytic_compile/platform/solc.py", line 565, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation 0xd2179a3754b96f1cf19f07242d1107d2f68f01e6_forcedToReceiveEthers.sol:11:1: Error: Source file requires different compiler version (current compiler is 0.5.17+commit.d19bba13.Darwin.appleclang - note that nightly builds are considered to be strictly less than the released version
+pragma solidity 0.5.16;
+^---------------------^
+line_number: 382
+
+Filename: 0xd3085707c2c612e81e6ddcd220d1ed1c1bdefff8_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Reputation.getValueAt(Reputation.Checkpoint[],uint256) (0xd3085707c2c612e81e6ddcd220d1ed1c1bdefff8_forcedToReceiveEthers.sol#205-230) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xd3085707c2c612e81e6ddcd220d1ed1c1bdefff8_forcedToReceiveEthers.sol#206)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xd3085707c2c612e81e6ddcd220d1ed1c1bdefff8_forcedToReceiveEthers.sol analyzed (15 contracts with 1 detectors), 1 result(s) found
+line_number: 206
+
+Filename: 0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol
+Output: Compilation warnings/errors on 0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol:
+0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol:241:5: Warning: Function state mutability can be restricted to view
+    function revenue() public onlyCeoAddress returns (uint256, uint256){
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:Detectors:
+Bussiness.setPriceFeeEth(uint256,uint256,bool) (0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol#142-163) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol#151)
+Bussiness.setPriceFeeHBWALLET(uint256,uint256,bool) (0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol#165-193) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol#177)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xd739a5fa926168aa57ff4a15aa2ad0655246c500_forcedToReceiveEthers.sol analyzed (4 contracts with 1 detectors), 2 result(s) found
+line_number: 151
+line_number: 177
+
+Filename: 0xd88a5a4926968bfbe0f100649dc7fc76a7df3302_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Reputation.getValueAt(Reputation.Checkpoint[],uint256) (0xd88a5a4926968bfbe0f100649dc7fc76a7df3302_forcedToReceiveEthers.sol#205-230) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xd88a5a4926968bfbe0f100649dc7fc76a7df3302_forcedToReceiveEthers.sol#206)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xd88a5a4926968bfbe0f100649dc7fc76a7df3302_forcedToReceiveEthers.sol analyzed (11 contracts with 1 detectors), 1 result(s) found
+line_number: 206
+
+Filename: 0xdc4a5151c0f29f6defa09b383d04b95d587fa275_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+ProposalLogic.unfreezeWithoutDelay(address) (0xdc4a5151c0f29f6defa09b383d04b95d587fa275_forcedToReceiveEthers.sol#1023-1030) uses a dangerous strict equality:
+	- address(this).balance == 1 (0xdc4a5151c0f29f6defa09b383d04b95d587fa275_forcedToReceiveEthers.sol#1025)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xdc4a5151c0f29f6defa09b383d04b95d587fa275_forcedToReceiveEthers.sol analyzed (8 contracts with 1 detectors), 1 result(s) found
+line_number: 1025
+
+Filename: 0xdfBCd11D7f62ECb1994bb63de574E6Bc019375aA_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+ExchangePool.buy(uint256) (0xdfBCd11D7f62ECb1994bb63de574E6Bc019375aA_forcedToReceiveEthers.sol#389-406) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 0,Subscribe only once) (0xdfBCd11D7f62ECb1994bb63de574E6Bc019375aA_forcedToReceiveEthers.sol#392)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xdfBCd11D7f62ECb1994bb63de574E6Bc019375aA_forcedToReceiveEthers.sol analyzed (7 contracts with 1 detectors), 1 result(s) found
+line_number: 392
+
+Filename: 0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+GemJoin8.auth() (0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol#99) uses a dangerous strict equality:
+	- require(bool)(address(this).balance == 1) (0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol#99)
+GemJoin8.exit(address,uint256) (0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol#141-147) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 1,GemJoin8/implementation-invalid) (0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol#144)
+GemJoin8.join(address,uint256) (0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol#132-139) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 1,GemJoin8/not-live) (0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol#133)
+GemJoin8.join(address,uint256) (0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol#132-139) uses a dangerous strict equality:
+	- require(bool,string)(address(this).balance == 1,GemJoin8/implementation-invalid) (0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol#136)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xe29a14bcdea40d83675aa43b72df07f649738c8b_forcedToReceiveEthers.sol analyzed (4 contracts with 1 detectors), 4 result(s) found
+line_number: 99
+line_number: 133
+line_number: 136
+line_number: 144
+
+Filename: 0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol
+Output: Compilation warnings/errors on 0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol:
+0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol:537:9: Warning: Return value of low-level calls not used.
+        _Address.call.value(msg.value)(_Data);
+        ^-----------------------------------^
+0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol:1244:9: Warning: Unreachable code.
+        return 0;
+        ^------^
+
+INFO:Detectors:
+Play_Blackjack.Create_UserAccount(uint256,string,string) (0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol#1100-1120) uses a dangerous strict equality:
+	- require(bool)(address(this).balance == 0) (0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol#1104)
+Blackjack_Functionality.Im_Cute_RecusiveFunction(uint256,uint256[]) (0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol#933-949) uses a dangerous strict equality:
+	- Im_UnCheck_Number == CheckNumberSet[_Im_CheckCounter] (0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol#941)
+AccessControl.StandCheck_AllPlayer(uint256) (0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol#250-261) uses a dangerous strict equality:
+	- require(bool)(address(this).balance == 1111) (0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol#258)
+Play_Blackjack.Start_NewRound(uint256) (0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol#1203-1245) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol#1213)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xe6bb2220819569b8e9d8265c49ca6c79e15a1559_forcedToReceiveEthers.sol analyzed (8 contracts with 1 detectors), 4 result(s) found
+line_number: 258
+line_number: 1104
+line_number: 1213
+
+Filename: 0xee6bd04c6164d7f0fa1cb03277c855639d99a7f6_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+DailyAction.getCount(address) (0xee6bd04c6164d7f0fa1cb03277c855639d99a7f6_forcedToReceiveEthers.sol#395-400) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xee6bd04c6164d7f0fa1cb03277c855639d99a7f6_forcedToReceiveEthers.sol#396)
+DailyAction.isInTerm(address) (0xee6bd04c6164d7f0fa1cb03277c855639d99a7f6_forcedToReceiveEthers.sol#386-393) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xee6bd04c6164d7f0fa1cb03277c855639d99a7f6_forcedToReceiveEthers.sol#387)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xee6bd04c6164d7f0fa1cb03277c855639d99a7f6_forcedToReceiveEthers.sol analyzed (7 contracts with 1 detectors), 2 result(s) found
+line_number: 387
+line_number: 396
+
+Filename: 0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol
+Output: INFO:Detectors:
+Bussiness.calPriceFeeEth(address,uint256,uint256,uint256) (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#288-307) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#297)
+Bussiness.calPriceFeeHBWALLET(address,uint256,uint256,uint256) (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#330-353) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#344)
+Bussiness.cancelBussinessByGameId(address,uint256) (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#421-438) uses a dangerous strict equality:
+	- address(this).balance == 1 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#426)
+Bussiness.cancelBussinessByGameId(address,uint256) (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#421-438) uses a dangerous strict equality:
+	- address(this).balance == 1 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#432)
+Bussiness.revenue() (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#480-505) uses a dangerous strict equality:
+	- address(this).balance == 1 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#493)
+Bussiness.revenue() (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#480-505) uses a dangerous strict equality:
+	- address(this).balance == 1 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#496)
+Bussiness.setPriceFeeEth(address,uint256,uint256,uint256) (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#308-329) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#317)
+Bussiness.setPriceFeeHBWALLET(address,uint256,uint256,uint256) (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#354-383) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol#368)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xf5f310b4bc81917c39a73cfec2c1b36325437fea_forcedToReceiveEthers.sol analyzed (5 contracts with 1 detectors), 8 result(s) found
+line_number: 297
+line_number: 317
+line_number: 344
+line_number: 368
+line_number: 426
+line_number: 432
+line_number: 493
+line_number: 496
+
+Filename: 0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol
+Output: Compilation warnings/errors on 0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:6:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:911:17: Warning: Unused local variable.
+                uint256 result = LibBytes.readUint256(resultData, 0);
+                ^------------^
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1110:5: Warning: Function state mutability can be restricted to pure
+    function _getKyberNetworkProxyAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1120:5: Warning: Function state mutability can be restricted to pure
+    function _getKyberHintHandlerAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1130:5: Warning: Function state mutability can be restricted to pure
+    function _getWethAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1140:5: Warning: Function state mutability can be restricted to pure
+    function _getUniswapExchangeFactoryAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1150:5: Warning: Function state mutability can be restricted to pure
+    function _getUniswapV2Router01Address()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1160:5: Warning: Function state mutability can be restricted to pure
+    function _getEth2DaiAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1170:5: Warning: Function state mutability can be restricted to pure
+    function _getERC20BridgeProxyAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1180:5: Warning: Function state mutability can be restricted to pure
+    function _getDaiAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1190:5: Warning: Function state mutability can be restricted to pure
+    function _getChaiAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1200:5: Warning: Function state mutability can be restricted to pure
+    function _getDevUtilsAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1210:5: Warning: Function state mutability can be restricted to pure
+    function _getDydxAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1220:5: Warning: Function state mutability can be restricted to pure
+    function _getGstAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1230:5: Warning: Function state mutability can be restricted to pure
+    function _getGstCollectorAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1240:5: Warning: Function state mutability can be restricted to pure
+    function _getMUsdAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1250:5: Warning: Function state mutability can be restricted to pure
+    function _getMooniswapAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1260:5: Warning: Function state mutability can be restricted to pure
+    function _getShellAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1270:5: Warning: Function state mutability can be restricted to pure
+    function _getDODORegistryAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol:1280:5: Warning: Function state mutability can be restricted to pure
+    function _getDODOHelperAddress()
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:Detectors:
+LibERC20Token._callWithOptionalBooleanResult(address,bytes) (0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol#899-918) uses a dangerous strict equality:
+	- address(this).balance == 0 (0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol#907)
+LibERC20Token._callWithOptionalBooleanResult(address,bytes) (0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol#899-918) uses a dangerous strict equality:
+	- address(this).balance == 32 (0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol#910)
+LibERC20Token._callWithOptionalBooleanResult(address,bytes) (0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol#899-918) uses a dangerous strict equality:
+	- address(this).balance == 1 (0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol#912)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+INFO:Slither:0xf9786d5eb1de47fa56a8f7bb387653c6d410bfee_forcedToReceiveEthers.sol analyzed (10 contracts with 1 detectors), 3 result(s) found
+line_number: 907
+line_number: 910
+line_number: 912
+
